@@ -1,0 +1,67 @@
+# Make the SysML Ports
+
+INSERT  {
+
+               GRAPH <http://data.pg.com/data/graph/DATA_CSM_Instances_v2_union> {
+
+#CONSTRUCT {
+
+                              ?smlportURI rdf:type ?cIDURI .
+
+                              ?smlportURI rdfs:label ?name .
+
+                              ?parentIDURI pgont:aggregate ?smlportURI .
+
+               }
+
+}
+
+#SELECT *
+
+WHERE {
+
+               ?smlport a csmi:ISysMLPort .
+
+               ?smlport csmi:_idRef/dtype:value ?id .
+
+               ?smlport csmi:_nameRef/dtype:value ?name .
+
+               ?smlport csmi:stereotypesRef/csmi:iRPYRawContainerRef/csmi:iHandleRef ?stypeh .
+
+               ?stypeh csmi:_hnameRef/dtype:value ?cname .
+
+               ?stypeh csmi:_hidRef/dtype:value ?cID .
+
+# Walk the graph to find the parent of the port via aggregates list ref.
+
+               ?parent csmi:aggregatesListRef/csmi:value ?id .
+
+               ?parent csmi:_idRef/dtype:value ?parentID .
+
+#             ?attaggidstr ^(csmi:_idRef/dtype:value) ?ownertag .
+
+#             BIND (   dash:toString(?attaggid) AS ?attaggidstr) .
+
+#             ?attaggidstr ^(csmi:_idRef/dtype:value) ?agg .
+
+
+
+#             ?agg csmi:_nameRef/dtype:value ?aggname .
+
+#             ?agg rdf:type ?aggtype .
+
+
+
+               BIND (spif:replaceAll(?cID, ' ', '_') AS ?cIDguid) .
+
+               BIND (spif:replaceAll(?id, ' ', '_') AS ?idguid) .
+
+               BIND (spif:replaceAll(?parentID, ' ', '_') AS ?parentIDguid) .
+
+               BIND (spif:buildURI("http://ontologies.pg.com/pgontology/{?cIDguid}") AS ?cIDURI) .
+
+               BIND (spif:buildURI("http://data.pg.com/data/{?idguid}") AS ?smlportURI) .
+
+               BIND (spif:buildURI("http://data.pg.com/data/{?parentIDguid}") AS ?parentIDURI) .
+
+}

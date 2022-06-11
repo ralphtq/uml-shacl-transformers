@@ -1,0 +1,7 @@
+**/*.bak
+**/.bsp/
+**/.DS_Store
+/.git/
+**/.idea/
+**/target/
+/project/project/

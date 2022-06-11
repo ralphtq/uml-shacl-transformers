@@ -1,0 +1,5 @@
+{
+    "id": "swimlanes",
+    "label": "Swimlanes app",
+    "uiScripts": [{"id": "swimlanes", "label": "Swimlanes script", "src": "/swimlanes/bundle.js", "stylesheetHref":"/swimlanes/yfiles.css"}]
+}

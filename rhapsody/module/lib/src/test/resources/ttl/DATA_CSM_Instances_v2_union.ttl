@@ -1,0 +1,645 @@
+# baseURI: http://data.pg.com/data/graph/DATA_CSM_Instances_v2_union
+# prefix: DATA_CSM_Instances_v2_union
+
+@prefix DATA_CSM_Instances_v2_union: <http://data.pg.com/data/graph/DATA_CSM_Instances_v2_union#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.pg.com/data/FLOW_GUID_03c73fb2-e355-4982-9f4d-ec3579669e52_GUID_d6e491b8-1ec7-4a7f-a810-a6ee256b5207>
+  a <http://edg.topbraid.solutions/model/Flow> ;
+  <http://edg.topbraid.solutions/model/source> <http://data.pg.com/data/GUID_03c73fb2-e355-4982-9f4d-ec3579669e52> ;
+  <http://edg.topbraid.solutions/model/target> <http://data.pg.com/data/GUID_d6e491b8-1ec7-4a7f-a810-a6ee256b5207> ;
+  rdfs:label "From: Attribute_B to ia_1" ;
+.
+<http://data.pg.com/data/FLOW_GUID_117f6803-1ee1-4f2e-803e-3f74ec762d8c_GUID_2d5e3be0-2cd7-4de3-b5c3-e17133800893>
+  a <http://edg.topbraid.solutions/model/Flow> ;
+  <http://edg.topbraid.solutions/model/source> <http://data.pg.com/data/GUID_117f6803-1ee1-4f2e-803e-3f74ec762d8c> ;
+  <http://edg.topbraid.solutions/model/target> <http://data.pg.com/data/GUID_2d5e3be0-2cd7-4de3-b5c3-e17133800893> ;
+  rdfs:label "From: da_3 to Allocation_Attribute" ;
+.
+<http://data.pg.com/data/FLOW_GUID_17488d7a-f209-4b09-8757-ed0e97c0c6bc_GUID_179a70b4-fb57-4d3b-b85e-d0f54f7c30ea>
+  a <http://edg.topbraid.solutions/model/Flow> ;
+  <http://edg.topbraid.solutions/model/source> <http://data.pg.com/data/GUID_17488d7a-f209-4b09-8757-ed0e97c0c6bc> ;
+  <http://edg.topbraid.solutions/model/target> <http://data.pg.com/data/GUID_179a70b4-fb57-4d3b-b85e-d0f54f7c30ea> ;
+  rdfs:label "From: Attribute_E to ia_5" ;
+.
+<http://data.pg.com/data/FLOW_GUID_4c2f6ddc-c569-4f88-b489-345705bc8925_GUID_e9e75d4a-50b8-4fb0-937a-70d67c3f3c9e>
+  a <http://edg.topbraid.solutions/model/Flow> ;
+  <http://edg.topbraid.solutions/model/source> <http://data.pg.com/data/GUID_4c2f6ddc-c569-4f88-b489-345705bc8925> ;
+  <http://edg.topbraid.solutions/model/target> <http://data.pg.com/data/GUID_e9e75d4a-50b8-4fb0-937a-70d67c3f3c9e> ;
+  rdfs:label "From: Attribute_C to ia_5" ;
+.
+<http://data.pg.com/data/FLOW_GUID_6704f7a6-a410-43eb-a16d-a1611b92812c_GUID_64042d6f-31df-4d86-b104-f6b12d7012fe>
+  a <http://edg.topbraid.solutions/model/Flow> ;
+  <http://edg.topbraid.solutions/model/source> <http://data.pg.com/data/GUID_6704f7a6-a410-43eb-a16d-a1611b92812c> ;
+  <http://edg.topbraid.solutions/model/target> <http://data.pg.com/data/GUID_64042d6f-31df-4d86-b104-f6b12d7012fe> ;
+  rdfs:label "From: da_3 to Feature_Attribute_1" ;
+.
+<http://data.pg.com/data/FLOW_GUID_6b28bf92-072b-448b-9747-5163a9a60bfd_GUID_e9e75d4a-50b8-4fb0-937a-70d67c3f3c9e>
+  a <http://edg.topbraid.solutions/model/Flow> ;
+  <http://edg.topbraid.solutions/model/source> <http://data.pg.com/data/GUID_6b28bf92-072b-448b-9747-5163a9a60bfd> ;
+  <http://edg.topbraid.solutions/model/target> <http://data.pg.com/data/GUID_e9e75d4a-50b8-4fb0-937a-70d67c3f3c9e> ;
+  rdfs:label "From: Requirement to ia_5" ;
+.
+<http://data.pg.com/data/FLOW_GUID_973e760f-24c6-41a7-af00-e2af549563e1_GUID_bd848d69-2edf-4179-b04f-1467f3f16032>
+  a <http://edg.topbraid.solutions/model/Flow> ;
+  <http://edg.topbraid.solutions/model/source> <http://data.pg.com/data/GUID_973e760f-24c6-41a7-af00-e2af549563e1> ;
+  <http://edg.topbraid.solutions/model/target> <http://data.pg.com/data/GUID_bd848d69-2edf-4179-b04f-1467f3f16032> ;
+  rdfs:label "From: da_3 to Attribute_B" ;
+.
+<http://data.pg.com/data/FLOW_GUID_aa1f0c5e-19a7-497f-a22e-8c5c77c27315_GUID_03c73fb2-e355-4982-9f4d-ec3579669e52>
+  a <http://edg.topbraid.solutions/model/Flow> ;
+  <http://edg.topbraid.solutions/model/source> <http://data.pg.com/data/GUID_aa1f0c5e-19a7-497f-a22e-8c5c77c27315> ;
+  <http://edg.topbraid.solutions/model/target> <http://data.pg.com/data/GUID_03c73fb2-e355-4982-9f4d-ec3579669e52> ;
+  rdfs:label "From: da_7 to Attribute_B" ;
+.
+<http://data.pg.com/data/FLOW_GUID_bd848d69-2edf-4179-b04f-1467f3f16032_GUID_217899f7-691c-48ba-ab47-167c1ab6130d>
+  a <http://edg.topbraid.solutions/model/Flow> ;
+  <http://edg.topbraid.solutions/model/source> <http://data.pg.com/data/GUID_bd848d69-2edf-4179-b04f-1467f3f16032> ;
+  <http://edg.topbraid.solutions/model/target> <http://data.pg.com/data/GUID_217899f7-691c-48ba-ab47-167c1ab6130d> ;
+  rdfs:label "From: Attribute_B to ia_3" ;
+.
+<http://data.pg.com/data/FLOW_GUID_be4acc1b-abd8-44f5-8150-38c63c8b57f9_GUID_21e19f11-1e84-438a-bf59-9d006721199f>
+  a <http://edg.topbraid.solutions/model/Flow> ;
+  <http://edg.topbraid.solutions/model/source> <http://data.pg.com/data/GUID_be4acc1b-abd8-44f5-8150-38c63c8b57f9> ;
+  <http://edg.topbraid.solutions/model/target> <http://data.pg.com/data/GUID_21e19f11-1e84-438a-bf59-9d006721199f> ;
+  <http://edg.topbraid.solutions/model/transfersAsset> <http://data.pg.com/data/GUID_0d9124a8-92fb-44bb-8225-9efa01211779> ;
+  rdfs:label "From: Logical_System_1_2 to Logical_System_1_1" ;
+.
+<http://data.pg.com/data/FLOW_GUID_e4d9c103-ab22-45be-bbbb-e6da6fa3b261_GUID_4c2f6ddc-c569-4f88-b489-345705bc8925>
+  a <http://edg.topbraid.solutions/model/Flow> ;
+  <http://edg.topbraid.solutions/model/source> <http://data.pg.com/data/GUID_e4d9c103-ab22-45be-bbbb-e6da6fa3b261> ;
+  <http://edg.topbraid.solutions/model/target> <http://data.pg.com/data/GUID_4c2f6ddc-c569-4f88-b489-345705bc8925> ;
+  rdfs:label "From: da_5 to Attribute_C" ;
+.
+<http://data.pg.com/data/FLOW_GUID_ebcfdc00-1000-40bf-85bd-eeff46ed9517_GUID_12ac90c3-6505-4aee-b17b-d2ce145339dc>
+  a <http://edg.topbraid.solutions/model/Flow> ;
+  <http://edg.topbraid.solutions/model/source> <http://data.pg.com/data/GUID_ebcfdc00-1000-40bf-85bd-eeff46ed9517> ;
+  <http://edg.topbraid.solutions/model/target> <http://data.pg.com/data/GUID_12ac90c3-6505-4aee-b17b-d2ce145339dc> ;
+  rdfs:label "From: Attribute_C to ia_5" ;
+.
+<http://data.pg.com/data/FLOW_GUID_ebcfdc00-1000-40bf-85bd-eeff46ed9517_GUID_90e66deb-c6ab-4f22-a14d-8e285c0680be>
+  a <http://edg.topbraid.solutions/model/Flow> ;
+  <http://edg.topbraid.solutions/model/source> <http://data.pg.com/data/GUID_ebcfdc00-1000-40bf-85bd-eeff46ed9517> ;
+  <http://edg.topbraid.solutions/model/target> <http://data.pg.com/data/GUID_90e66deb-c6ab-4f22-a14d-8e285c0680be> ;
+  rdfs:label "From: Attribute_C to ia_7" ;
+.
+<http://data.pg.com/data/GUID_03c73fb2-e355-4982-9f4d-ec3579669e52>
+  a <http://ontologies.pg.com/pgontology/GUID_1543d072-22fc-490b-9304-d323fbf854e3> ;
+  <http://ontologies.pg.com/pgontology/GUID_5a2ab45e-a3b7-49b0-9eac-4e9c50fa0077> <http://data.pg.com/data/GUID_d6e491b8-1ec7-4a7f-a810-a6ee256b5207> ;
+  <http://ontologies.pg.com/pgontology/composition> <http://data.pg.com/data/GUID_77cd2243-c493-4f3b-a8eb-60eff5b4d4b0> ;
+  rdfs:label "Attribute_B" ;
+.
+<http://data.pg.com/data/GUID_05ce6a38-5dda-46f7-8c0f-98823926e205>
+  a <http://ontologies.pg.com/pgontology/GUID_eac96e6c-98cb-48cd-88dc-a3f1a3bda326> ;
+  <http://ontologies.pg.com/pgontology/composition> <http://data.pg.com/data/GUID_4debd70c-09d3-4e7e-9a1f-ced45377eada> ;
+  rdfs:label "Attribute_A" ;
+.
+<http://data.pg.com/data/GUID_0c77994f-0802-4184-968c-1d574d952871>
+  a <http://ontologies.pg.com/pgontology/GUID_1543d072-22fc-490b-9304-d323fbf854e3> ;
+  <http://ontologies.pg.com/pgontology/composition> <http://data.pg.com/data/GUID_a2194dc6-2fbe-44bf-93a0-ec6f60e1d7f9> ;
+  rdfs:label "Attribute_C" ;
+.
+<http://data.pg.com/data/GUID_0d9124a8-92fb-44bb-8225-9efa01211779>
+  a <http://ontologies.pg.com/pgontology/GUID_a68f3beb-9294-4276-a5c0-46e60eeaf6ee> ;
+  <http://ontologies.pg.com/pgontology/composition> <http://data.pg.com/data/GUID_2f17840f-d766-42d2-8741-d0fbfa4d1cdc> ;
+  rdfs:label "Logical_System_1_3__Flowing_" ;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Logical System 1.3 (Flowing)" ;
+.
+<http://data.pg.com/data/GUID_117f6803-1ee1-4f2e-803e-3f74ec762d8c>
+  a <http://ontologies.pg.com/pgontology/GUID_cbbdf6fc-2d56-4b61-bdff-34318ae6934f> ;
+  <http://ontologies.pg.com/pgontology/GUID_5a2ab45e-a3b7-49b0-9eac-4e9c50fa0077> <http://data.pg.com/data/GUID_2d5e3be0-2cd7-4de3-b5c3-e17133800893> ;
+  rdfs:label "da_3" ;
+.
+<http://data.pg.com/data/GUID_121eea41-8a5c-4ce9-b6fa-707362dcce61>
+  a <http://ontologies.pg.com/pgontology/GUID_a68f3beb-9294-4276-a5c0-46e60eeaf6ee> ;
+  rdfs:label "LS" ;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "LS" ;
+.
+<http://data.pg.com/data/GUID_12ac90c3-6505-4aee-b17b-d2ce145339dc>
+  a <http://ontologies.pg.com/pgontology/GUID_b209bb76-02c3-4007-acef-9bdadd834156> ;
+  rdfs:label "ia_5" ;
+.
+<http://data.pg.com/data/GUID_17488d7a-f209-4b09-8757-ed0e97c0c6bc>
+  a <http://ontologies.pg.com/pgontology/GUID_1543d072-22fc-490b-9304-d323fbf854e3> ;
+  <http://ontologies.pg.com/pgontology/GUID_5a2ab45e-a3b7-49b0-9eac-4e9c50fa0077> <http://data.pg.com/data/GUID_179a70b4-fb57-4d3b-b85e-d0f54f7c30ea> ;
+  <http://ontologies.pg.com/pgontology/composition> <http://data.pg.com/data/GUID_a2194dc6-2fbe-44bf-93a0-ec6f60e1d7f9> ;
+  rdfs:label "Attribute_E" ;
+.
+<http://data.pg.com/data/GUID_1785e2d0-c3ca-4ce7-abba-7551488247e5>
+  a <http://ontologies.pg.com/pgontology/GUID_2a7b8a63-f54f-4379-bab0-02800a5084e1> ;
+  rdfs:label "da_7_implicitType" ;
+.
+<http://data.pg.com/data/GUID_179a70b4-fb57-4d3b-b85e-d0f54f7c30ea>
+  a <http://ontologies.pg.com/pgontology/GUID_b209bb76-02c3-4007-acef-9bdadd834156> ;
+  rdfs:label "ia_5" ;
+.
+<http://data.pg.com/data/GUID_188490f0-9a5e-44d7-91c3-7568305b1d38>
+  a <http://ontologies.pg.com/pgontology/GUID_fc62ed7c-6f8f-4e94-9a25-9c4706ad982d> ;
+  <http://ontologies.pg.com/pgontology/GUID_e0f7511a-dab9-4c13-9789-e1c229d02440> <http://data.pg.com/data/GUID_ab09810e-017d-4f4f-9602-1601099357fd> ;
+  rdfs:label "Comment" ;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Comment" ;
+.
+<http://data.pg.com/data/GUID_1d846c2c-e2bd-4662-a0f2-2db169cf1045>
+  a <http://ontologies.pg.com/pgontology/GUID_2a7b8a63-f54f-4379-bab0-02800a5084e1> ;
+  rdfs:label "ia_7_implicitType" ;
+.
+<http://data.pg.com/data/GUID_217899f7-691c-48ba-ab47-167c1ab6130d>
+  a <http://ontologies.pg.com/pgontology/GUID_b209bb76-02c3-4007-acef-9bdadd834156> ;
+  rdfs:label "ia_3" ;
+.
+<http://data.pg.com/data/GUID_21e19f11-1e84-438a-bf59-9d006721199f>
+  a <http://ontologies.pg.com/pgontology/GUID_b04e5e63-f5d7-4e3d-8000-2e07f5be4e8a> ;
+  rdfs:label "Logical_System_1_1" ;
+.
+<http://data.pg.com/data/GUID_28b4268f-5ca4-4c09-84d3-59770cab9171>
+  a <http://ontologies.pg.com/pgontology/GUID_1543d072-22fc-490b-9304-d323fbf854e3> ;
+  <http://ontologies.pg.com/pgontology/composition> <http://data.pg.com/data/GUID_2f17840f-d766-42d2-8741-d0fbfa4d1cdc> ;
+  rdfs:label "Attribute_A" ;
+  rdfs:label "Logical_Attribute" ;
+.
+<http://data.pg.com/data/GUID_2c60ec6f-c47a-4cc8-9f3f-879577764db7>
+  a <http://ontologies.pg.com/pgontology/GUID_2a7b8a63-f54f-4379-bab0-02800a5084e1> ;
+  rdfs:label "da_5_implicitType" ;
+.
+<http://data.pg.com/data/GUID_2d5e3be0-2cd7-4de3-b5c3-e17133800893>
+  a <http://ontologies.pg.com/pgontology/GUID_bc7dc7d5-fbf1-4d24-8f33-637d297bfad4> ;
+  <http://ontologies.pg.com/pgontology/composition> <http://data.pg.com/data/GUID_a2194dc6-2fbe-44bf-93a0-ec6f60e1d7f9> ;
+  rdfs:label "Allocation_Attribute" ;
+.
+<http://data.pg.com/data/GUID_2f17840f-d766-42d2-8741-d0fbfa4d1cdc>
+  a <http://ontologies.pg.com/pgontology/GUID_a68f3beb-9294-4276-a5c0-46e60eeaf6ee> ;
+  <http://ontologies.pg.com/pgontology/GUID_1c381097-6afe-4581-87c2-a99a118cd188> <http://data.pg.com/data/GUID_b85167b9-996f-4b7d-b1a5-09bda0163e8b> ;
+  <http://ontologies.pg.com/pgontology/GUID_41d320d3-ddb8-4f65-8023-3c2ccd4f7684> <http://data.pg.com/data/GUID_ab09810e-017d-4f4f-9602-1601099357fd> ;
+  <http://ontologies.pg.com/pgontology/GUID_b1dde399-82c0-40c3-b731-00f6e74b3e8f> <http://data.pg.com/data/GUID_e4b78edb-a8b0-43a6-9b2a-442fc93d868e> ;
+  rdfs:label "Logical_System" ;
+  rdfs:label "Logical_System_1" ;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Logical System 1" ;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Logical System" ;
+.
+<http://data.pg.com/data/GUID_37a9c977-a6bc-404f-bd4d-f90b708e79a6>
+  a <http://ontologies.pg.com/pgontology/GUID_2b105d8c-c3f5-448b-8fed-b6d34d5645fc> ;
+  rdfs:label "Allocation_Asset" ;
+.
+<http://data.pg.com/data/GUID_43979bbf-3904-4dd2-8e1c-018724105535>
+  a <http://ontologies.pg.com/pgontology/GUID_1543d072-22fc-490b-9304-d323fbf854e3> ;
+  <http://ontologies.pg.com/pgontology/composition> <http://data.pg.com/data/GUID_121eea41-8a5c-4ce9-b6fa-707362dcce61> ;
+  rdfs:label "A2" ;
+.
+<http://data.pg.com/data/GUID_491da24f-c214-4215-8fba-ca8ff68d6a13>
+  a <http://ontologies.pg.com/pgontology/GUID_1543d072-22fc-490b-9304-d323fbf854e3> ;
+  <http://ontologies.pg.com/pgontology/composition> <http://data.pg.com/data/GUID_0d9124a8-92fb-44bb-8225-9efa01211779> ;
+  rdfs:label "Attribute_D" ;
+.
+<http://data.pg.com/data/GUID_4c2f6ddc-c569-4f88-b489-345705bc8925>
+  a <http://ontologies.pg.com/pgontology/GUID_1543d072-22fc-490b-9304-d323fbf854e3> ;
+  <http://ontologies.pg.com/pgontology/GUID_15a5a3cd-e00b-431a-b981-3cd8ea70cba9> <http://data.pg.com/data/GUID_ebcfdc00-1000-40bf-85bd-eeff46ed9517> ;
+  <http://ontologies.pg.com/pgontology/GUID_5a2ab45e-a3b7-49b0-9eac-4e9c50fa0077> <http://data.pg.com/data/GUID_e9e75d4a-50b8-4fb0-937a-70d67c3f3c9e> ;
+  <http://ontologies.pg.com/pgontology/composition> <http://data.pg.com/data/GUID_95cc7f2e-a5df-4cd7-8fa9-8dd128c28c16> ;
+  rdfs:label "Attribute_C" ;
+.
+<http://data.pg.com/data/GUID_4debd70c-09d3-4e7e-9a1f-ced45377eada>
+  a <http://ontologies.pg.com/pgontology/GUID_f7c6986c-65ae-4773-9054-2a9f2a5b5a3b> ;
+  <http://ontologies.pg.com/pgontology/generalization> <http://data.pg.com/data/GUID_b85167b9-996f-4b7d-b1a5-09bda0163e8b> ;
+  rdfs:label "Specialized_Physical_System" ;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Specialized_Physical_System" ;
+.
+<http://data.pg.com/data/GUID_53f67d5a-f782-428d-bce0-1314681ee7aa>
+  a <http://ontologies.pg.com/pgontology/GUID_db0f6255-b34a-4346-8ce2-029a4a620c35> ;
+  <http://ontologies.pg.com/pgontology/port> <http://data.pg.com/data/GUID_d6e491b8-1ec7-4a7f-a810-a6ee256b5207> ;
+  <http://ontologies.pg.com/pgontology/port> <http://data.pg.com/data/GUID_e4d9c103-ab22-45be-bbbb-e6da6fa3b261> ;
+  rdfs:label "Attribute_C" ;
+  rdfs:label "Logical_Attribute_2" ;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Attribute C" ;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Logical Attribute 2" ;
+.
+<http://data.pg.com/data/GUID_5d494a85-bef9-4380-8941-c9be80ab5a8e>
+  a <http://ontologies.pg.com/pgontology/GUID_f9b1f136-b00b-47ec-ae67-59bd0aedec72> ;
+  <http://ontologies.pg.com/pgontology/generalization> <http://data.pg.com/data/GUID_e4b78edb-a8b0-43a6-9b2a-442fc93d868e> ;
+  rdfs:label "Specialized_Feature" ;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Specialized_Feature" ;
+.
+<http://data.pg.com/data/GUID_6251ee51-8097-4883-9bd4-55afff79b848>
+  a <http://ontologies.pg.com/pgontology/GUID_2a7b8a63-f54f-4379-bab0-02800a5084e1> ;
+  rdfs:label "da_3_implicitType" ;
+.
+<http://data.pg.com/data/GUID_64042d6f-31df-4d86-b104-f6b12d7012fe>
+  a <http://ontologies.pg.com/pgontology/GUID_ebb14fcc-77f9-4e5b-b512-50756bb1ef22> ;
+  <http://ontologies.pg.com/pgontology/GUID_e1f2cb67-aea9-43ac-896b-2c3ed2384ec2> <http://data.pg.com/data/GUID_ac604023-b2a2-431f-bd51-191507f99cac> ;
+  <http://ontologies.pg.com/pgontology/composition> <http://data.pg.com/data/GUID_e4b78edb-a8b0-43a6-9b2a-442fc93d868e> ;
+  rdfs:label "Feature_Attribute_1" ;
+.
+<http://data.pg.com/data/GUID_64c9708e-051d-43ff-9062-4193059d96b9>
+  a <http://ontologies.pg.com/pgontology/GUID_2a7b8a63-f54f-4379-bab0-02800a5084e1> ;
+  rdfs:label "ia_3_implicitType" ;
+.
+<http://data.pg.com/data/GUID_65f99c36-5cbb-4bd2-a756-ad57637dc2ec>
+  a <http://ontologies.pg.com/pgontology/GUID_f7c6986c-65ae-4773-9054-2a9f2a5b5a3b> ;
+  <http://ontologies.pg.com/pgontology/GUID_b0ab7297-4dc8-404b-a448-12b4c1069a9c> <http://data.pg.com/data/GUID_95cc7f2e-a5df-4cd7-8fa9-8dd128c28c16> ;
+  <http://ontologies.pg.com/pgontology/composition> <http://data.pg.com/data/GUID_b85167b9-996f-4b7d-b1a5-09bda0163e8b> ;
+  <http://ontologies.pg.com/pgontology/generalization> <http://data.pg.com/data/GUID_95cc7f2e-a5df-4cd7-8fa9-8dd128c28c16> ;
+  rdfs:label "Physical_System_AC" ;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Physical System AC" ;
+.
+<http://data.pg.com/data/GUID_6704f7a6-a410-43eb-a16d-a1611b92812c>
+  a <http://ontologies.pg.com/pgontology/GUID_cbbdf6fc-2d56-4b61-bdff-34318ae6934f> ;
+  <http://ontologies.pg.com/pgontology/GUID_5a2ab45e-a3b7-49b0-9eac-4e9c50fa0077> <http://data.pg.com/data/GUID_64042d6f-31df-4d86-b104-f6b12d7012fe> ;
+  rdfs:label "da_3" ;
+.
+<http://data.pg.com/data/GUID_6b28bf92-072b-448b-9747-5163a9a60bfd>
+  a <http://ontologies.pg.com/pgontology/GUID_d2d2ec13-ed96-4c5c-bc35-a12e3b693079> ;
+  <http://ontologies.pg.com/pgontology/GUID_5a2ab45e-a3b7-49b0-9eac-4e9c50fa0077> <http://data.pg.com/data/GUID_e9e75d4a-50b8-4fb0-937a-70d67c3f3c9e> ;
+  rdfs:label "Requirement" ;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Requirement" ;
+.
+<http://data.pg.com/data/GUID_734a8fdf-b7a5-48c2-92d4-9b77b169ed39>
+  a <http://ontologies.pg.com/pgontology/GUID_eac96e6c-98cb-48cd-88dc-a3f1a3bda326> ;
+  <http://ontologies.pg.com/pgontology/composition> <http://data.pg.com/data/GUID_b85167b9-996f-4b7d-b1a5-09bda0163e8b> ;
+  rdfs:label "Attribute_A" ;
+.
+<http://data.pg.com/data/GUID_77cd2243-c493-4f3b-a8eb-60eff5b4d4b0>
+  a <http://ontologies.pg.com/pgontology/GUID_a68f3beb-9294-4276-a5c0-46e60eeaf6ee> ;
+  <http://ontologies.pg.com/pgontology/GUID_1c381097-6afe-4581-87c2-a99a118cd188> <http://data.pg.com/data/GUID_fef00684-5abd-4177-b8a6-55022ade520d> ;
+  <http://ontologies.pg.com/pgontology/composition> <http://data.pg.com/data/GUID_2f17840f-d766-42d2-8741-d0fbfa4d1cdc> ;
+  rdfs:label "Logical_System_1_1" ;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Logical System 1.1" ;
+.
+<http://data.pg.com/data/GUID_80f35294-21ad-42fc-a7cd-e509f0097e62>
+  a <http://ontologies.pg.com/pgontology/GUID_7b8c6c75-6b53-47a9-ae92-e39d30597986> ;
+  <http://ontologies.pg.com/pgontology/composition> <http://data.pg.com/data/GUID_6b28bf92-072b-448b-9747-5163a9a60bfd> ;
+  rdfs:label "RPN" ;
+.
+<http://data.pg.com/data/GUID_8516b75c-50aa-4a20-91e7-f626d89fb40d>
+  a <http://ontologies.pg.com/pgontology/GUID_db0f6255-b34a-4346-8ce2-029a4a620c35> ;
+  <http://ontologies.pg.com/pgontology/port> <http://data.pg.com/data/GUID_217899f7-691c-48ba-ab47-167c1ab6130d> ;
+  <http://ontologies.pg.com/pgontology/port> <http://data.pg.com/data/GUID_aa1f0c5e-19a7-497f-a22e-8c5c77c27315> ;
+  rdfs:label "Attribute_B" ;
+  rdfs:label "Logical_Attribute_1" ;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Attribute B" ;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Logical Attribute 1" ;
+.
+<http://data.pg.com/data/GUID_90e66deb-c6ab-4f22-a14d-8e285c0680be>
+  a <http://ontologies.pg.com/pgontology/GUID_b209bb76-02c3-4007-acef-9bdadd834156> ;
+  rdfs:label "ia_7" ;
+.
+<http://data.pg.com/data/GUID_95cc7f2e-a5df-4cd7-8fa9-8dd128c28c16>
+  a <http://ontologies.pg.com/pgontology/GUID_a68f3beb-9294-4276-a5c0-46e60eeaf6ee> ;
+  <http://ontologies.pg.com/pgontology/GUID_1c381097-6afe-4581-87c2-a99a118cd188> <http://data.pg.com/data/GUID_65f99c36-5cbb-4bd2-a756-ad57637dc2ec> ;
+  <http://ontologies.pg.com/pgontology/composition> <http://data.pg.com/data/GUID_2f17840f-d766-42d2-8741-d0fbfa4d1cdc> ;
+  rdfs:label "Logical_System_1_2" ;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Logical System 1.2" ;
+.
+<http://data.pg.com/data/GUID_973e760f-24c6-41a7-af00-e2af549563e1>
+  a <http://ontologies.pg.com/pgontology/GUID_cbbdf6fc-2d56-4b61-bdff-34318ae6934f> ;
+  <http://ontologies.pg.com/pgontology/GUID_5a2ab45e-a3b7-49b0-9eac-4e9c50fa0077> <http://data.pg.com/data/GUID_bd848d69-2edf-4179-b04f-1467f3f16032> ;
+  rdfs:label "da_3" ;
+.
+<http://data.pg.com/data/GUID_a2194dc6-2fbe-44bf-93a0-ec6f60e1d7f9>
+  a <http://ontologies.pg.com/pgontology/GUID_a68f3beb-9294-4276-a5c0-46e60eeaf6ee> ;
+  <http://ontologies.pg.com/pgontology/generalization> <http://data.pg.com/data/GUID_95cc7f2e-a5df-4cd7-8fa9-8dd128c28c16> ;
+  rdfs:label "Specialized_Logical_System" ;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Specialized Logical System" ;
+.
+<http://data.pg.com/data/GUID_a2c865c6-22cd-4013-b5b2-4a4f85be3d0f>
+  a <http://ontologies.pg.com/pgontology/GUID_fd834787-3435-4b6a-bf88-3f76eb1efafe> ;
+  <http://ontologies.pg.com/pgontology/port> <http://data.pg.com/data/GUID_117f6803-1ee1-4f2e-803e-3f74ec762d8c> ;
+  <http://ontologies.pg.com/pgontology/port> <http://data.pg.com/data/GUID_179a70b4-fb57-4d3b-b85e-d0f54f7c30ea> ;
+  <http://ontologies.pg.com/pgontology/port> <http://data.pg.com/data/GUID_90e66deb-c6ab-4f22-a14d-8e285c0680be> ;
+  rdfs:label "Allocation_Attribute" ;
+.
+<http://data.pg.com/data/GUID_a4982d8f-38c9-4260-8a49-1ff5bb5ae816>
+  a <http://ontologies.pg.com/pgontology/GUID_a68f3beb-9294-4276-a5c0-46e60eeaf6ee> ;
+  <http://ontologies.pg.com/pgontology/GUID_3936f44d-01de-4a99-a8fb-0bef9edb15f9> <http://data.pg.com/data/GUID_de30abf7-defd-46fe-a31a-64c1b9a04563> ;
+  rdfs:label "Aggregating_Logical_System" ;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Aggregating Logical System" ;
+.
+<http://data.pg.com/data/GUID_aa1f0c5e-19a7-497f-a22e-8c5c77c27315>
+  a <http://ontologies.pg.com/pgontology/GUID_cbbdf6fc-2d56-4b61-bdff-34318ae6934f> ;
+  <http://ontologies.pg.com/pgontology/GUID_5a2ab45e-a3b7-49b0-9eac-4e9c50fa0077> <http://data.pg.com/data/GUID_03c73fb2-e355-4982-9f4d-ec3579669e52> ;
+  rdfs:label "da_7" ;
+.
+<http://data.pg.com/data/GUID_ab09810e-017d-4f4f-9602-1601099357fd>
+  a <http://ontologies.pg.com/pgontology/GUID_b6bde93a-4cf5-4402-aa02-89635490ad00> ;
+  <http://ontologies.pg.com/pgontology/GUID_439889d6-cda4-4eb1-8fc2-72b424d35e1b> <http://data.pg.com/data/GUID_188490f0-9a5e-44d7-91c3-7568305b1d38> ;
+  <http://ontologies.pg.com/pgontology/GUID_4e2e0556-3a1e-4a74-b6d3-99bbdb08856d> <http://data.pg.com/data/GUID_2f17840f-d766-42d2-8741-d0fbfa4d1cdc> ;
+  <http://ontologies.pg.com/pgontology/GUID_80894568-6098-45d9-81f6-7b4da95afe2c> <http://data.pg.com/data/GUID_b378f5fb-a366-4215-8b48-319b62b587a8> ;
+  <http://ontologies.pg.com/pgontology/GUID_9ca1fb23-d16f-40ad-945b-c8187116b739> <http://data.pg.com/data/GUID_ced82d2a-c763-4d05-af86-9ac0e0d62b33> ;
+  <http://ontologies.pg.com/pgontology/GUID_ae843e06-f012-4c80-883d-7df8bd4f5fb1> <http://data.pg.com/data/GUID_d38532e9-1bc5-49fc-bcff-55af6f5b9f6b> ;
+  <http://ontologies.pg.com/pgontology/GUID_bcd59a00-0c08-40a8-ac84-234ccc54eb67> <http://data.pg.com/data/GUID_e4b78edb-a8b0-43a6-9b2a-442fc93d868e> ;
+  rdfs:label "Stakeholder" ;
+.
+<http://data.pg.com/data/GUID_ac604023-b2a2-431f-bd51-191507f99cac>
+  a <http://ontologies.pg.com/pgontology/GUID_fd65fba7-39b5-4574-ad14-63607d505703> ;
+  <http://ontologies.pg.com/pgontology/GUID_2a8f0c62-66c8-4454-bb72-5056664a00ad> <http://data.pg.com/data/GUID_64042d6f-31df-4d86-b104-f6b12d7012fe> ;
+  rdfs:label "Test" ;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Test" ;
+.
+<http://data.pg.com/data/GUID_adecdd8d-95d5-4ac5-81ff-16d00373343c>
+  a <http://ontologies.pg.com/pgontology/GUID_2a7b8a63-f54f-4379-bab0-02800a5084e1> ;
+  rdfs:label "ia_1_implicitType" ;
+.
+<http://data.pg.com/data/GUID_b378f5fb-a366-4215-8b48-319b62b587a8>
+  a <http://ontologies.pg.com/pgontology/GUID_fabbe536-3039-495f-90b9-8755517b0a8f> ;
+  <http://ontologies.pg.com/pgontology/GUID_aee3822d-9fbc-489a-8de0-566e7f8b8717> <http://data.pg.com/data/GUID_ab09810e-017d-4f4f-9602-1601099357fd> ;
+  rdfs:label "TLP" ;
+.
+<http://data.pg.com/data/GUID_b3913b9b-6392-44ba-a70d-79690ac3d79b>
+  a <http://ontologies.pg.com/pgontology/GUID_7b8c6c75-6b53-47a9-ae92-e39d30597986> ;
+  <http://ontologies.pg.com/pgontology/composition> <http://data.pg.com/data/GUID_6b28bf92-072b-448b-9747-5163a9a60bfd> ;
+  rdfs:label "Severity" ;
+.
+<http://data.pg.com/data/GUID_b3a3b18d-7558-4560-a887-3b2f9fd873a9>
+  a <http://ontologies.pg.com/pgontology/GUID_a7c5f54e-ab5f-4100-8696-17c790103b01> ;
+  <http://ontologies.pg.com/pgontology/port> <http://data.pg.com/data/GUID_6704f7a6-a410-43eb-a16d-a1611b92812c> ;
+  <http://ontologies.pg.com/pgontology/port> <http://data.pg.com/data/GUID_e9e75d4a-50b8-4fb0-937a-70d67c3f3c9e> ;
+  rdfs:label "Feature_Attribute_1" ;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Feature Attribute 1" ;
+.
+<http://data.pg.com/data/GUID_b85167b9-996f-4b7d-b1a5-09bda0163e8b>
+  a <http://ontologies.pg.com/pgontology/GUID_f7c6986c-65ae-4773-9054-2a9f2a5b5a3b> ;
+  <http://ontologies.pg.com/pgontology/GUID_b0ab7297-4dc8-404b-a448-12b4c1069a9c> <http://data.pg.com/data/GUID_2f17840f-d766-42d2-8741-d0fbfa4d1cdc> ;
+  <http://ontologies.pg.com/pgontology/generalization> <http://data.pg.com/data/GUID_2f17840f-d766-42d2-8741-d0fbfa4d1cdc> ;
+  rdfs:label "Physical_System_A" ;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Physical System A" ;
+.
+<http://data.pg.com/data/GUID_bd848d69-2edf-4179-b04f-1467f3f16032>
+  a <http://ontologies.pg.com/pgontology/GUID_eac96e6c-98cb-48cd-88dc-a3f1a3bda326> ;
+  <http://ontologies.pg.com/pgontology/GUID_5a2ab45e-a3b7-49b0-9eac-4e9c50fa0077> <http://data.pg.com/data/GUID_217899f7-691c-48ba-ab47-167c1ab6130d> ;
+  <http://ontologies.pg.com/pgontology/composition> <http://data.pg.com/data/GUID_fef00684-5abd-4177-b8a6-55022ade520d> ;
+  rdfs:label "Attribute_B" ;
+.
+<http://data.pg.com/data/GUID_be4acc1b-abd8-44f5-8150-38c63c8b57f9>
+  a <http://ontologies.pg.com/pgontology/GUID_b04e5e63-f5d7-4e3d-8000-2e07f5be4e8a> ;
+  <http://ontologies.pg.com/pgontology/GUID_d10728e0-b034-4b51-afad-c00fb9c8c328> <http://data.pg.com/data/GUID_21e19f11-1e84-438a-bf59-9d006721199f> ;
+  rdfs:label "Logical_System_1_2" ;
+.
+<http://data.pg.com/data/GUID_c3ed292b-f3ed-4621-bdea-bbb2ec1e398d>
+  a <http://ontologies.pg.com/pgontology/GUID_7b8c6c75-6b53-47a9-ae92-e39d30597986> ;
+  <http://ontologies.pg.com/pgontology/composition> <http://data.pg.com/data/GUID_6b28bf92-072b-448b-9747-5163a9a60bfd> ;
+  rdfs:label "Detectability" ;
+.
+<http://data.pg.com/data/GUID_c52fc759-88ed-45e7-ba0e-c2c663d1f31d>
+  a <http://ontologies.pg.com/pgontology/GUID_81c93d3b-9fdf-4563-bf50-1be8da002df4> ;
+  <http://ontologies.pg.com/pgontology/composition> <http://data.pg.com/data/GUID_37a9c977-a6bc-404f-bd4d-f90b708e79a6> ;
+  rdfs:label "Asset_Attribute" ;
+.
+<http://data.pg.com/data/GUID_c56859c3-d661-4166-90b2-f3dfe7bbb52d>
+  a <http://ontologies.pg.com/pgontology/GUID_7b8c6c75-6b53-47a9-ae92-e39d30597986> ;
+  <http://ontologies.pg.com/pgontology/composition> <http://data.pg.com/data/GUID_6b28bf92-072b-448b-9747-5163a9a60bfd> ;
+  rdfs:label "Likelihood" ;
+.
+<http://data.pg.com/data/GUID_c97f4b2a-7178-4ccb-a5ad-dd231d53d708>
+  a <http://ontologies.pg.com/pgontology/GUID_2a7b8a63-f54f-4379-bab0-02800a5084e1> ;
+  rdfs:label "ia_5_implicitType" ;
+.
+<http://data.pg.com/data/GUID_caec0d9a-7919-4459-aceb-25d8772b05df>
+  a <http://ontologies.pg.com/pgontology/GUID_2a7b8a63-f54f-4379-bab0-02800a5084e1> ;
+  rdfs:label "ia_5_implicitType" ;
+.
+<http://data.pg.com/data/GUID_ced82d2a-c763-4d05-af86-9ac0e0d62b33>
+  a <http://ontologies.pg.com/pgontology/GUID_7e181a89-0aa4-42da-bcfa-fcbb0cfed182> ;
+  <http://ontologies.pg.com/pgontology/GUID_1a073c94-20a7-4e64-a0a8-2e34cea59236> <http://data.pg.com/data/GUID_d38532e9-1bc5-49fc-bcff-55af6f5b9f6b> ;
+  <http://ontologies.pg.com/pgontology/GUID_51a9a1ac-a338-4934-abad-7fb19db5ea10> <http://data.pg.com/data/GUID_e4b78edb-a8b0-43a6-9b2a-442fc93d868e> ;
+  <http://ontologies.pg.com/pgontology/GUID_e995efd8-3fdc-4eed-87f0-1b0235f3a7d6> <http://data.pg.com/data/GUID_ab09810e-017d-4f4f-9602-1601099357fd> ;
+  rdfs:label "Need" ;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Need" ;
+.
+<http://data.pg.com/data/GUID_d38532e9-1bc5-49fc-bcff-55af6f5b9f6b>
+  a <http://ontologies.pg.com/pgontology/GUID_603b2c2e-3dfd-41db-ba7f-bdbee9fb80b2> ;
+  <http://ontologies.pg.com/pgontology/GUID_4cf79344-c556-4b75-8f49-283ade434790> <http://data.pg.com/data/GUID_ced82d2a-c763-4d05-af86-9ac0e0d62b33> ;
+  <http://ontologies.pg.com/pgontology/GUID_916ddcdc-b630-4001-abdb-1ea079fffad4> <http://data.pg.com/data/GUID_ab09810e-017d-4f4f-9602-1601099357fd> ;
+  rdfs:label "Advocate" ;
+.
+<http://data.pg.com/data/GUID_d6e491b8-1ec7-4a7f-a810-a6ee256b5207>
+  a <http://ontologies.pg.com/pgontology/GUID_b209bb76-02c3-4007-acef-9bdadd834156> ;
+  rdfs:label "ia_1" ;
+.
+<http://data.pg.com/data/GUID_de30abf7-defd-46fe-a31a-64c1b9a04563>
+  a <http://ontologies.pg.com/pgontology/GUID_481b7426-8524-45db-a10c-f13ec5146c99> ;
+  <http://ontologies.pg.com/pgontology/GUID_ed89ab51-b2fe-4535-8a74-ca006dd0dc82> <http://data.pg.com/data/GUID_a4982d8f-38c9-4260-8a49-1ff5bb5ae816> ;
+  rdfs:label "Allocation_Permutation" ;
+.
+<http://data.pg.com/data/GUID_df777165-da2a-43c4-8621-90c9efd185e8>
+  a <http://ontologies.pg.com/pgontology/GUID_7b8c6c75-6b53-47a9-ae92-e39d30597986> ;
+  <http://ontologies.pg.com/pgontology/composition> <http://data.pg.com/data/GUID_6b28bf92-072b-448b-9747-5163a9a60bfd> ;
+  rdfs:label "Detection" ;
+.
+<http://data.pg.com/data/GUID_e00a1c2e-9d3b-492c-ac83-5b8b8dbcd805>
+  a <http://ontologies.pg.com/pgontology/GUID_1543d072-22fc-490b-9304-d323fbf854e3> ;
+  <http://ontologies.pg.com/pgontology/composition> <http://data.pg.com/data/GUID_121eea41-8a5c-4ce9-b6fa-707362dcce61> ;
+  rdfs:label "A1" ;
+.
+<http://data.pg.com/data/GUID_e20e918e-0b54-4c8a-90d5-37dbdafd9741>
+  a <http://ontologies.pg.com/pgontology/GUID_2a7b8a63-f54f-4379-bab0-02800a5084e1> ;
+  rdfs:label "da_3_implicitType" ;
+.
+<http://data.pg.com/data/GUID_e4b78edb-a8b0-43a6-9b2a-442fc93d868e>
+  a <http://ontologies.pg.com/pgontology/GUID_f9b1f136-b00b-47ec-ae67-59bd0aedec72> ;
+  <http://ontologies.pg.com/pgontology/GUID_7e526c06-e31a-4f0e-b2bc-f13fe8764137> <http://data.pg.com/data/GUID_ced82d2a-c763-4d05-af86-9ac0e0d62b33> ;
+  <http://ontologies.pg.com/pgontology/GUID_a34514be-b848-4df0-8a12-315aa622349b> <http://data.pg.com/data/GUID_ab09810e-017d-4f4f-9602-1601099357fd> ;
+  <http://ontologies.pg.com/pgontology/GUID_b854037d-95e0-4da8-a261-ba9d47689b9f> <http://data.pg.com/data/GUID_2f17840f-d766-42d2-8741-d0fbfa4d1cdc> ;
+  rdfs:label "Feature" ;
+.
+<http://data.pg.com/data/GUID_e4d9c103-ab22-45be-bbbb-e6da6fa3b261>
+  a <http://ontologies.pg.com/pgontology/GUID_cbbdf6fc-2d56-4b61-bdff-34318ae6934f> ;
+  <http://ontologies.pg.com/pgontology/GUID_5a2ab45e-a3b7-49b0-9eac-4e9c50fa0077> <http://data.pg.com/data/GUID_4c2f6ddc-c569-4f88-b489-345705bc8925> ;
+  rdfs:label "da_5" ;
+.
+<http://data.pg.com/data/GUID_e6496eab-46c0-40f6-8364-8daf3b416e30>
+  a <http://ontologies.pg.com/pgontology/GUID_ebb14fcc-77f9-4e5b-b512-50756bb1ef22> ;
+  <http://ontologies.pg.com/pgontology/composition> <http://data.pg.com/data/GUID_5d494a85-bef9-4380-8941-c9be80ab5a8e> ;
+  rdfs:label "Feature_Attribute_1" ;
+.
+<http://data.pg.com/data/GUID_e9e75d4a-50b8-4fb0-937a-70d67c3f3c9e>
+  a <http://ontologies.pg.com/pgontology/GUID_b209bb76-02c3-4007-acef-9bdadd834156> ;
+  rdfs:label "ia_5" ;
+.
+<http://data.pg.com/data/GUID_ebcfdc00-1000-40bf-85bd-eeff46ed9517>
+  a <http://ontologies.pg.com/pgontology/GUID_eac96e6c-98cb-48cd-88dc-a3f1a3bda326> ;
+  <http://ontologies.pg.com/pgontology/GUID_5a2ab45e-a3b7-49b0-9eac-4e9c50fa0077> <http://data.pg.com/data/GUID_12ac90c3-6505-4aee-b17b-d2ce145339dc> ;
+  <http://ontologies.pg.com/pgontology/GUID_5a2ab45e-a3b7-49b0-9eac-4e9c50fa0077> <http://data.pg.com/data/GUID_90e66deb-c6ab-4f22-a14d-8e285c0680be> ;
+  <http://ontologies.pg.com/pgontology/GUID_6ac50915-3dcc-4ced-875c-5d9cb4522e45> <http://data.pg.com/data/GUID_4c2f6ddc-c569-4f88-b489-345705bc8925> ;
+  <http://ontologies.pg.com/pgontology/composition> <http://data.pg.com/data/GUID_65f99c36-5cbb-4bd2-a756-ad57637dc2ec> ;
+  rdfs:label "Attribute_C" ;
+.
+<http://data.pg.com/data/GUID_f02c4655-ed94-4554-8c30-65f52eb03d6f>
+  a <http://ontologies.pg.com/pgontology/GUID_2a7b8a63-f54f-4379-bab0-02800a5084e1> ;
+  rdfs:label "da_3_implicitType" ;
+.
+<http://data.pg.com/data/GUID_f7cf79d4-ed7b-4522-89cb-3a92ed054d26>
+  a <http://ontologies.pg.com/pgontology/GUID_2a7b8a63-f54f-4379-bab0-02800a5084e1> ;
+  rdfs:label "ia_5_implicitType" ;
+.
+<http://data.pg.com/data/GUID_fa079e3d-c169-4251-88c3-1dc7c72b9b43>
+  a <http://ontologies.pg.com/pgontology/GUID_7b8c6c75-6b53-47a9-ae92-e39d30597986> ;
+  <http://ontologies.pg.com/pgontology/composition> <http://data.pg.com/data/GUID_6b28bf92-072b-448b-9747-5163a9a60bfd> ;
+  rdfs:label "Prevention" ;
+.
+<http://data.pg.com/data/GUID_fe24afa2-fe6c-4421-8210-fdd782ecbc75>
+  a <http://ontologies.pg.com/pgontology/GUID_fb88de4c-4199-4e0a-95b2-929d41b14e1d> ;
+  <http://ontologies.pg.com/pgontology/port> <http://data.pg.com/data/GUID_12ac90c3-6505-4aee-b17b-d2ce145339dc> ;
+  <http://ontologies.pg.com/pgontology/port> <http://data.pg.com/data/GUID_973e760f-24c6-41a7-af00-e2af549563e1> ;
+  rdfs:label "Logical_Attribute_1" ;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Logical Attribute 1" ;
+.
+<http://data.pg.com/data/GUID_fef00684-5abd-4177-b8a6-55022ade520d>
+  a <http://ontologies.pg.com/pgontology/GUID_f7c6986c-65ae-4773-9054-2a9f2a5b5a3b> ;
+  <http://ontologies.pg.com/pgontology/GUID_b0ab7297-4dc8-404b-a448-12b4c1069a9c> <http://data.pg.com/data/GUID_77cd2243-c493-4f3b-a8eb-60eff5b4d4b0> ;
+  <http://ontologies.pg.com/pgontology/composition> <http://data.pg.com/data/GUID_b85167b9-996f-4b7d-b1a5-09bda0163e8b> ;
+  <http://ontologies.pg.com/pgontology/generalization> <http://data.pg.com/data/GUID_77cd2243-c493-4f3b-a8eb-60eff5b4d4b0> ;
+  rdfs:label "Physical_System_AB" ;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Physical System AB" ;
+.
+<http://data.pg.com/data/graph/DATA_CSM_Instances_v2_union>
+  a owl:Ontology ;
+  owl:versionInfo "Created with TopBraid Composer" ;
+.
+<http://ontologies.pg.com/pgontology/GUID_1543d072-22fc-490b-9304-d323fbf854e3>
+  rdfs:label "LS_Attribute" ;
+.
+<http://ontologies.pg.com/pgontology/GUID_15a5a3cd-e00b-431a-b981-3cd8ea70cba9>
+  rdfs:label "Allocated_By_Attribute" ;
+.
+<http://ontologies.pg.com/pgontology/GUID_1a073c94-20a7-4e64-a0a8-2e34cea59236>
+  rdfs:label "Advocated_By" ;
+.
+<http://ontologies.pg.com/pgontology/GUID_1c381097-6afe-4581-87c2-a99a118cd188>
+  rdfs:label "Allocated_To_Physical_System" ;
+.
+<http://ontologies.pg.com/pgontology/GUID_2a7b8a63-f54f-4379-bab0-02800a5084e1>
+  rdfs:label "Interface" ;
+.
+<http://ontologies.pg.com/pgontology/GUID_2a8f0c62-66c8-4454-bb72-5056664a00ad>
+  rdfs:label "Measures_Attribute" ;
+.
+<http://ontologies.pg.com/pgontology/GUID_2b105d8c-c3f5-448b-8fed-b6d34d5645fc>
+  rdfs:label "Asset" ;
+.
+<http://ontologies.pg.com/pgontology/GUID_3936f44d-01de-4a99-a8fb-0bef9edb15f9>
+  rdfs:label "Allocated_By" ;
+.
+<http://ontologies.pg.com/pgontology/GUID_41d320d3-ddb8-4f65-8023-3c2ccd4f7684>
+  rdfs:label "Has_Stakeholder" ;
+.
+<http://ontologies.pg.com/pgontology/GUID_439889d6-cda4-4eb1-8fc2-72b424d35e1b>
+  rdfs:label "Referenced_By_Comment" ;
+.
+<http://ontologies.pg.com/pgontology/GUID_481b7426-8524-45db-a10c-f13ec5146c99>
+  rdfs:label "Allocation_Permutation" ;
+.
+<http://ontologies.pg.com/pgontology/GUID_4cf79344-c556-4b75-8f49-283ade434790>
+  rdfs:label "Advocated_Need" ;
+.
+<http://ontologies.pg.com/pgontology/GUID_4e2e0556-3a1e-4a74-b6d3-99bbdb08856d>
+  rdfs:label "Has_Stake_In" ;
+.
+<http://ontologies.pg.com/pgontology/GUID_51a9a1ac-a338-4934-abad-7fb19db5ea10>
+  rdfs:label "Satisfied_By" ;
+.
+<http://ontologies.pg.com/pgontology/GUID_603b2c2e-3dfd-41db-ba7f-bdbee9fb80b2>
+  rdfs:label "Advocate" ;
+.
+<http://ontologies.pg.com/pgontology/GUID_6ac50915-3dcc-4ced-875c-5d9cb4522e45>
+  rdfs:label "Allocation_Of_Attribute" ;
+.
+<http://ontologies.pg.com/pgontology/GUID_7b8c6c75-6b53-47a9-ae92-e39d30597986>
+  rdfs:label "FM_Attribute" ;
+.
+<http://ontologies.pg.com/pgontology/GUID_7e181a89-0aa4-42da-bcfa-fcbb0cfed182>
+  rdfs:label "Need" ;
+.
+<http://ontologies.pg.com/pgontology/GUID_7e526c06-e31a-4f0e-b2bc-f13fe8764137>
+  rdfs:label "Satisfies" ;
+.
+<http://ontologies.pg.com/pgontology/GUID_80894568-6098-45d9-81f6-7b4da95afe2c>
+  rdfs:label "Referenced_By_TLP" ;
+.
+<http://ontologies.pg.com/pgontology/GUID_81c93d3b-9fdf-4563-bf50-1be8da002df4>
+  rdfs:label "Asset_Attribute" ;
+.
+<http://ontologies.pg.com/pgontology/GUID_916ddcdc-b630-4001-abdb-1ea079fffad4>
+  rdfs:label "Represented_Stakeholder" ;
+.
+<http://ontologies.pg.com/pgontology/GUID_9ca1fb23-d16f-40ad-945b-c8187116b739>
+  rdfs:label "Perceived_Need" ;
+.
+<http://ontologies.pg.com/pgontology/GUID_a34514be-b848-4df0-8a12-315aa622349b>
+  rdfs:label "Benefited_Stakeholder" ;
+.
+<http://ontologies.pg.com/pgontology/GUID_a68f3beb-9294-4276-a5c0-46e60eeaf6ee>
+  rdfs:label "Logical_System" ;
+.
+<http://ontologies.pg.com/pgontology/GUID_a7c5f54e-ab5f-4100-8696-17c790103b01>
+  rdfs:label "Features_Constraint" ;
+.
+<http://ontologies.pg.com/pgontology/GUID_ae843e06-f012-4c80-883d-7df8bd4f5fb1>
+  rdfs:label "Represented_By" ;
+.
+<http://ontologies.pg.com/pgontology/GUID_aee3822d-9fbc-489a-8de0-566e7f8b8717>
+  rdfs:label "TLP_Reference" ;
+.
+<http://ontologies.pg.com/pgontology/GUID_b0ab7297-4dc8-404b-a448-12b4c1069a9c>
+  rdfs:label "Allocated_Functional_Role" ;
+.
+<http://ontologies.pg.com/pgontology/GUID_b1dde399-82c0-40c3-b731-00f6e74b3e8f>
+  rdfs:label "Offers_Feature" ;
+.
+<http://ontologies.pg.com/pgontology/GUID_b6bde93a-4cf5-4402-aa02-89635490ad00>
+  rdfs:label "Stakeholder" ;
+.
+<http://ontologies.pg.com/pgontology/GUID_b854037d-95e0-4da8-a261-ba9d47689b9f>
+  rdfs:label "Offered_By" ;
+.
+<http://ontologies.pg.com/pgontology/GUID_bc7dc7d5-fbf1-4d24-8f33-637d297bfad4>
+  rdfs:label "Allocation_Attribute" ;
+.
+<http://ontologies.pg.com/pgontology/GUID_bcd59a00-0c08-40a8-ac84-234ccc54eb67>
+  rdfs:label "Benefited_By" ;
+.
+<http://ontologies.pg.com/pgontology/GUID_d2d2ec13-ed96-4c5c-bc35-a12e3b693079>
+  rdfs:label "Requirement_Stm" ;
+.
+<http://ontologies.pg.com/pgontology/GUID_db0f6255-b34a-4346-8ce2-029a4a620c35>
+  rdfs:label "Logical_Systems_Constraint" ;
+.
+<http://ontologies.pg.com/pgontology/GUID_e0f7511a-dab9-4c13-9789-e1c229d02440>
+  rdfs:label "Comment_Reference" ;
+.
+<http://ontologies.pg.com/pgontology/GUID_e1f2cb67-aea9-43ac-896b-2c3ed2384ec2>
+  rdfs:label "Tested_By" ;
+.
+<http://ontologies.pg.com/pgontology/GUID_e995efd8-3fdc-4eed-87f0-1b0235f3a7d6>
+  rdfs:label "Perceived_By" ;
+.
+<http://ontologies.pg.com/pgontology/GUID_eac96e6c-98cb-48cd-88dc-a3f1a3bda326>
+  rdfs:label "PS_Attribute" ;
+.
+<http://ontologies.pg.com/pgontology/GUID_ebb14fcc-77f9-4e5b-b512-50756bb1ef22>
+  rdfs:label "Feature_Attribute" ;
+.
+<http://ontologies.pg.com/pgontology/GUID_ed89ab51-b2fe-4535-8a74-ca006dd0dc82>
+  rdfs:label "Allocates" ;
+.
+<http://ontologies.pg.com/pgontology/GUID_f7c6986c-65ae-4773-9054-2a9f2a5b5a3b>
+  rdfs:label "Physical_System" ;
+.
+<http://ontologies.pg.com/pgontology/GUID_f9b1f136-b00b-47ec-ae67-59bd0aedec72>
+  rdfs:label "Feature_Stm" ;
+.
+<http://ontologies.pg.com/pgontology/GUID_fabbe536-3039-495f-90b9-8755517b0a8f>
+  rdfs:label "TLP_Item" ;
+.
+<http://ontologies.pg.com/pgontology/GUID_fb88de4c-4199-4e0a-95b2-929d41b14e1d>
+  rdfs:label "Physical_Systems_Constraint" ;
+.
+<http://ontologies.pg.com/pgontology/GUID_fc62ed7c-6f8f-4e94-9a25-9c4706ad982d>
+  rdfs:label "Comment_Stm" ;
+.
+<http://ontologies.pg.com/pgontology/GUID_fd65fba7-39b5-4574-ad14-63607d505703>
+  rdfs:label "Test_Stm" ;
+.
+<http://ontologies.pg.com/pgontology/GUID_fd834787-3435-4b6a-bf88-3f76eb1efafe>
+  rdfs:label "Allocation_Constraint" ;
+.

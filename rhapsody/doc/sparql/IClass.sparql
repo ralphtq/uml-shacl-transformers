@@ -1,0 +1,35 @@
+CONSTRUCT {
+                ?instanceURI rdf:type ?classURI .
+                ?instanceURI rdfs:label ?iname .
+                ?instanceURI skos:prefLabel ?idispname .
+                ?instanceURI edg:id ?iID .
+                ?classURI rdfs:label ?cname .
+                ?instanceURI pgont:owner ?ownerURI .
+}
+WHERE {
+        ?inst a csmi:IClass .
+        ?inst csmi:_idRef/dtype:value ?iID .
+        ?inst csmi:_nameRef/dtype:value ?iname .
+        OPTIONAL {?inst csmi:_displayNameRef/dtype:value ?idispname . } .
+        ?inst csmi:stereotypesRef/csmi:iRPYRawContainerRef/csmi:iHandleRef ?stypeh .
+        ?stypeh csmi:_hnameRef/dtype:value ?cname .
+        ?stypeh csmi:_hidRef/dtype:value ?cID .
+OPTIONAL {
+  ?inst csmi:aggregatesListRef/csmi:value ?instaggid .
+        BIND (  dash:toString(?instaggid) AS ?instaggidstr) .
+        ?instaggidstr ^(csmi:_idRef/dtype:value) ?ownertag .
+        ?ownertag rdf:type csmi:ITag .
+        ?ownertag csmi:_nameRef/dtype:value "OwnerGUID" .
+        ?ownertag csmi:aggregatesListRef/csmi:value ?ownerAggID .
+        BIND (  dash:toString(?ownerAggID) AS ?ownerAggIDstr) .
+        ?ownerAggIDstr ^(csmi:_idRef/dtype:value) ?ownerLitSpec .
+        ?ownerLitSpec rdf:type csmi:ILiteralSpecification .
+        ?ownerLitSpec csmi:_valueRef/dtype:value ?ownerID .
+} .
+        BIND (spif:replaceAll(?ownerID, ' ', '_') AS ?ownerguid) .
+        BIND (spif:buildURI("http://data.pg.com/data/{?ownerguid}") AS ?ownerURI) .
+        BIND (spif:replaceAll(?iID, ' ', '_') AS ?iguid) .
+        BIND (spif:replaceAll(?cID, ' ', '_') AS ?cguid) .
+        BIND (spif:buildURI("http://ontologies.pg.com/pgontology/{?cguid}") AS ?classURI) .
+        BIND (spif:buildURI("http://data.pg.com/data/{?iguid}") AS ?instanceURI) .
+}

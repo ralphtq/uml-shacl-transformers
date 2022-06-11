@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RhapsodyArchive>
+	<MagicNumber></MagicNumber>
+	<CODE-PAGE>1252</CODE-PAGE>
+	<version>109.0</version>
+	<lang>C++</lang>
+	<BuildNo>202002261110</BuildNo>
+	<RMMMinimumClientVersion>100.0</RMMMinimumClientVersion>
+	
+	<RHAPSODY-MODEL>
+	<IClass type="e">
+			<_id type="a">GUID fef00684-5abd-4177-b8a6-55022ade520d</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Physical_System_AB</_name>
+			<_displayName type="a">Physical System AB</_displayName>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">.\..\..\Production_Profile_Component\Systematica_rpy\Meta_Classes.sbsx</_hfilename>
+							<_hsubsystem type="a">Systematica::Meta_Classes</_hsubsystem>
+							<_hname type="a">Physical_System</_hname>
+							<_hid type="a">GUID f7c6986c-65ae-4773-9054-2a9f2a5b5a3b</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">4.27.2021::0:35:35</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IDiagram</_hm2Class>
+					<_hfilename type="a">.\Local_Pattern.sbsx</_hfilename>
+					<_hsubsystem type="a">Local_Pattern</_hsubsystem>
+					<_hname type="a">End to End Diagram</_hname>
+					<_hid type="a">GUID 8985fccb-a6fa-482c-b129-259798196221</_hid>
+				</IHandle>
+			</_theMainDiagram>
+			<_modifiedTime type="a">4.27.2021::0:36:6</_modifiedTime>
+			<_lastID type="a">3</_lastID>
+			<weakCGTime type="a">4.27.2021::0:35:35</weakCGTime>
+			<strongCGTime type="a">4.19.2021::12:42:50</strongCGTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+			<AggregatesList type="e">
+				<value>GUID 63eac03e-f30f-4b33-b60c-f8feb81d5b10</value>
+				<value>GUID 3f7e66ab-4030-42bf-b5d8-fdea9c58ee50</value>
+				<value>GUID 16adbefa-714c-4fe8-8ec4-8dcda201f118</value>
+				<value>GUID 5b22c8c3-2784-42c1-87d1-962cb5539421</value>
+				<value>GUID fe24afa2-fe6c-4421-8210-fdd782ecbc75</value>
+				<value>GUID bd848d69-2edf-4179-b04f-1467f3f16032</value>
+				<value>GUID 47bdd815-410d-409f-a6fa-fdbb2cb98f7d</value>
+				<value>GUID f1fae005-b506-4ca9-b4d7-bb1d33834dfe</value>
+			</AggregatesList>
+		</IClass>
+		<IDependency type="e">
+			<_id type="a">GUID 63eac03e-f30f-4b33-b60c-f8feb81d5b10</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Logical_System_1_1</_name>
+			<_displayName type="a">Logical System 1.1</_displayName>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">.\..\..\Production_Profile_Component\Systematica_rpy\Meta_Relationships.sbsx</_hfilename>
+							<_hsubsystem type="a">Systematica::Meta_Relationships</_hsubsystem>
+							<_hname type="a">Allocated_Functional_Role</_hname>
+							<_hid type="a">GUID b0ab7297-4dc8-404b-a448-12b4c1069a9c</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">4.19.2021::12:44:13</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.19.2021::12:44:13</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\Logical_System_1_1_1.clsx</_hfilename>
+					<_hsubsystem type="a">Local_Pattern::System_Environment</_hsubsystem>
+					<_hclass type="a">Logical_System_1</_hclass>
+					<_hname type="a">Logical_System_1_1</_hname>
+					<_hid type="a">GUID 77cd2243-c493-4f3b-a8eb-60eff5b4d4b0</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hid type="a">GUID fef00684-5abd-4177-b8a6-55022ade520d</_hid>
+				</INObjectHandle>
+			</_dependent>
+			<AggregatesList type="e">
+				<value>GUID 5da7193b-b182-403e-9796-8d57cde4b458</value>
+				<value>GUID 08851cd8-9ec5-4e22-bdd7-3c2898f3211e</value>
+				<value>GUID d26db79b-d6c2-44d8-959c-758e8dd1fbc4</value>
+				<value>GUID 9f811c52-bb74-4c8f-abd2-1a5eb6185513</value>
+			</AggregatesList>
+		</IDependency>
+		<ITag type="e">
+			<_id type="a">GUID 5da7193b-b182-403e-9796-8d57cde4b458</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">ElementGUID</_name>
+			<_modifiedTimeWeak type="a">4.19.2021::12:44:13</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.19.2021::12:44:13</_modifiedTime>
+			<_typeOf type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IType</_hm2Class>
+					<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+					<_hname type="a">RhpString</_hname>
+					<_hid type="a">GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35</_hid>
+				</IHandle>
+			</_typeOf>
+			<_isOrdered type="a">0</_isOrdered>
+			<AggregatesList type="e">
+				<value>GUID a52fb02f-48d2-4bc2-acfe-c93cb6fca673</value>
+			</AggregatesList>
+		</ITag>
+		<ILiteralSpecification type="e">
+			<_id type="a">GUID a52fb02f-48d2-4bc2-acfe-c93cb6fca673</_id>
+			<_modifiedTimeWeak type="a">4.19.2021::12:44:13</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.19.2021::12:44:13</_modifiedTime>
+			<_value type="a">GUID 63eac03e-f30f-4b33-b60c-f8feb81d5b10</_value>
+		</ILiteralSpecification>
+		<ITag type="e">
+			<_id type="a">GUID 08851cd8-9ec5-4e22-bdd7-3c2898f3211e</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Reverse_Relation_GUID</_name>
+			<_modifiedTimeWeak type="a">4.19.2021::12:44:13</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.19.2021::12:44:13</_modifiedTime>
+			<_typeOf type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IType</_hm2Class>
+					<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+					<_hname type="a">RhpString</_hname>
+					<_hid type="a">GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35</_hid>
+				</IHandle>
+			</_typeOf>
+			<_isOrdered type="a">0</_isOrdered>
+			<AggregatesList type="e">
+				<value>GUID 64d6bc42-d9c5-41fb-924d-b7e609e43bc1</value>
+			</AggregatesList>
+		</ITag>
+		<ILiteralSpecification type="e">
+			<_id type="a">GUID 64d6bc42-d9c5-41fb-924d-b7e609e43bc1</_id>
+			<_modifiedTimeWeak type="a">4.19.2021::12:44:13</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.19.2021::12:44:13</_modifiedTime>
+			<_value type="a">GUID 965a0590-3a45-4c6b-903d-fd382b01df49</_value>
+		</ILiteralSpecification>
+		<ITag type="e">
+			<_id type="a">GUID d26db79b-d6c2-44d8-959c-758e8dd1fbc4</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Dependent_End</_name>
+			<_modifiedTimeWeak type="a">4.19.2021::12:44:13</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.19.2021::12:44:13</_modifiedTime>
+			<_typeOf type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IType</_hm2Class>
+					<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+					<_hname type="a">RhpString</_hname>
+					<_hid type="a">GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35</_hid>
+				</IHandle>
+			</_typeOf>
+			<_isOrdered type="a">0</_isOrdered>
+			<AggregatesList type="e">
+				<value>GUID 77a34e39-b05b-45b0-8d14-18f7e0134553</value>
+			</AggregatesList>
+		</ITag>
+		<ILiteralSpecification type="e">
+			<_id type="a">GUID 77a34e39-b05b-45b0-8d14-18f7e0134553</_id>
+			<_modifiedTimeWeak type="a">4.19.2021::12:44:13</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.19.2021::12:44:13</_modifiedTime>
+			<_value type="a">GUID fef00684-5abd-4177-b8a6-55022ade520d</_value>
+		</ILiteralSpecification>
+		<ITag type="e">
+			<_id type="a">GUID 9f811c52-bb74-4c8f-abd2-1a5eb6185513</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Depends_On_End</_name>
+			<_modifiedTimeWeak type="a">4.19.2021::12:44:13</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.19.2021::12:44:13</_modifiedTime>
+			<_typeOf type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IType</_hm2Class>
+					<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+					<_hname type="a">RhpString</_hname>
+					<_hid type="a">GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35</_hid>
+				</IHandle>
+			</_typeOf>
+			<_isOrdered type="a">0</_isOrdered>
+			<AggregatesList type="e">
+				<value>GUID ca045d16-f36a-44e7-8408-04700e794092</value>
+			</AggregatesList>
+		</ITag>
+		<ILiteralSpecification type="e">
+			<_id type="a">GUID ca045d16-f36a-44e7-8408-04700e794092</_id>
+			<_modifiedTimeWeak type="a">4.19.2021::12:44:13</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.19.2021::12:44:13</_modifiedTime>
+			<_value type="a">GUID 77cd2243-c493-4f3b-a8eb-60eff5b4d4b0</_value>
+		</ILiteralSpecification>
+		<ITag type="e">
+			<_id type="a">GUID 3f7e66ab-4030-42bf-b5d8-fdea9c58ee50</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">ElementGUID</_name>
+			<_modifiedTimeWeak type="a">4.19.2021::12:42:19</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.19.2021::12:42:19</_modifiedTime>
+			<_typeOf type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IType</_hm2Class>
+					<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+					<_hname type="a">RhpString</_hname>
+					<_hid type="a">GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35</_hid>
+				</IHandle>
+			</_typeOf>
+			<_isOrdered type="a">0</_isOrdered>
+			<AggregatesList type="e">
+				<value>GUID 8756d474-adb5-4e35-9e54-a3ff3953d95c</value>
+			</AggregatesList>
+		</ITag>
+		<ILiteralSpecification type="e">
+			<_id type="a">GUID 8756d474-adb5-4e35-9e54-a3ff3953d95c</_id>
+			<_modifiedTimeWeak type="a">4.19.2021::12:42:19</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.19.2021::12:42:19</_modifiedTime>
+			<_value type="a">GUID fef00684-5abd-4177-b8a6-55022ade520d</_value>
+		</ILiteralSpecification>
+		<ITag type="e">
+			<_id type="a">GUID 16adbefa-714c-4fe8-8ec4-8dcda201f118</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">OwnerGUID</_name>
+			<_modifiedTimeWeak type="a">4.19.2021::12:42:27</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.19.2021::12:42:27</_modifiedTime>
+			<_typeOf type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IType</_hm2Class>
+					<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+					<_hname type="a">RhpString</_hname>
+					<_hid type="a">GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35</_hid>
+				</IHandle>
+			</_typeOf>
+			<_isOrdered type="a">0</_isOrdered>
+			<AggregatesList type="e">
+				<value>GUID c44d412f-53b9-4190-81e4-5392fa187c4a</value>
+			</AggregatesList>
+		</ITag>
+		<ILiteralSpecification type="e">
+			<_id type="a">GUID c44d412f-53b9-4190-81e4-5392fa187c4a</_id>
+			<_modifiedTimeWeak type="a">4.19.2021::12:42:27</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.19.2021::12:42:27</_modifiedTime>
+			<_value type="a">GUID b85167b9-996f-4b7d-b1a5-09bda0163e8b</_value>
+		</ILiteralSpecification>
+		<ITag type="e">
+			<_id type="a">GUID 5b22c8c3-2784-42c1-87d1-962cb5539421</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">RootName</_name>
+			<_modifiedTimeWeak type="a">4.19.2021::12:42:50</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.19.2021::12:42:50</_modifiedTime>
+			<_typeOf type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IType</_hm2Class>
+					<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+					<_hname type="a">RhpString</_hname>
+					<_hid type="a">GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35</_hid>
+				</IHandle>
+			</_typeOf>
+			<_isOrdered type="a">0</_isOrdered>
+			<_base type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">ITag</_hm2Class>
+					<_hfilename type="a">.\..\..\Production_Profile_Component\Systematica_rpy\Meta_Classes.sbsx</_hfilename>
+					<_hsubsystem type="a">Systematica::Meta_Classes</_hsubsystem>
+					<_hclass type="a">Physical_System</_hclass>
+					<_hname type="a">RootName</_hname>
+					<_hid type="a">GUID c9669686-9e67-4548-bb74-cddca1ac9fff</_hid>
+				</IHandle>
+			</_base>
+			<AggregatesList type="e">
+				<value>GUID 8b658104-33f2-4ffa-b09c-4690d78170dc</value>
+			</AggregatesList>
+		</ITag>
+		<ILiteralSpecification type="e">
+			<_id type="a">GUID 8b658104-33f2-4ffa-b09c-4690d78170dc</_id>
+			<_modifiedTimeWeak type="a">4.19.2021::12:42:50</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.19.2021::12:42:50</_modifiedTime>
+			<_value type="a">Physical System AB</_value>
+		</ILiteralSpecification>
+		<IClass type="e">
+			<fileName type="a">Logical_Attribute_1_1</fileName>
+			<_id type="a">GUID fe24afa2-fe6c-4421-8210-fdd782ecbc75</_id>
+			<_name type="a">Logical_Attribute_1</_name>
+		</IClass>
+		<IAttribute type="e">
+			<_id type="a">GUID bd848d69-2edf-4179-b04f-1467f3f16032</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Attribute_B</_name>
+			<_displayName type="a">Attribute B</_displayName>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">.\..\..\Production_Profile_Component\Systematica_rpy\Meta_Classes.sbsx</_hfilename>
+							<_hsubsystem type="a">Systematica::Meta_Classes</_hsubsystem>
+							<_hname type="a">PS_Attribute</_hname>
+							<_hid type="a">GUID eac96e6c-98cb-48cd-88dc-a3f1a3bda326</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">4.27.2021::0:35:35</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.27.2021::0:35:35</_modifiedTime>
+			<_typeOf type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IType</_hm2Class>
+					<_hsubsystem type="a">PredefinedTypesCpp</_hsubsystem>
+					<_hname type="a">int</_hname>
+					<_hid type="a">GUID 6024c6ab-fe9e-402e-954f-27aca6d3b5e4</_hid>
+				</IHandle>
+			</_typeOf>
+			<_isOrdered type="a">0</_isOrdered>
+			<_protection type="a">iPublic</_protection>
+			<_static type="a">0</_static>
+			<_isReferenceAttr type="a">0</_isReferenceAttr>
+			<_isConstant type="a">0</_isConstant>
+			<AggregatesList type="e">
+				<value>GUID 5c0bdcca-bc46-48ea-8705-ba82704334d5</value>
+				<value>GUID 93ad8c93-168f-434b-af45-aac24ec20007</value>
+				<value>GUID 2cb94f13-31cd-4838-9ff6-5c9917e55706</value>
+			</AggregatesList>
+		</IAttribute>
+		<ITag type="e">
+			<_id type="a">GUID 5c0bdcca-bc46-48ea-8705-ba82704334d5</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">RootName</_name>
+			<_modifiedTimeWeak type="a">4.27.2021::0:35:35</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.27.2021::0:35:35</_modifiedTime>
+			<_typeOf type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IType</_hm2Class>
+					<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+					<_hname type="a">RhpString</_hname>
+					<_hid type="a">GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35</_hid>
+				</IHandle>
+			</_typeOf>
+			<_isOrdered type="a">0</_isOrdered>
+			<_base type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">ITag</_hm2Class>
+					<_hfilename type="a">.\..\..\Production_Profile_Component\Systematica_rpy\Meta_Classes.sbsx</_hfilename>
+					<_hsubsystem type="a">Systematica::Meta_Classes</_hsubsystem>
+					<_hclass type="a">PS_Attribute</_hclass>
+					<_hname type="a">RootName</_hname>
+					<_hid type="a">GUID 1382ba22-9815-487d-8eee-4cc0cce4ad28</_hid>
+				</IHandle>
+			</_base>
+			<AggregatesList type="e">
+				<value>GUID cbf25de6-565d-4cd4-b09c-0a9ca52bbbd1</value>
+			</AggregatesList>
+		</ITag>
+		<ILiteralSpecification type="e">
+			<_id type="a">GUID cbf25de6-565d-4cd4-b09c-0a9ca52bbbd1</_id>
+			<_modifiedTimeWeak type="a">4.27.2021::0:35:35</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.27.2021::0:35:35</_modifiedTime>
+			<_value type="a">Attribute B</_value>
+		</ILiteralSpecification>
+		<ITag type="e">
+			<_id type="a">GUID 93ad8c93-168f-434b-af45-aac24ec20007</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">ElementGUID</_name>
+			<_modifiedTimeWeak type="a">4.19.2021::12:45:58</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.19.2021::12:45:58</_modifiedTime>
+			<_typeOf type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IType</_hm2Class>
+					<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+					<_hname type="a">RhpString</_hname>
+					<_hid type="a">GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35</_hid>
+				</IHandle>
+			</_typeOf>
+			<_isOrdered type="a">0</_isOrdered>
+			<AggregatesList type="e">
+				<value>GUID 2b09a0df-6b83-425d-89dd-e6fb68ed4317</value>
+			</AggregatesList>
+		</ITag>
+		<ILiteralSpecification type="e">
+			<_id type="a">GUID 2b09a0df-6b83-425d-89dd-e6fb68ed4317</_id>
+			<_modifiedTimeWeak type="a">4.19.2021::12:45:58</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.19.2021::12:45:58</_modifiedTime>
+			<_value type="a">GUID bd848d69-2edf-4179-b04f-1467f3f16032</_value>
+		</ILiteralSpecification>
+		<ITag type="e">
+			<_id type="a">GUID 2cb94f13-31cd-4838-9ff6-5c9917e55706</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">OwnerGUID</_name>
+			<_modifiedTimeWeak type="a">4.19.2021::12:45:58</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.19.2021::12:45:58</_modifiedTime>
+			<_typeOf type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IType</_hm2Class>
+					<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+					<_hname type="a">RhpString</_hname>
+					<_hid type="a">GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35</_hid>
+				</IHandle>
+			</_typeOf>
+			<_isOrdered type="a">0</_isOrdered>
+			<AggregatesList type="e">
+				<value>GUID 3468db3f-216a-4801-86f3-4046a67240e4</value>
+			</AggregatesList>
+		</ITag>
+		<ILiteralSpecification type="e">
+			<_id type="a">GUID 3468db3f-216a-4801-86f3-4046a67240e4</_id>
+			<_modifiedTimeWeak type="a">4.19.2021::12:45:58</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.19.2021::12:45:58</_modifiedTime>
+			<_value type="a">GUID fef00684-5abd-4177-b8a6-55022ade520d</_value>
+		</ILiteralSpecification>
+		<IGeneralization type="e">
+			<_id type="a">GUID 47bdd815-410d-409f-a6fa-fdbb2cb98f7d</_id>
+			<_modifiedTimeWeak type="a">4.19.2021::12:43:49</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.19.2021::12:43:49</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\Logical_System_1_1_1.clsx</_hfilename>
+					<_hsubsystem type="a">Local_Pattern::System_Environment</_hsubsystem>
+					<_hclass type="a">Logical_System_1</_hclass>
+					<_hname type="a">Logical_System_1_1</_hname>
+					<_hid type="a">GUID 77cd2243-c493-4f3b-a8eb-60eff5b4d4b0</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_inheritanceType type="a">iPublic</_inheritanceType>
+			<_isVirtual type="a">0</_isVirtual>
+			<AggregatesList type="e">
+				<value>GUID 7ee7c716-e63b-4f45-b91a-c8fbd1bf7078</value>
+				<value>GUID 5816d56b-a3f9-4327-8f80-356e00a13338</value>
+				<value>GUID 0ca00561-ec08-4663-8200-15809044980a</value>
+			</AggregatesList>
+		</IGeneralization>
+		<ITag type="e">
+			<_id type="a">GUID 7ee7c716-e63b-4f45-b91a-c8fbd1bf7078</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">ElementGUID</_name>
+			<_modifiedTimeWeak type="a">4.19.2021::12:43:49</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.19.2021::12:43:49</_modifiedTime>
+			<_typeOf type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IType</_hm2Class>
+					<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+					<_hname type="a">RhpString</_hname>
+					<_hid type="a">GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35</_hid>
+				</IHandle>
+			</_typeOf>
+			<_isOrdered type="a">0</_isOrdered>
+			<AggregatesList type="e">
+				<value>GUID 09898f7b-5c71-47b3-8d68-a436d2e117d8</value>
+			</AggregatesList>
+		</ITag>
+		<ILiteralSpecification type="e">
+			<_id type="a">GUID 09898f7b-5c71-47b3-8d68-a436d2e117d8</_id>
+			<_modifiedTimeWeak type="a">4.19.2021::12:43:49</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.19.2021::12:43:49</_modifiedTime>
+			<_value type="a">GUID 47bdd815-410d-409f-a6fa-fdbb2cb98f7d</_value>
+		</ILiteralSpecification>
+		<ITag type="e">
+			<_id type="a">GUID 5816d56b-a3f9-4327-8f80-356e00a13338</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">DerivedEnd</_name>
+			<_modifiedTimeWeak type="a">4.19.2021::12:43:49</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.19.2021::12:43:49</_modifiedTime>
+			<_typeOf type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IType</_hm2Class>
+					<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+					<_hname type="a">RhpString</_hname>
+					<_hid type="a">GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35</_hid>
+				</IHandle>
+			</_typeOf>
+			<_isOrdered type="a">0</_isOrdered>
+			<AggregatesList type="e">
+				<value>GUID c4d15954-99d7-4351-9396-8b7ff4fb9df0</value>
+			</AggregatesList>
+		</ITag>
+		<ILiteralSpecification type="e">
+			<_id type="a">GUID c4d15954-99d7-4351-9396-8b7ff4fb9df0</_id>
+			<_modifiedTimeWeak type="a">4.19.2021::12:43:49</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.19.2021::12:43:49</_modifiedTime>
+			<_value type="a">GUID fef00684-5abd-4177-b8a6-55022ade520d</_value>
+		</ILiteralSpecification>
+		<ITag type="e">
+			<_id type="a">GUID 0ca00561-ec08-4663-8200-15809044980a</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">BaseEnd</_name>
+			<_modifiedTimeWeak type="a">4.19.2021::12:43:49</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.19.2021::12:43:49</_modifiedTime>
+			<_typeOf type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IType</_hm2Class>
+					<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+					<_hname type="a">RhpString</_hname>
+					<_hid type="a">GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35</_hid>
+				</IHandle>
+			</_typeOf>
+			<_isOrdered type="a">0</_isOrdered>
+			<AggregatesList type="e">
+				<value>GUID fab5707e-75e4-4de3-8c82-e9a0cf6bae6b</value>
+			</AggregatesList>
+		</ITag>
+		<ILiteralSpecification type="e">
+			<_id type="a">GUID fab5707e-75e4-4de3-8c82-e9a0cf6bae6b</_id>
+			<_modifiedTimeWeak type="a">4.19.2021::12:43:49</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.19.2021::12:43:49</_modifiedTime>
+			<_value type="a">GUID 77cd2243-c493-4f3b-a8eb-60eff5b4d4b0</_value>
+		</ILiteralSpecification>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID f1fae005-b506-4ca9-b4d7-bb1d33834dfe</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsPhysical_System_A</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">.\..\..\Production_Profile_Component\Systematica_rpy\Meta_Relationships.sbsx</_hfilename>
+							<_hsubsystem type="a">Systematica::Meta_Relationships</_hsubsystem>
+							<_hname type="a">Container</_hname>
+							<_hid type="a">GUID 1d3755b1-e0ce-449c-a090-d7aaf53fa097</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">4.19.2021::12:42:50</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.19.2021::12:42:50</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\Physical_System_A.clsx</_hfilename>
+					<_hsubsystem type="a">Local_Pattern::Physical_Architecture</_hsubsystem>
+					<_hname type="a">Physical_System_A</_hname>
+					<_hid type="a">GUID b85167b9-996f-4b7d-b1a5-09bda0163e8b</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IPart</_hm2Class>
+					<_hfilename type="a">.\Physical_System_A.clsx</_hfilename>
+					<_hsubsystem type="a">Local_Pattern::Physical_Architecture</_hsubsystem>
+					<_hclass type="a">Physical_System_A</_hclass>
+					<_hname type="a">itsPhysical_System_AB</_hname>
+					<_hid type="a">GUID 61d71e0f-15d2-4f89-9583-dd5a2385662c</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+			<AggregatesList type="e">
+				<value>GUID 58a77bd3-b54d-408a-a863-891fbd5aabbc</value>
+				<value>GUID 4ea06f24-58d6-422f-bf4e-9e3480d778b6</value>
+			</AggregatesList>
+		</IAssociationEnd>
+		<ITag type="e">
+			<_id type="a">GUID 58a77bd3-b54d-408a-a863-891fbd5aabbc</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">RelationPart</_name>
+			<_modifiedTimeWeak type="a">4.19.2021::12:42:27</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.19.2021::12:42:27</_modifiedTime>
+			<_typeOf type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IType</_hm2Class>
+					<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+					<_hname type="a">RhpString</_hname>
+					<_hid type="a">GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35</_hid>
+				</IHandle>
+			</_typeOf>
+			<_isOrdered type="a">0</_isOrdered>
+			<AggregatesList type="e">
+				<value>GUID a284e8fc-f4cd-4714-8e58-d5c2fa736b33</value>
+			</AggregatesList>
+		</ITag>
+		<ILiteralSpecification type="e">
+			<_id type="a">GUID a284e8fc-f4cd-4714-8e58-d5c2fa736b33</_id>
+			<_modifiedTimeWeak type="a">4.19.2021::12:42:27</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.19.2021::12:42:27</_modifiedTime>
+			<_value type="a">GUID fef00684-5abd-4177-b8a6-55022ade520d</_value>
+		</ILiteralSpecification>
+		<ITag type="e">
+			<_id type="a">GUID 4ea06f24-58d6-422f-bf4e-9e3480d778b6</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">RelationWhole</_name>
+			<_modifiedTimeWeak type="a">4.19.2021::12:42:27</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.19.2021::12:42:27</_modifiedTime>
+			<_typeOf type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IType</_hm2Class>
+					<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+					<_hname type="a">RhpString</_hname>
+					<_hid type="a">GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35</_hid>
+				</IHandle>
+			</_typeOf>
+			<_isOrdered type="a">0</_isOrdered>
+			<AggregatesList type="e">
+				<value>GUID 009ec5ba-b629-4116-a910-5a63493bfb45</value>
+			</AggregatesList>
+		</ITag>
+		<ILiteralSpecification type="e">
+			<_id type="a">GUID 009ec5ba-b629-4116-a910-5a63493bfb45</_id>
+			<_modifiedTimeWeak type="a">4.19.2021::12:42:27</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.19.2021::12:42:27</_modifiedTime>
+			<_value type="a">GUID b85167b9-996f-4b7d-b1a5-09bda0163e8b</_value>
+		</ILiteralSpecification>
+		
+	</RHAPSODY-MODEL>
+	<OslcLinks type="c">
+		<IRPYRawContainer type="e">
+		</IRPYRawContainer>
+	</OslcLinks>
+
+<INCLUDES-RHAPSODY-INDEX>false</INCLUDES-RHAPSODY-INDEX>
+</RhapsodyArchive>
+

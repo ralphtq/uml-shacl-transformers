@@ -1,0 +1,457 @@
+{
+  "diagramType" : "http%3A%2F%2Fedg.topbraid.solutions%2Fmodel%2FDIAGTYPE_UPSTREAM-LINEAGEGRAM",
+  "explanation" : "|->TLG08103",
+  "focusNode" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BACT_1001",
+  "links" : [
+    {
+      "activeResources" : [
+        {
+          "activeProducers" : [
+            {
+              "activeDependent" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BAPP_9101",
+              "activeResource" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BACT_1001",
+              "caseCode" : "USD0050",
+              "dependencyObject" : null,
+              "isInverted" : false,
+              "property" : "http%3A%2F%2Fedg.topbraid.solutions%2Fmodel%2FsupportsBusinessActivity",
+              "reciprocalProperty" : null
+            }
+          ],
+          "producers" : "[{\"activeResource\":\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BACT_1001\",\"property\":\"http%3A%2F%2Fedg.topbraid.solutions%2Fmodel%2FsupportsBusinessActivity\",\"isInverted\":false,\"activeDependent\":\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BAPP_9101\",\"dependencyObject\":null,\"reciprocalProperty\":null,\"caseCode\":\"USD0050\"}]",
+          "source" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BAPP_9101",
+          "target" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BACT_1001"
+        }
+      ],
+      "activeResourcesList" : "[{\"source\":\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BAPP_9101\",\"producers\":\"[{\\\"activeResource\\\":\\\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BACT_1001\\\",\\\"property\\\":\\\"http%3A%2F%2Fedg.topbraid.solutions%2Fmodel%2FsupportsBusinessActivity\\\",\\\"isInverted\\\":false,\\\"activeDependent\\\":\\\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BAPP_9101\\\",\\\"dependencyObject\\\":null,\\\"reciprocalProperty\\\":null,\\\"caseCode\\\":\\\"USD0050\\\"}]\",\"target\":\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BACT_1001\"}]",
+      "explanation" : "|->TLG08101->TLG15101->TLG15103->TLG02040->TLG09514",
+      "id" : "LINK_uniqueId0000",
+      "linkType" : "application-usage",
+      "source" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BAPP_9101--VF_SoftwareFrame",
+      "target" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BACT_1001--VF_TargetFrame"
+    },
+    {
+      "activeResources" : [
+        {
+          "activeProducers" : [
+            {
+              "activeDependent" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BAPP_9102",
+              "activeResource" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BACT_1001",
+              "caseCode" : "USD0050",
+              "dependencyObject" : null,
+              "isInverted" : false,
+              "property" : "http%3A%2F%2Fedg.topbraid.solutions%2Fmodel%2FsupportsBusinessActivity",
+              "reciprocalProperty" : null
+            }
+          ],
+          "producers" : "[{\"activeResource\":\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BACT_1001\",\"property\":\"http%3A%2F%2Fedg.topbraid.solutions%2Fmodel%2FsupportsBusinessActivity\",\"isInverted\":false,\"activeDependent\":\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BAPP_9102\",\"dependencyObject\":null,\"reciprocalProperty\":null,\"caseCode\":\"USD0050\"}]",
+          "source" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BAPP_9102",
+          "target" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BACT_1001"
+        }
+      ],
+      "activeResourcesList" : "[{\"source\":\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BAPP_9102\",\"producers\":\"[{\\\"activeResource\\\":\\\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BACT_1001\\\",\\\"property\\\":\\\"http%3A%2F%2Fedg.topbraid.solutions%2Fmodel%2FsupportsBusinessActivity\\\",\\\"isInverted\\\":false,\\\"activeDependent\\\":\\\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BAPP_9102\\\",\\\"dependencyObject\\\":null,\\\"reciprocalProperty\\\":null,\\\"caseCode\\\":\\\"USD0050\\\"}]\",\"target\":\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BACT_1001\"}]",
+      "explanation" : "|->TLG08101->TLG15101->TLG15103->TLG02040->TLG09514",
+      "id" : "LINK_uniqueId0001",
+      "linkType" : "application-usage",
+      "source" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BAPP_9102--VF_SoftwareFrame",
+      "target" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BACT_1001--VF_TargetFrame"
+    },
+    {
+      "activeResources" : [
+        {
+          "activeProducers" : [
+            {
+              "activeDependent" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23JTITLE-MarketingEngineer",
+              "activeResource" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BACT_1001",
+              "caseCode" : "USD0052",
+              "dependencyObject" : null,
+              "isInverted" : true,
+              "property" : "http%3A%2F%2Fedg.topbraid.solutions%2Fmodel%2FassistedBy",
+              "reciprocalProperty" : null
+            }
+          ],
+          "producers" : "[{\"activeResource\":\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BACT_1001\",\"property\":\"http%3A%2F%2Fedg.topbraid.solutions%2Fmodel%2FassistedBy\",\"isInverted\":true,\"activeDependent\":\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23JTITLE-MarketingEngineer\",\"dependencyObject\":null,\"reciprocalProperty\":null,\"caseCode\":\"USD0052\"}]",
+          "source" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23JTITLE-MarketingEngineer",
+          "target" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BACT_1001"
+        }
+      ],
+      "activeResourcesList" : "[{\"source\":\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23JTITLE-MarketingEngineer\",\"producers\":\"[{\\\"activeResource\\\":\\\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BACT_1001\\\",\\\"property\\\":\\\"http%3A%2F%2Fedg.topbraid.solutions%2Fmodel%2FassistedBy\\\",\\\"isInverted\\\":true,\\\"activeDependent\\\":\\\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23JTITLE-MarketingEngineer\\\",\\\"dependencyObject\\\":null,\\\"reciprocalProperty\\\":null,\\\"caseCode\\\":\\\"USD0052\\\"}]\",\"target\":\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BACT_1001\"}]",
+      "explanation" : "|->TLG08101->TLG15101->TLG15103->TLG02040->TLG09514",
+      "id" : "LINK_uniqueId0002",
+      "linkType" : "assisted-by",
+      "source" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23JTITLE-MarketingEngineer--VF_ResourcesFrame",
+      "target" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BACT_1001--VF_TargetFrame"
+    },
+    {
+      "activeResources" : [
+        {
+          "activeProducers" : [
+            {
+              "activeDependent" : "http%3A%2F%2Fedg.topbraid.solutions%2Fdata-assets-model%2Fnorthwind%23COL_NORTHWIND.DBO%252ECATEGORY%2520SALES%2520FOR%25201997.CATEGORYSALES",
+              "activeResource" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BAPP_9101",
+              "caseCode" : "USD0104",
+              "dependencyObject" : "http%3A%2F%2Fedg.topbraid.solutions%2Fdata-assets-model%2Fnorthwind%23COL_NORTHWIND.DBO%252ECATEGORY%2520SALES%2520FOR%25201997.CATEGORYSALES",
+              "isInverted" : false,
+              "property" : "http%3A%2F%2Fedg.topbraid.solutions%2Fmodel%2Finput",
+              "reciprocalProperty" : null
+            }
+          ],
+          "producers" : "[{\"activeResource\":\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BAPP_9101\",\"property\":\"http%3A%2F%2Fedg.topbraid.solutions%2Fmodel%2Finput\",\"isInverted\":false,\"activeDependent\":\"http%3A%2F%2Fedg.topbraid.solutions%2Fdata-assets-model%2Fnorthwind%23COL_NORTHWIND.DBO%252ECATEGORY%2520SALES%2520FOR%25201997.CATEGORYSALES\",\"dependencyObject\":\"http%3A%2F%2Fedg.topbraid.solutions%2Fdata-assets-model%2Fnorthwind%23COL_NORTHWIND.DBO%252ECATEGORY%2520SALES%2520FOR%25201997.CATEGORYSALES\",\"reciprocalProperty\":null,\"caseCode\":\"USD0104\"}]",
+          "source" : "http%3A%2F%2Fedg.topbraid.solutions%2Fdata-assets-model%2Fnorthwind%23COL_NORTHWIND.DBO%252ECATEGORY%2520SALES%2520FOR%25201997.CATEGORYSALES",
+          "target" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BAPP_9101"
+        }
+      ],
+      "activeResourcesList" : "[{\"source\":\"http%3A%2F%2Fedg.topbraid.solutions%2Fdata-assets-model%2Fnorthwind%23COL_NORTHWIND.DBO%252ECATEGORY%2520SALES%2520FOR%25201997.CATEGORYSALES\",\"producers\":\"[{\\\"activeResource\\\":\\\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BAPP_9101\\\",\\\"property\\\":\\\"http%3A%2F%2Fedg.topbraid.solutions%2Fmodel%2Finput\\\",\\\"isInverted\\\":false,\\\"activeDependent\\\":\\\"http%3A%2F%2Fedg.topbraid.solutions%2Fdata-assets-model%2Fnorthwind%23COL_NORTHWIND.DBO%252ECATEGORY%2520SALES%2520FOR%25201997.CATEGORYSALES\\\",\\\"dependencyObject\\\":\\\"http%3A%2F%2Fedg.topbraid.solutions%2Fdata-assets-model%2Fnorthwind%23COL_NORTHWIND.DBO%252ECATEGORY%2520SALES%2520FOR%25201997.CATEGORYSALES\\\",\\\"reciprocalProperty\\\":null,\\\"caseCode\\\":\\\"USD0104\\\"}]\",\"target\":\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BAPP_9101\"}]",
+      "explanation" : "|->TLG08101->TLG15101->TLG15104->TLG23055->TLG03064->TLG15101->TLG15103->TLG02040->TLG09514",
+      "id" : "LINK_uniqueId0003",
+      "linkType" : "data-input",
+      "source" : "http%3A%2F%2Fedg.topbraid.solutions%2Fdata-assets-model%2Fnorthwind%23COL_NORTHWIND.DBO%252ECATEGORY%2520SALES%2520FOR%25201997.CATEGORYSALES--VF_DataAssetsFrame",
+      "target" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BAPP_9101--VF_SoftwareFrame"
+    },
+    {
+      "activeResources" : [
+        {
+          "activeProducers" : [
+            {
+              "activeDependent" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23DB_Column_3002",
+              "activeResource" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23CaseStatementMapping_1001",
+              "caseCode" : "USD0040",
+              "dependencyObject" : null,
+              "isInverted" : false,
+              "property" : "http%3A%2F%2Fedg.topbraid.solutions%2Fmodel%2Finput",
+              "reciprocalProperty" : null
+            }
+          ],
+          "producers" : "[{\"activeResource\":\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23CaseStatementMapping_1001\",\"property\":\"http%3A%2F%2Fedg.topbraid.solutions%2Fmodel%2Finput\",\"isInverted\":false,\"activeDependent\":\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23DB_Column_3002\",\"dependencyObject\":null,\"reciprocalProperty\":null,\"caseCode\":\"USD0040\"}]",
+          "source" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23DB_Column_3002",
+          "target" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BAPP_9101"
+        }
+      ],
+      "activeResourcesList" : "[{\"source\":\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23DB_Column_3002\",\"producers\":\"[{\\\"activeResource\\\":\\\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23CaseStatementMapping_1001\\\",\\\"property\\\":\\\"http%3A%2F%2Fedg.topbraid.solutions%2Fmodel%2Finput\\\",\\\"isInverted\\\":false,\\\"activeDependent\\\":\\\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23DB_Column_3002\\\",\\\"dependencyObject\\\":null,\\\"reciprocalProperty\\\":null,\\\"caseCode\\\":\\\"USD0040\\\"}]\",\"target\":\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BAPP_9101\"}]",
+      "explanation" : "|->TLG08101->TLG15101->TLG15104->TLG23055->TLG03064->TLG15101->TLG15104->TLG22066->TLG03064->TLG15101->TLG15103->TLG02040->TLG09514",
+      "id" : "LINK_uniqueId0004",
+      "linkType" : "data-input",
+      "source" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23DB_Column_3002--VF_DataAssetsFrame",
+      "target" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BAPP_9101--VF_SoftwareFrame"
+    },
+    {
+      "activeResources" : [
+        {
+          "activeProducers" : [
+            {
+              "activeDependent" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23DB_Column_3003",
+              "activeResource" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23CaseStatementMapping_1001",
+              "caseCode" : "USD0040",
+              "dependencyObject" : null,
+              "isInverted" : false,
+              "property" : "http%3A%2F%2Fedg.topbraid.solutions%2Fmodel%2Finput",
+              "reciprocalProperty" : null
+            }
+          ],
+          "producers" : "[{\"activeResource\":\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23CaseStatementMapping_1001\",\"property\":\"http%3A%2F%2Fedg.topbraid.solutions%2Fmodel%2Finput\",\"isInverted\":false,\"activeDependent\":\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23DB_Column_3003\",\"dependencyObject\":null,\"reciprocalProperty\":null,\"caseCode\":\"USD0040\"}]",
+          "source" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23DB_Column_3003",
+          "target" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BAPP_9101"
+        }
+      ],
+      "activeResourcesList" : "[{\"source\":\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23DB_Column_3003\",\"producers\":\"[{\\\"activeResource\\\":\\\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23CaseStatementMapping_1001\\\",\\\"property\\\":\\\"http%3A%2F%2Fedg.topbraid.solutions%2Fmodel%2Finput\\\",\\\"isInverted\\\":false,\\\"activeDependent\\\":\\\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23DB_Column_3003\\\",\\\"dependencyObject\\\":null,\\\"reciprocalProperty\\\":null,\\\"caseCode\\\":\\\"USD0040\\\"}]\",\"target\":\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BAPP_9101\"}]",
+      "explanation" : "|->TLG08101->TLG15101->TLG15104->TLG23055->TLG03064->TLG15101->TLG15104->TLG22066->TLG03064->TLG15101->TLG15103->TLG02040->TLG09514",
+      "id" : "LINK_uniqueId0005",
+      "linkType" : "data-input",
+      "source" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23DB_Column_3003--VF_DataAssetsFrame",
+      "target" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BAPP_9101--VF_SoftwareFrame"
+    },
+    {
+      "activeResources" : [
+        {
+          "activeProducers" : [
+            {
+              "activeDependent" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23DB_Column_3001",
+              "activeResource" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23CaseStatementMapping_1001",
+              "caseCode" : "USD0040",
+              "dependencyObject" : null,
+              "isInverted" : false,
+              "property" : "http%3A%2F%2Fedg.topbraid.solutions%2Fmodel%2Finput",
+              "reciprocalProperty" : null
+            }
+          ],
+          "producers" : "[{\"activeResource\":\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23CaseStatementMapping_1001\",\"property\":\"http%3A%2F%2Fedg.topbraid.solutions%2Fmodel%2Finput\",\"isInverted\":false,\"activeDependent\":\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23DB_Column_3001\",\"dependencyObject\":null,\"reciprocalProperty\":null,\"caseCode\":\"USD0040\"}]",
+          "source" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23RDMBS_3001",
+          "target" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BAPP_9101"
+        }
+      ],
+      "activeResourcesList" : "[{\"source\":\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23RDMBS_3001\",\"producers\":\"[{\\\"activeResource\\\":\\\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23CaseStatementMapping_1001\\\",\\\"property\\\":\\\"http%3A%2F%2Fedg.topbraid.solutions%2Fmodel%2Finput\\\",\\\"isInverted\\\":false,\\\"activeDependent\\\":\\\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23DB_Column_3001\\\",\\\"dependencyObject\\\":null,\\\"reciprocalProperty\\\":null,\\\"caseCode\\\":\\\"USD0040\\\"}]\",\"target\":\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BAPP_9101\"}]",
+      "explanation" : "|->TLG08101->TLG15101->TLG15104->TLG23055->TLG03064->TLG15101->TLG15104->TLG22066->TLG03064->TLG15101->TLG15103->TLG02040->TLG09514",
+      "id" : "LINK_uniqueId0006",
+      "linkType" : "data-input",
+      "source" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23RDMBS_3001--VF_DataAssetsFrame",
+      "target" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BAPP_9101--VF_SoftwareFrame"
+    },
+    {
+      "activeResources" : [
+        {
+          "activeProducers" : [
+            {
+              "activeDependent" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23SWPROG_5003",
+              "activeResource" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23DB_Column_3001",
+              "caseCode" : "USD0001",
+              "dependencyObject" : null,
+              "isInverted" : false,
+              "property" : "http%3A%2F%2Fedg.topbraid.solutions%2Fmodel%2Foutput",
+              "reciprocalProperty" : null
+            }
+          ],
+          "producers" : "[{\"activeResource\":\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23DB_Column_3001\",\"property\":\"http%3A%2F%2Fedg.topbraid.solutions%2Fmodel%2Foutput\",\"isInverted\":false,\"activeDependent\":\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23SWPROG_5003\",\"dependencyObject\":null,\"reciprocalProperty\":null,\"caseCode\":\"USD0001\"}]",
+          "source" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23SWPROG_5003",
+          "target" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23RDMBS_3001"
+        }
+      ],
+      "activeResourcesList" : "[{\"source\":\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23SWPROG_5003\",\"producers\":\"[{\\\"activeResource\\\":\\\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23DB_Column_3001\\\",\\\"property\\\":\\\"http%3A%2F%2Fedg.topbraid.solutions%2Fmodel%2Foutput\\\",\\\"isInverted\\\":false,\\\"activeDependent\\\":\\\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23SWPROG_5003\\\",\\\"dependencyObject\\\":null,\\\"reciprocalProperty\\\":null,\\\"caseCode\\\":\\\"USD0001\\\"}]\",\"target\":\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23RDMBS_3001\"}]",
+      "explanation" : "|->TLG08101->TLG15101->TLG15104->TLG23055->TLG03064->TLG15101->TLG15104->TLG22066->TLG03064->TLG15101->TLG15104->TLG22066->TLG03064->TLG15101->TLG15103->TLG02040->TLG09514",
+      "id" : "LINK_uniqueId0007",
+      "linkType" : "data-output",
+      "source" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23SWPROG_5003--VF_SoftwareFrame",
+      "target" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23RDMBS_3001--VF_DataAssetsFrame"
+    },
+    {
+      "activeResources" : [
+        {
+          "activeProducers" : [
+            {
+              "activeDependent" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23CaseStatementMapping_1001",
+              "activeResource" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BAPP_9101",
+              "caseCode" : "USD0107",
+              "dependencyObject" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23CaseStatementMapping_1001",
+              "isInverted" : false,
+              "property" : "http%3A%2F%2Fedg.topbraid.solutions%2Fmodel%2FusesSoftwareFunction",
+              "reciprocalProperty" : null
+            }
+          ],
+          "producers" : "[{\"activeResource\":\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BAPP_9101\",\"property\":\"http%3A%2F%2Fedg.topbraid.solutions%2Fmodel%2FusesSoftwareFunction\",\"isInverted\":false,\"activeDependent\":\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23CaseStatementMapping_1001\",\"dependencyObject\":\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23CaseStatementMapping_1001\",\"reciprocalProperty\":null,\"caseCode\":\"USD0107\"}]",
+          "source" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BAPP_9101",
+          "target" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BAPP_9101"
+        }
+      ],
+      "activeResourcesList" : "[{\"source\":\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BAPP_9101\",\"producers\":\"[{\\\"activeResource\\\":\\\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BAPP_9101\\\",\\\"property\\\":\\\"http%3A%2F%2Fedg.topbraid.solutions%2Fmodel%2FusesSoftwareFunction\\\",\\\"isInverted\\\":false,\\\"activeDependent\\\":\\\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23CaseStatementMapping_1001\\\",\\\"dependencyObject\\\":\\\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23CaseStatementMapping_1001\\\",\\\"reciprocalProperty\\\":null,\\\"caseCode\\\":\\\"USD0107\\\"}]\",\"target\":\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BAPP_9101\"}]",
+      "explanation" : "|->TLG08101->TLG15101->TLG15104->TLG23055->TLG03064->TLG15101->TLG15103->TLG02055->TLG09514",
+      "id" : "LINK_uniqueId0008",
+      "linkType" : "function-io",
+      "source" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BAPP_9101--VF_SoftwareFrame",
+      "target" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BAPP_9101--VF_SoftwareFrame"
+    },
+    {
+      "activeResources" : [
+        {
+          "activeProducers" : [
+            {
+              "activeDependent" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23CaseStatementMapping_1001",
+              "activeResource" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23SWPROG_5007",
+              "caseCode" : "USD0107",
+              "dependencyObject" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23CaseStatementMapping_1001",
+              "isInverted" : false,
+              "property" : "http%3A%2F%2Fedg.topbraid.solutions%2Fmodel%2FusesSoftwareFunction",
+              "reciprocalProperty" : null
+            }
+          ],
+          "producers" : "[{\"activeResource\":\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23SWPROG_5007\",\"property\":\"http%3A%2F%2Fedg.topbraid.solutions%2Fmodel%2FusesSoftwareFunction\",\"isInverted\":false,\"activeDependent\":\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23CaseStatementMapping_1001\",\"dependencyObject\":\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23CaseStatementMapping_1001\",\"reciprocalProperty\":null,\"caseCode\":\"USD0107\"}]",
+          "source" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BAPP_9101",
+          "target" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BAPP_9101"
+        }
+      ],
+      "activeResourcesList" : "[{\"source\":\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BAPP_9101\",\"producers\":\"[{\\\"activeResource\\\":\\\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23SWPROG_5007\\\",\\\"property\\\":\\\"http%3A%2F%2Fedg.topbraid.solutions%2Fmodel%2FusesSoftwareFunction\\\",\\\"isInverted\\\":false,\\\"activeDependent\\\":\\\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23CaseStatementMapping_1001\\\",\\\"dependencyObject\\\":\\\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23CaseStatementMapping_1001\\\",\\\"reciprocalProperty\\\":null,\\\"caseCode\\\":\\\"USD0107\\\"}]\",\"target\":\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BAPP_9101\"}]",
+      "explanation" : "|->TLG08101->TLG15101->TLG15104->TLG23055->TLG03064->TLG15101->TLG15104->TLG22066->TLG03064->TLG15101->TLG15103->TLG02055->TLG09514",
+      "id" : "LINK_uniqueId0009",
+      "linkType" : "function-io",
+      "source" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BAPP_9101--VF_SoftwareFrame",
+      "target" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BAPP_9101--VF_SoftwareFrame"
+    },
+    {
+      "activeResources" : [
+        {
+          "activeProducers" : [
+            {
+              "activeDependent" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23Stakeholder_Group_A",
+              "activeResource" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BACT_1001",
+              "caseCode" : "USD0053",
+              "dependencyObject" : null,
+              "isInverted" : true,
+              "property" : "http%3A%2F%2Fedg.topbraid.solutions%2Fmodel%2FperformedBy",
+              "reciprocalProperty" : null
+            }
+          ],
+          "producers" : "[{\"activeResource\":\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BACT_1001\",\"property\":\"http%3A%2F%2Fedg.topbraid.solutions%2Fmodel%2FperformedBy\",\"isInverted\":true,\"activeDependent\":\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23Stakeholder_Group_A\",\"dependencyObject\":null,\"reciprocalProperty\":null,\"caseCode\":\"USD0053\"}]",
+          "source" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23Stakeholder_Group_A",
+          "target" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BACT_1001"
+        }
+      ],
+      "activeResourcesList" : "[{\"source\":\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23Stakeholder_Group_A\",\"producers\":\"[{\\\"activeResource\\\":\\\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BACT_1001\\\",\\\"property\\\":\\\"http%3A%2F%2Fedg.topbraid.solutions%2Fmodel%2FperformedBy\\\",\\\"isInverted\\\":true,\\\"activeDependent\\\":\\\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23Stakeholder_Group_A\\\",\\\"dependencyObject\\\":null,\\\"reciprocalProperty\\\":null,\\\"caseCode\\\":\\\"USD0053\\\"}]\",\"target\":\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BACT_1001\"}]",
+      "explanation" : "|->TLG08101->TLG15101->TLG15103->TLG02040->TLG09514",
+      "id" : "LINK_uniqueId0010",
+      "linkType" : "performed-by",
+      "source" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23Stakeholder_Group_A--VF_ResourcesFrame",
+      "target" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BACT_1001--VF_TargetFrame"
+    },
+    {
+      "activeResources" : [
+        {
+          "activeProducers" : [
+            {
+              "activeDependent" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BusinessProcess1001",
+              "activeResource" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BACT_1001",
+              "caseCode" : "USD0051",
+              "dependencyObject" : null,
+              "isInverted" : true,
+              "property" : "http%3A%2F%2Fedg.topbraid.solutions%2Fmodel%2FusesProcess",
+              "reciprocalProperty" : null
+            }
+          ],
+          "producers" : "[{\"activeResource\":\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BACT_1001\",\"property\":\"http%3A%2F%2Fedg.topbraid.solutions%2Fmodel%2FusesProcess\",\"isInverted\":true,\"activeDependent\":\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BusinessProcess1001\",\"dependencyObject\":null,\"reciprocalProperty\":null,\"caseCode\":\"USD0051\"}]",
+          "source" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BusinessProcess1001",
+          "target" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BACT_1001"
+        }
+      ],
+      "activeResourcesList" : "[{\"source\":\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BusinessProcess1001\",\"producers\":\"[{\\\"activeResource\\\":\\\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BACT_1001\\\",\\\"property\\\":\\\"http%3A%2F%2Fedg.topbraid.solutions%2Fmodel%2FusesProcess\\\",\\\"isInverted\\\":true,\\\"activeDependent\\\":\\\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BusinessProcess1001\\\",\\\"dependencyObject\\\":null,\\\"reciprocalProperty\\\":null,\\\"caseCode\\\":\\\"USD0051\\\"}]\",\"target\":\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BACT_1001\"}]",
+      "explanation" : "|->TLG08101->TLG15101->TLG15103->TLG02040->TLG09514",
+      "id" : "LINK_uniqueId0011",
+      "linkType" : "process-usage",
+      "source" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BusinessProcess1001--VF_EnterpriseFrame",
+      "target" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BACT_1001--VF_TargetFrame"
+    },
+    {
+      "activeResources" : [
+        {
+          "activeProducers" : [
+            {
+              "activeDependent" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23SWPROG_5007",
+              "activeResource" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BAPP_9101",
+              "caseCode" : "USD0108",
+              "dependencyObject" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23SWPROG_5007",
+              "isInverted" : false,
+              "property" : "http%3A%2F%2Fedg.topbraid.solutions%2Fmodel%2FusesSoftwareProgram",
+              "reciprocalProperty" : null
+            }
+          ],
+          "producers" : "[{\"activeResource\":\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BAPP_9101\",\"property\":\"http%3A%2F%2Fedg.topbraid.solutions%2Fmodel%2FusesSoftwareProgram\",\"isInverted\":false,\"activeDependent\":\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23SWPROG_5007\",\"dependencyObject\":\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23SWPROG_5007\",\"reciprocalProperty\":null,\"caseCode\":\"USD0108\"}]",
+          "source" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BAPP_9101",
+          "target" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BAPP_9101"
+        }
+      ],
+      "activeResourcesList" : "[{\"source\":\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BAPP_9101\",\"producers\":\"[{\\\"activeResource\\\":\\\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BAPP_9101\\\",\\\"property\\\":\\\"http%3A%2F%2Fedg.topbraid.solutions%2Fmodel%2FusesSoftwareProgram\\\",\\\"isInverted\\\":false,\\\"activeDependent\\\":\\\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23SWPROG_5007\\\",\\\"dependencyObject\\\":\\\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23SWPROG_5007\\\",\\\"reciprocalProperty\\\":null,\\\"caseCode\\\":\\\"USD0108\\\"}]\",\"target\":\"http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BAPP_9101\"}]",
+      "explanation" : "|->TLG08101->TLG15101->TLG15104->TLG23055->TLG03064->TLG15101->TLG15103->TLG02040->TLG09514",
+      "id" : "LINK_uniqueId0012",
+      "linkType" : "program-usage",
+      "source" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BAPP_9101--VF_SoftwareFrame",
+      "target" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BAPP_9101--VF_SoftwareFrame"
+    }
+  ],
+  "nodes" : [
+    {
+      "activeResource" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BACT_1001",
+      "explanation" : "|->TLG08100->TLG09502->TLG09513",
+      "id" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BACT_1001--VF_TargetFrame",
+      "label" : "Business Activity 1001",
+      "resource" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BACT_1001",
+      "resourceType" : "edg:BusinessActivity",
+      "typeId" : "edg:BusinessActivity",
+      "viewFrame" : "edg:VF_TargetFrame"
+    },
+    {
+      "activeResource" : "http%3A%2F%2Fedg.topbraid.solutions%2Fdata-assets-model%2Fnorthwind%23COL_NORTHWIND.DBO%252ECATEGORY%2520SALES%2520FOR%25201997.CATEGORYSALES",
+      "explanation" : "|->TLG08101->TLG15101->TLG15104->TLG23055->TLG03064->TLG15101->TLG15102->TLG09505->TLG09513",
+      "id" : "http%3A%2F%2Fedg.topbraid.solutions%2Fdata-assets-model%2Fnorthwind%23COL_NORTHWIND.DBO%252ECATEGORY%2520SALES%2520FOR%25201997.CATEGORYSALES--VF_DataAssetsFrame",
+      "label" : "NORTHWIND DBO CATEGORIES FOR SALES COLUMN",
+      "resource" : "http%3A%2F%2Fedg.topbraid.solutions%2Fdata-assets-model%2Fnorthwind%23COL_NORTHWIND.DBO%252ECATEGORY%2520SALES%2520FOR%25201997.CATEGORYSALES",
+      "resourceType" : "edg:DatabaseColumn",
+      "typeId" : "edg:DatabaseColumn",
+      "viewFrame" : "edg:VF_DataAssetsFrame"
+    },
+    {
+      "activeResource" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BAPP_9101",
+      "explanation" : "|->TLG08101->TLG15101->TLG15102->TLG09505->TLG09513",
+      "id" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BAPP_9101--VF_SoftwareFrame",
+      "label" : "Business Application 9101",
+      "resource" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BAPP_9101",
+      "resourceType" : "edg:BusinessApplication",
+      "typeId" : "edg:BusinessApplication",
+      "viewFrame" : "edg:VF_SoftwareFrame"
+    },
+    {
+      "activeResource" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BAPP_9102",
+      "explanation" : "|->TLG08101->TLG15101->TLG15102->TLG09505->TLG09513",
+      "id" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BAPP_9102--VF_SoftwareFrame",
+      "label" : "Business Application 9102",
+      "resource" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BAPP_9102",
+      "resourceType" : "edg:BusinessApplication",
+      "typeId" : "edg:BusinessApplication",
+      "viewFrame" : "edg:VF_SoftwareFrame"
+    },
+    {
+      "activeResource" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BusinessProcess1001",
+      "explanation" : "|->TLG08101->TLG15101->TLG15102->TLG09505->TLG09513",
+      "id" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BusinessProcess1001--VF_EnterpriseFrame",
+      "label" : "Business Process 1001",
+      "resource" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23BusinessProcess1001",
+      "resourceType" : "edg:Process",
+      "typeId" : "edg:Process",
+      "viewFrame" : "edg:VF_EnterpriseFrame"
+    },
+    {
+      "activeResource" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23DB_Column_3002",
+      "explanation" : "|->TLG08101->TLG15101->TLG15104->TLG23055->TLG03064->TLG15101->TLG15104->TLG22066->TLG03064->TLG15101->TLG15102->TLG09505->TLG09513",
+      "id" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23DB_Column_3002--VF_DataAssetsFrame",
+      "label" : "DB Column 3002",
+      "resource" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23DB_Column_3002",
+      "resourceType" : "edg:DatabaseColumn",
+      "typeId" : "edg:DatabaseColumn",
+      "viewFrame" : "edg:VF_DataAssetsFrame"
+    },
+    {
+      "activeResource" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23DB_Column_3003",
+      "explanation" : "|->TLG08101->TLG15101->TLG15104->TLG23055->TLG03064->TLG15101->TLG15104->TLG22066->TLG03064->TLG15101->TLG15102->TLG09505->TLG09513",
+      "id" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23DB_Column_3003--VF_DataAssetsFrame",
+      "label" : "DB Column 3003",
+      "resource" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23DB_Column_3003",
+      "resourceType" : "edg:DatabaseColumn",
+      "typeId" : "edg:DatabaseColumn",
+      "viewFrame" : "edg:VF_DataAssetsFrame"
+    },
+    {
+      "activeResource" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23JTITLE-MarketingEngineer",
+      "explanation" : "|->TLG08101->TLG15101->TLG15102->TLG09505->TLG09513",
+      "id" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23JTITLE-MarketingEngineer--VF_ResourcesFrame",
+      "label" : "Marketing Engineer",
+      "resource" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23JTITLE-MarketingEngineer",
+      "resourceType" : "edg:JobTitle",
+      "typeId" : "edg:Party",
+      "viewFrame" : "edg:VF_ResourcesFrame"
+    },
+    {
+      "activeResource" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23RDMBS_3001",
+      "explanation" : "|->TLG08101->TLG15101->TLG15104->TLG23055->TLG03064->TLG15101->TLG15104->TLG22066->TLG03064->TLG15101->TLG15102->TLG09505->TLG09513",
+      "id" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23RDMBS_3001--VF_DataAssetsFrame",
+      "label" : "RDMBS 3001",
+      "resource" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23RDMBS_3001",
+      "resourceType" : "edg:RelationalDatabase",
+      "typeId" : "edg:Database",
+      "viewFrame" : "edg:VF_DataAssetsFrame"
+    },
+    {
+      "activeResource" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23SWPROG_5003",
+      "explanation" : "|->TLG08101->TLG15101->TLG15104->TLG23055->TLG03064->TLG15101->TLG15104->TLG22066->TLG03064->TLG15101->TLG15104->TLG22066->TLG03064->TLG15101->TLG15102->TLG09505->TLG09513",
+      "id" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23SWPROG_5003--VF_SoftwareFrame",
+      "label" : "SW5003",
+      "resource" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23SWPROG_5003",
+      "resourceType" : "edg:SoftwareProgram",
+      "typeId" : "edg:SoftwareProgram",
+      "viewFrame" : "edg:VF_SoftwareFrame"
+    },
+    {
+      "activeResource" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23Stakeholder_Group_A",
+      "explanation" : "|->TLG08101->TLG15101->TLG15102->TLG09505->TLG09513",
+      "id" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23Stakeholder_Group_A--VF_ResourcesFrame",
+      "label" : "Stakeholder Group A",
+      "resource" : "http%3A%2F%2Fexample.org%2Flineage-models%2Flm-tests%23Stakeholder_Group_A",
+      "resourceType" : "edg:StakeholderGroup",
+      "typeId" : "edg:StakeholderGroup",
+      "viewFrame" : "edg:VF_ResourcesFrame"
+    }
+  ]
+}

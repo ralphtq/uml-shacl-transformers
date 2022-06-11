@@ -1,0 +1,54 @@
+# Make composition triples for IPart
+INSERT  {
+        GRAPH <http://data.pg.com/data/graph/DATA_CSM_Instances_v2_union> {
+        ?subjectURI pgont:composition ?objectURI .
+        }
+}
+WHERE {
+{
+SELECT ?partid (GROUP_CONCAT(?relation ; separator= "|") AS ?subobj)
+WHERE {
+{
+SELECT ?partTag  ?cID ?partid ?relpartid ?relWholeid ?relation
+WHERE {
+        ?part a csmi:IPart .
+        ?part csmi:_idRef/dtype:value ?partid .
+        ?part csmi:_nameRef/dtype:value ?partname .
+        ?part csmi:stereotypesRef/csmi:iRPYRawContainerRef/csmi:iHandleRef ?stypeh .
+        ?stypeh csmi:_hnameRef/dtype:value ?cname .
+        ?stypeh csmi:_hidRef/dtype:value ?cID .
+        ?part csmi:aggregatesListRef/csmi:value ?partTagid .
+        BIND (  dash:toString(?partTagid) AS ?partidstr) .
+        ?partidstr ^(csmi:_idRef/dtype:value) ?partTag .
+        ?partTag rdf:type csmi:ITag .
+
+OPTIONAL {
+        ?partTag csmi:_nameRef/dtype:value "RelationPart" .
+        ?partTag csmi:aggregatesListRef/csmi:value ?relPartAggID .
+        BIND (  dash:toString(?relPartAggID) AS ?relPartAggIDstr) .
+        ?relPartAggIDstr ^(csmi:_idRef/dtype:value) ?relPartLitSpec .
+        ?relPartLitSpec rdf:type csmi:ILiteralSpecification .
+        ?relPartLitSpec csmi:_valueRef/dtype:value ?relpartid .
+        BIND ( fn:concat("SUB:", ?relpartid) AS ?relation)
+        }
+OPTIONAL {
+        ?partTag csmi:_nameRef/dtype:value "RelationWhole" .
+        ?partTag csmi:aggregatesListRef/csmi:value ?relWholeAggID .
+        BIND (  dash:toString(?relWholeAggID) AS ?relWholeAggIDstr) .
+        ?relWholeAggIDstr ^(csmi:_idRef/dtype:value) ?relWholeLitSpec .
+        ?relWholeLitSpec rdf:type csmi:ILiteralSpecification .
+        ?relWholeLitSpec csmi:_valueRef/dtype:value ?relWholeid .
+        BIND ( fn:concat("OBJ:", ?relWholeid) AS ?relation)
+ }
+
+}
+}
+} GROUP BY ?partid
+}
+        BIND (spif:regex(?subobj, "^OBJ:([a-zA-Z0-9- ]*)\\|SUB:([a-zA-Z0-9- ]*)$", "$2") AS ?subject)
+        BIND (spif:regex(?subobj, "^OBJ:([a-zA-Z0-9- ]*)\\|SUB:([a-zA-Z0-9- ]*)$", "$1") AS ?object)
+        BIND (spif:replaceAll(?subject, ' ', '_') AS ?subjectguid) .
+        BIND (spif:replaceAll(?object, ' ', '_') AS ?objectguid) .
+        BIND (spif:buildURI("http://data.pg.com/data/{?subject}") AS ?subjectURI) .
+        BIND (spif:buildURI("http://data.pg.com/data/{?object}") AS ?objectURI) .
+}

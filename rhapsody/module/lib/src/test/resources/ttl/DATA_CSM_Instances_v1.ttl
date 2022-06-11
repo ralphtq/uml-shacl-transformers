@@ -1,0 +1,42 @@
+# baseURI: http://data.pg.com/data/graph/DATA_CSM_Instances_v1.0
+# prefix: DATA_CSM_Instances_v1
+
+@prefix DATA_CSM_Instances_v1: <http://data.pg.com/data/graph/DATA_CSM_Instances_v1.0#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.pg.com/data/GUID_2f17840f-d766-42d2-8741-d0fbfa4d1cdc>
+  a <http://ontologies.pg.com/pgontology/GUID_a68f3beb-9294-4276-a5c0-46e60eeaf6ee> ;
+  <http://ontologies.pg.com/pgontology/GUID_1c381097-6afe-4581-87c2-a99a118cd188> <http://data.pg.com/data/GUID_b85167b9-996f-4b7d-b1a5-09bda0163e8b> ;
+  <http://ontologies.pg.com/pgontology/GUID_41d320d3-ddb8-4f65-8023-3c2ccd4f7684> <http://data.pg.com/data/GUID_ab09810e-017d-4f4f-9602-1601099357fd> ;
+  <http://ontologies.pg.com/pgontology/GUID_b1dde399-82c0-40c3-b731-00f6e74b3e8f> <http://data.pg.com/data/GUID_e4b78edb-a8b0-43a6-9b2a-442fc93d868e> ;
+  rdfs:label "Logical_System_1" ;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Logical System 1" ;
+.
+<http://data.pg.com/data/GUID_ab09810e-017d-4f4f-9602-1601099357fd>
+  rdfs:label "Stakeholder" ;
+.
+<http://data.pg.com/data/GUID_b85167b9-996f-4b7d-b1a5-09bda0163e8b>
+  rdfs:label "Physical_System_A" ;
+.
+<http://data.pg.com/data/GUID_e4b78edb-a8b0-43a6-9b2a-442fc93d868e>
+  rdfs:label "Feature" ;
+.
+<http://data.pg.com/data/graph/DATA_CSM_Instances_v1.0>
+  a owl:Ontology ;
+  owl:versionInfo "Created with TopBraid Composer" ;
+.
+<http://ontologies.pg.com/pgontology/GUID_1c381097-6afe-4581-87c2-a99a118cd188>
+  rdfs:label "Allocated_To_Physical_System" ;
+.
+<http://ontologies.pg.com/pgontology/GUID_41d320d3-ddb8-4f65-8023-3c2ccd4f7684>
+  rdfs:label "Has_Stakeholder" ;
+.
+<http://ontologies.pg.com/pgontology/GUID_a68f3beb-9294-4276-a5c0-46e60eeaf6ee>
+  rdfs:label "Logical_System" ;
+.
+<http://ontologies.pg.com/pgontology/GUID_b1dde399-82c0-40c3-b731-00f6e74b3e8f>
+  rdfs:label "Offers_Feature" ;
+.

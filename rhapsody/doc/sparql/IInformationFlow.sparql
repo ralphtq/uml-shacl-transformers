@@ -1,0 +1,165 @@
+# Make Flow triples with conveyed assets
+
+INSERT  {
+
+               GRAPH <http://data.pg.com/data/graph/DATA_CSM_Instances_v2_union> {
+
+#CONSTRUCT {
+
+               ?flowURI a edg:Flow .
+
+               ?flowURI rdfs:label ?flowlabel .
+
+               ?flowURI edg:transfersAsset ?conveyedObjectURI .
+
+               ?flowURI edg:source ?subject .
+
+               ?flowURI edg:target ?object .
+
+               ?subject pgont:GUID_d10728e0-b034-4b51-afad-c00fb9c8c328 ?object .
+
+               }
+
+}
+
+#SELECT *
+
+WHERE {
+
+               ?flow a csmi:IInformationFlow .
+
+               ?flow csmi:_idRef/dtype:value ?id .
+
+               ?flow csmi:_nameRef/dtype:value ?name .
+
+               ?flow csmi:end1_Ref/csmi:iHandleRef ?end1HandleRef .
+
+               ?end1HandleRef csmi:_hidRef/dtype:value ?end1ID .
+
+               ?end1HandleRef csmi:_hm2ClassRef/dtype:value ?end1Class .
+
+               ?flow csmi:end2_Ref/csmi:iHandleRef ?end2HandleRef .
+
+               ?end2HandleRef csmi:_hidRef/dtype:value ?end2ID .
+
+               ?end2HandleRef csmi:_hm2ClassRef/dtype:value ?end2Class .
+
+               ?flow csmi:direction_Ref/dtype:value ?direction .
+
+               ?flow csmi:conveyedRef/csmi:iRPYRawContainerRef/csmi:iHandleRef ?conveyedObjecthref .
+
+               ?conveyedObjecthref csmi:_hnameRef/dtype:value ?conveyedObjectName .
+
+               ?conveyedObjecthref csmi:_hidRef/dtype:value ?conveyedObjectID .
+
+               BIND (spif:replaceAll(?end1ID, ' ', '_') AS ?end1IDguid) .
+
+               BIND (spif:replaceAll(?end2ID, ' ', '_') AS ?end2IDguid) .
+
+               BIND (spif:replaceAll(?conveyedObjectID, ' ', '_') AS ?conveyedObjectguid) .
+
+               BIND (spif:buildURI("http://data.pg.com/data/{?end1IDguid}") AS ?end1IDURI) .
+
+               BIND (spif:buildURI("http://data.pg.com/data/{?end2IDguid}") AS ?end2IDURI) .
+
+               BIND (spif:buildURI("http://data.pg.com/data/{?conveyedObjectguid}") AS ?conveyedObjectURI) .
+
+               BIND (smf:if(?direction ="toEnd2", ?end1IDURI, ?end2IDURI) AS ?subject) .
+
+               BIND (smf:if(?direction ="toEnd2", ?end2IDURI, ?end1IDURI) AS ?object) .
+
+               BIND (spif:buildURI("http://data.pg.com/data/FLOW_{?end1IDguid}_{?end2IDguid}") AS ?flowURI) .
+
+               ?end1IDURI rdfs:label ?e1label .
+
+               ?end2IDURI rdfs:label ?e2label .
+
+               BIND (smf:if(?direction ="toEnd2", ?e1label, ?e2label) AS ?from) .
+
+               BIND (smf:if(?direction ="toEnd2", ?e2label, ?e1label ) AS ?to) .
+
+               BIND (fn:concat("From: ",?from," to ",?to) AS ?flowlabel) .
+}
+
+
+# Make Flow triples with stereotypes
+
+INSERT  {
+
+               GRAPH <http://data.pg.com/data/graph/DATA_CSM_Instances_v2_union> {
+
+#CONSTRUCT {
+
+               ?flowURI a edg:Flow .
+
+               ?flowURI rdfs:label ?flowlabel .
+
+               ?flowURI edg:source ?subject .
+
+               ?flowURI edg:target ?object .
+
+               ?subject ?stypeIDURI ?object .
+
+               }
+
+}
+
+#SELECT *
+
+WHERE {
+
+               ?flow a csmi:IInformationFlow .
+
+               ?flow csmi:_idRef/dtype:value ?id .
+
+               ?flow csmi:_nameRef/dtype:value ?name .
+
+               ?flow csmi:end1_Ref/csmi:iHandleRef ?end1HandleRef .
+
+               ?end1HandleRef csmi:_hidRef/dtype:value ?end1ID .
+
+               ?end1HandleRef csmi:_hm2ClassRef/dtype:value ?end1Class .
+
+               ?flow csmi:end2_Ref/csmi:iHandleRef ?end2HandleRef .
+
+               ?end2HandleRef csmi:_hidRef/dtype:value ?end2ID .
+
+               ?end2HandleRef csmi:_hm2ClassRef/dtype:value ?end2Class .
+
+               ?flow csmi:direction_Ref/dtype:value ?direction .
+
+               ?flow  csmi:stereotypesRef/csmi:iRPYRawContainerRef/csmi:iHandleRef ?stypeh .
+
+               ?stypeh csmi:_hnameRef/dtype:value ?stypename .
+
+               ?stypeh csmi:_hidRef/dtype:value ?stypeID .
+
+               BIND (spif:replaceAll(?end1ID, ' ', '_') AS ?end1IDguid) .
+
+               BIND (spif:replaceAll(?end2ID, ' ', '_') AS ?end2IDguid) .
+
+               BIND (spif:replaceAll(?stypeID, ' ', '_') AS ?stypeIDguid) .
+
+               BIND (spif:buildURI("http://data.pg.com/data/{?end1IDguid}") AS ?end1IDURI) .
+
+               BIND (spif:buildURI("http://data.pg.com/data/{?end2IDguid}") AS ?end2IDURI) .
+
+               BIND (spif:buildURI("http://ontologies.pg.com/pgontology/{?stypeIDguid}") AS ?stypeIDURI) .
+
+               BIND (smf:if(?direction ="toEnd2", ?end1IDURI, ?end2IDURI) AS ?subject) .
+
+               BIND (smf:if(?direction ="toEnd2", ?end2IDURI, ?end1IDURI) AS ?object) .
+
+               BIND (spif:buildURI("http://data.pg.com/data/FLOW_{?end1IDguid}_{?end2IDguid}") AS ?flowURI) .
+
+               ?end1IDURI rdfs:label ?e1label .
+
+               ?end2IDURI rdfs:label ?e2label .
+
+               BIND (smf:if(?direction ="toEnd2", ?e1label, ?e2label) AS ?from) .
+
+               BIND (smf:if(?direction ="toEnd2", ?e2label, ?e1label ) AS ?to) .
+
+               BIND (fn:concat("From: ",?from," to ",?to) AS ?flowlabel) .
+
+}

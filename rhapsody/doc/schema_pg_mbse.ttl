@@ -1,0 +1,234 @@
+# baseURI: urn:x-evn-master:schema_pg_mbse
+# imports: http://datashapes.org/graphql
+# imports: http://edg.topbraid.solutions/1.0/schema/core
+# imports: http://edg.topbraid.solutions/1.0/schema/enterprise-models
+# imports: http://ontologies.pg.com/graph/SCHEMA_CSM_V1.0
+# imports: http://topbraid.org/teamworkconstraints
+# imports: urn:x-evn-master:schema_visualization_model_v1_0
+
+@prefix edg: <http://edg.topbraid.solutions/model/> .
+@prefix metadata: <http://topbraid.org/metadata#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pgont: <http://ontologies.pg.com/pgontology/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix teamwork: <http://topbraid.org/teamwork#> .
+
+edg:Flow
+  sh:property pgont:ForceFlow-transfersAsset ;
+.
+edg:subActivity
+  rdfs:subPropertyOf pgont:composition ;
+.
+pgont:Coupling
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Coupling" ;
+  rdfs:subClassOf owl:Thing ;
+.
+pgont:DesignConstraintStm
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Design constraint stm" ;
+  rdfs:subClassOf pgont:Statement ;
+.
+pgont:Feature
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Feature" ;
+  rdfs:subClassOf owl:Thing ;
+.
+pgont:ForceFlow
+  a edg:AssetClass ;
+  a sh:NodeShape ;
+  rdfs:comment "Intended to mirror the MBSE Force Flow property."@en ;
+  rdfs:label "Force Flow"@en ;
+  rdfs:subClassOf edg:Flow ;
+.
+pgont:ForceFlow-transfersAsset
+  a sh:PropertyShape ;
+  sh:path edg:transfersAsset ;
+  sh:class edg:AssetClass ;
+  sh:description "What asset/Logical System is transferred by this flow" ;
+  sh:group edg:PropertiesGroup ;
+  sh:name "transfers"@en ;
+.
+pgont:FunctionalInteraction
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Functional interaction" ;
+  rdfs:subClassOf pgont:Interaction ;
+.
+pgont:GUID_34aac9f0-bcbe-4fef-a0b1-e71fbbfabc4c
+  rdfs:subPropertyOf pgont:GUID_d10728e0-b034-4b51-afad-c00fb9c8c328 ;
+.
+pgont:GUID_9338ba16-3c2c-430e-bd00-4601060450d7
+  rdfs:subPropertyOf pgont:GUID_d10728e0-b034-4b51-afad-c00fb9c8c328 ;
+.
+pgont:GUID_b04e5e63-f5d7-4e3d-8000-2e07f5be4e8a
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:comment "Proxy Port as defined in SysML.sbs."@en ;
+  rdfs:label "Proxy Port"@en ;
+  rdfs:subClassOf pgont:Port ;
+.
+pgont:GUID_be6c97cf-f737-4605-82d7-d7a8f392fab5
+  rdfs:subPropertyOf pgont:GUID_d10728e0-b034-4b51-afad-c00fb9c8c328 ;
+.
+pgont:GUID_d10728e0-b034-4b51-afad-c00fb9c8c328
+  a owl:ObjectProperty ;
+  rdfs:label "flow"@en ;
+.
+pgont:GUID_eade196c-bc72-4a89-b4ed-2856faf593ee
+  rdfs:subPropertyOf pgont:GUID_d10728e0-b034-4b51-afad-c00fb9c8c328 ;
+.
+pgont:InformationFlow
+  a edg:LineageAnalyzableClass ;
+  a sh:NodeShape ;
+  rdfs:comment "Intended to mirror the MBSE Information Flow property."@en ;
+  rdfs:label "Information Flow"@en ;
+  rdfs:subClassOf edg:LogicalFlow ;
+.
+pgont:Interaction
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Interaction" ;
+  rdfs:subClassOf owl:Thing ;
+.
+pgont:Interface
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Interface" ;
+  rdfs:subClassOf owl:Thing ;
+.
+pgont:InterfaceBlock
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:comment "SysML Interface Block"@en ;
+  rdfs:label "Interface Block"@en ;
+  rdfs:subClassOf owl:Thing ;
+.
+pgont:LogicalSystem
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Logical system" ;
+  rdfs:subClassOf pgont:System ;
+.
+pgont:MassFlow
+  a edg:AssetClass ;
+  a sh:NodeShape ;
+  rdfs:comment "Intended to mirror the MBSE Mass Flow property."@en ;
+  rdfs:label "Mass Flow"@en ;
+  rdfs:subClassOf edg:Flow ;
+.
+pgont:PhysicalSystem
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Physical system" ;
+  rdfs:subClassOf pgont:System ;
+.
+pgont:Port
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:comment "Superclass for all SysML port types."@en ;
+  rdfs:label "Port"@en ;
+  rdfs:subClassOf owl:Thing ;
+.
+pgont:RequirementStm
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Requirement stm" ;
+  rdfs:subClassOf pgont:Statement ;
+.
+pgont:Stakeholder
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Stakeholder" ;
+  rdfs:subClassOf owl:Thing ;
+.
+pgont:StakeholderRequirementStm
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Stakeholder requirement stm" ;
+  rdfs:subClassOf pgont:RequirementStm ;
+.
+pgont:State
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:label "State" ;
+  rdfs:subClassOf owl:Thing ;
+.
+pgont:Statement
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Statement" ;
+  rdfs:subClassOf owl:Thing ;
+.
+pgont:SysMLPort
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:comment "A port as defined by SysML."@en ;
+  rdfs:label "SysML Port"@en ;
+  rdfs:subClassOf pgont:Port ;
+.
+pgont:System
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:label "System" ;
+  rdfs:subClassOf owl:Thing ;
+.
+pgont:TechnicalRequirementStm
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Technical requirement stm" ;
+  rdfs:subClassOf pgont:RequirementStm ;
+.
+pgont:WorkProcess
+  a edg:CustomAssetClass ;
+  a sh:NodeShape ;
+  rdfs:comment "Superclass for work processes."@en ;
+  rdfs:label "Work Process"@en ;
+  rdfs:subClassOf edg:Process ;
+.
+pgont:aggregate
+  a owl:ObjectProperty ;
+  rdfs:label "aggregate"@en ;
+.
+pgont:composition
+  a pgont:VisualizationProperty ;
+  a owl:ObjectProperty ;
+  rdfs:comment "<div lang=\"en\">Same as SysML Composition as used within P&amp;G. <br /><br />The following is from Bob Sherman (02/05/2021): <br /><strong><em>\"It is more accurate to say that the SysML &ldquo;Composition&rdquo; relationship is exactly the same as the UML &ldquo;Composition&rdquo;... the object at the diamond end of the relationship is the unique &ldquo;container&rdquo; of the object at the other end of the relationship. The &ldquo;Compositon&rdquo; relationship in SysML and UML does not specify class types at each end. However, in our SysML profile, we do specify that class types must be the same at each end of the relationship. On last note... many people assume that the SysML &ldquo;Containment&rdquo; relationship is the same as &ldquo;Composition&rdquo;; they are not the same thing in SysML. In SysML... the &ldquo;Containment&rdquo; relationship controls placement in the tool&rsquo;s hierarchical presentation of objects in the object browser. However, in our automation, we force the &ldquo;Containment&rdquo; to always match the &ldquo;Composition&rdquo; relationship and also force the reverse (depending upon where the change was made).\"</em></strong></div>"^^rdf:HTML ;
+  rdfs:label "composition"@en ;
+.
+pgont:dependency
+  a owl:ObjectProperty ;
+  rdfs:label "dependency"@en ;
+.
+pgont:generalization
+  a owl:ObjectProperty ;
+  rdfs:comment "<div>From Bob Sherman:<br /><br /><em><strong>\"The subclass inherits not only the attributes of the superclass but also any Flow connections and/or binding connections (both through inheritance of the super classes ports).&nbsp;&nbsp; We are evaluating a transition from use of &ldquo;Dependency&rdquo; between Physical System and Logical System towards generalization from Physical System as a sub-class to the Logical System as a super-class.&nbsp;&nbsp; We are considering this metamodel change because, semantically, it makes sense that if we&rsquo;re allocating the behaviors (attributes, flows, bindings) of a Logical System to a Physical System, the Physical System should inherit constructs to describe the as-is properties of the Physical System to support comparison to &ldquo;required&rdquo; constructs on the Logical System.\"</strong></em></div>"^^rdf:HTML ;
+  rdfs:label "generalization"@en ;
+  rdfs:subPropertyOf rdfs:subClassOf ;
+.
+<http://teamwork.topbraidlive.org/ontologyprojects#Ontology>
+  rdfs:subClassOf teamwork:Vocabulary ;
+.
+teamwork:Vocabulary
+  rdfs:subClassOf owl:Ontology ;
+.
+<urn:x-evn-master:schema_pg_mbse>
+  a <http://teamwork.topbraidlive.org/ontologyprojects#Ontology> ;
+  a teamwork:Vocabulary ;
+  a owl:Ontology ;
+  metadata:status metadata:UnderDevelopmentStatus ;
+  <http://topbraid.org/swa#defaultNamespace> "http://ontologies.pg.com/pgontology/" ;
+  rdfs:comment "P&G customization of SysML to broaden it's ability to represent knowledge." ;
+  rdfs:label "SCHEMA_PG_MBSE" ;
+  owl:imports <http://datashapes.org/graphql> ;
+  owl:imports <http://edg.topbraid.solutions/1.0/schema/core> ;
+  owl:imports <http://edg.topbraid.solutions/1.0/schema/enterprise-models> ;
+  owl:imports <http://ontologies.pg.com/graph/SCHEMA_CSM_V1.0> ;
+  owl:imports <http://topbraid.org/teamworkconstraints> ;
+  owl:imports <urn:x-evn-master:schema_visualization_model_v1_0> ;
+.

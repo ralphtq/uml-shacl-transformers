@@ -1,0 +1,12 @@
+#!/bin/sh
+
+set -e
+
+cd "$(dirname "$0")/.."
+
+OUTDIR=module/lib/src/gen/scala
+SCALAXB="script/scalaxb --outdir $OUTDIR --package-dir"
+
+$SCALAXB --class-prefix Xsd -p rhapsody.lib.xsd module/lib/src/main/resources/xsd/Union.xsd
+sed -i.bak 's/trait/sealed trait/g' module/lib/src/gen/scala/rhapsody/lib/xsd/Union.scala
+mv module/lib/src/gen/scala/rhapsody/lib/xsd/Union.scala module/lib/src/gen/scala/rhapsody/lib/xsd/package.scala

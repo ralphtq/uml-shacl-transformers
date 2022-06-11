@@ -1,0 +1,7 @@
+#!/bin/sh
+
+set -e
+
+cd "$(dirname "$0")/.."
+
+../../edg-af/framework/script/cli upload-zip --app-base-url https://edg.mgordon.topquadrant.net/swimlanes --edg-base-url https://edg.mgordon.topquadrant.net/ --edg-password password32 --edg-username Admin_user

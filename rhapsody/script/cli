@@ -1,0 +1,8 @@
+#!/bin/sh
+
+set -e
+
+cd "$(dirname "$0")/.."
+
+#script/update
+java -jar module/cli/target/scala-2.11/rhapsody-cli.jar "$@"

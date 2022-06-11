@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  rhapsody-app:
+    build:
+      dockerfile: rhapsody/Dockerfile
+      context: .
+    container_name: rhapsody-app
+  swimlanes-app:
+    build: swimlanes
+    container_name: swimlanes-app

@@ -1,0 +1,7 @@
+#!/bin/sh
+
+set -e
+
+cd "$(dirname "$0")/.."
+
+../../edg-af/framework/script/cli upload-zip --app-base-url http://localhost:8081/rhapsody --edg-base-url http://localhost:8083/ --edg-password password32 --edg-username Administrator
