@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema targetNamespace="http://schema.omg.org/spec/mof/2.0/emof.xmi"
+    xmlns:emof="http://schema.omg.org/spec/mof/2.0/emof.xmi"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:import namespace="http://www.omg.org/XMI" schemaLocation="XMI.xsd"/>
+    <xsd:complexType name="Class">
+        <xsd:complexContent>
+            <xsd:extension base="emof:Type">
+                <xsd:choice maxOccurs="unbounded" minOccurs="0">
+                    <xsd:element name="isAbstract" type="xsd:boolean"/>
+                    <xsd:element name="ownedAttribute" type="emof:Property"/>
+                    <xsd:element name="ownedOperation" type="emof:Operation"/>
+                    <xsd:element name="superClass" type="emof:Class"/>
+                </xsd:choice>
+                <xsd:attribute name="isAbstract" type="xsd:boolean"/>
+                <xsd:attribute name="superClass" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="Class" type="emof:Class"/>
+    <xsd:complexType name="DataType">
+        <xsd:complexContent>
+            <xsd:extension base="emof:Type">
+                <xsd:choice maxOccurs="unbounded" minOccurs="0">
+                    <xsd:element name="serializable" type="xsd:boolean"/>
+                    <xsd:element name="defaultValue" type="xsd:string"/>
+                    <xsd:element name="allowNull" type="xsd:boolean"/>
+                </xsd:choice>
+                <xsd:attribute name="serializable" type="xsd:boolean"/>
+                <xsd:attribute name="defaultValue" type="xsd:string"/>
+                <xsd:attribute name="allowNull" type="xsd:boolean"/>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="DataType" type="emof:DataType"/>
+    <xsd:complexType name="Enumeration">
+        <xsd:complexContent>
+            <xsd:extension base="emof:DataType">
+                <xsd:choice maxOccurs="unbounded" minOccurs="0">
+                    <xsd:element name="ownedLiteral" type="emof:EnumerationLiteral"/>
+                </xsd:choice>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="Enumeration" type="emof:Enumeration"/>
+    <xsd:complexType name="EnumerationLiteral">
+        <xsd:complexContent>
+            <xsd:extension base="emof:NamedElement"/>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="EnumerationLiteral" type="emof:EnumerationLiteral"/>
+    <xsd:complexType name="NamedElement">
+        <xsd:complexContent>
+            <xsd:extension base="emof:Object">
+                <xsd:choice maxOccurs="unbounded" minOccurs="0">
+                    <xsd:element name="name" type="xsd:string"/>
+                </xsd:choice>
+                <xsd:attribute name="name" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="NamedElement" type="emof:NamedElement"/>
+    <xsd:complexType name="Operation">
+        <xsd:complexContent>
+            <xsd:extension base="emof:MultiplicityElement">
+                <xsd:choice maxOccurs="unbounded" minOccurs="0">
+                    <xsd:element name="raisedException" type="emof:Type"/>
+                    <xsd:element name="ownedParameter" type="emof:Parameter"/>
+                </xsd:choice>
+                <xsd:attribute name="raisedException" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="Operation" type="emof:Operation"/>
+    <xsd:complexType name="Package">
+        <xsd:complexContent>
+            <xsd:extension base="emof:NamedElement">
+                <xsd:choice maxOccurs="unbounded" minOccurs="0">
+                    <xsd:element name="uri" type="xsd:string"/>
+                    <xsd:element name="nestedPackage" type="emof:Package"/>
+                    <xsd:element name="ownedType" type="emof:Type"/>
+                </xsd:choice>
+                <xsd:attribute name="uri" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="Package" type="emof:Package"/>
+    <xsd:complexType name="Parameter">
+        <xsd:complexContent>
+            <xsd:extension base="emof:MultiplicityElement"/>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="Parameter" type="emof:Parameter"/>
+    <xsd:complexType name="PrimitiveType">
+        <xsd:complexContent>
+            <xsd:extension base="emof:DataType"/>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="PrimitiveType" type="emof:PrimitiveType"/>
+    <xsd:complexType name="TypedElement">
+        <xsd:complexContent>
+            <xsd:extension base="emof:NamedElement">
+                <xsd:choice maxOccurs="unbounded" minOccurs="0">
+                    <xsd:element name="type" type="emof:Type"/>
+                </xsd:choice>
+                <xsd:attribute name="type" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="TypedElement" type="emof:TypedElement"/>
+    <xsd:complexType name="Property">
+        <xsd:complexContent>
+            <xsd:extension base="emof:MultiplicityElement">
+                <xsd:choice maxOccurs="unbounded" minOccurs="0">
+                    <xsd:element name="isReadOnly" type="xsd:boolean"/>
+                    <xsd:element name="default" type="xsd:string"/>
+                    <xsd:element name="isComposite" type="xsd:boolean"/>
+                    <xsd:element name="isDerived" type="xsd:boolean"/>
+                    <xsd:element name="isID" type="xsd:boolean"/>
+                    <xsd:element name="opposite" type="emof:Property"/>
+                </xsd:choice>
+                <xsd:attribute name="isReadOnly" type="xsd:boolean"/>
+                <xsd:attribute name="default" type="xsd:string"/>
+                <xsd:attribute name="isComposite" type="xsd:boolean"/>
+                <xsd:attribute name="isDerived" type="xsd:boolean"/>
+                <xsd:attribute name="isID" type="xsd:boolean"/>
+                <xsd:attribute name="opposite" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="Property" type="emof:Property"/>
+    <xsd:complexType name="MultiplicityElement">
+        <xsd:complexContent>
+            <xsd:extension base="emof:TypedElement">
+                <xsd:choice maxOccurs="unbounded" minOccurs="0">
+                    <xsd:element name="isOrdered" type="xsd:boolean"/>
+                    <xsd:element name="isUnique" type="xsd:boolean"/>
+                    <xsd:element name="lower" type="xsd:int"/>
+                    <xsd:element name="upper" type="xsd:string"/>
+                </xsd:choice>
+                <xsd:attribute name="isOrdered" type="xsd:boolean"/>
+                <xsd:attribute name="isUnique" type="xsd:boolean"/>
+                <xsd:attribute name="lower" type="xsd:int"/>
+                <xsd:attribute name="upper" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="MultiplicityElement" type="emof:MultiplicityElement"/>
+    <xsd:complexType name="Object">
+        <xsd:complexContent>
+            <xsd:extension base="emof:Element"/>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="Object" type="emof:Object"/>
+    <xsd:complexType name="Element">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+            <xsd:element ref="xmi:Extension"/>
+        </xsd:choice>
+        <xsd:attribute ref="xmi:id"/>
+        <xsd:attributeGroup ref="xmi:ObjectAttribs"/>
+    </xsd:complexType>
+    <xsd:complexType name="Type">
+        <xsd:complexContent>
+            <xsd:extension base="emof:NamedElement"/>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="Type" type="emof:Type"/>
+    <xsd:complexType name="Tag">
+        <xsd:complexContent>
+            <xsd:extension base="emof:Object">
+                <xsd:choice maxOccurs="unbounded" minOccurs="0">
+                    <xsd:element name="name" type="xsd:string"/>
+                    <xsd:element name="value" type="xsd:string"/>
+                    <xsd:element name="element" type="emof:Element"/>
+                </xsd:choice>
+                <xsd:attribute name="name" type="xsd:string"/>
+                <xsd:attribute name="value" type="xsd:string"/>
+                <xsd:attribute name="element" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="Tag" type="emof:Tag"/>
+</xsd:schema>

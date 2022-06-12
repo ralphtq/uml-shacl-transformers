@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema
+    targetNamespace="http:///org/omg/uml2/infrastructure/identity"
+    xmlns:elements="http:///org/omg/uml2/infrastructure/elements"
+    xmlns:identity="http:///org/omg/uml2/infrastructure/identity"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:import namespace="http:///org/omg/uml2/infrastructure/elements" schemaLocation="elements.xsd"/>
+    <xsd:import namespace="http://www.omg.org/XMI" schemaLocation="XMI.xsd"/>
+    <xsd:complexType name="Extent">
+        <xsd:complexContent>
+            <xsd:extension base="elements:Element"/>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="Extent" type="identity:Extent"/>
+    <xsd:complexType name="URIExtent">
+        <xsd:complexContent>
+            <xsd:extension base="identity:Extent"/>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="URIExtent" type="identity:URIExtent"/>
+    <xsd:complexType name="Object">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+            <xsd:element ref="xmi:Extension"/>
+        </xsd:choice>
+        <xsd:attribute ref="xmi:id"/>
+        <xsd:attributeGroup ref="xmi:ObjectAttribs"/>
+    </xsd:complexType>
+    <xsd:element name="Object" type="identity:Object"/>
+    <xsd:complexType name="Property">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+            <xsd:element name="isID" type="xsd:boolean"/>
+            <xsd:element ref="xmi:Extension"/>
+        </xsd:choice>
+        <xsd:attribute ref="xmi:id"/>
+        <xsd:attributeGroup ref="xmi:ObjectAttribs"/>
+        <xsd:attribute name="isID" type="xsd:boolean"/>
+    </xsd:complexType>
+    <xsd:element name="Property" type="identity:Property"/>
+    <xsd:complexType name="Package">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+            <xsd:element name="uri" type="xsd:string"/>
+            <xsd:element ref="xmi:Extension"/>
+        </xsd:choice>
+        <xsd:attribute ref="xmi:id"/>
+        <xsd:attributeGroup ref="xmi:ObjectAttribs"/>
+        <xsd:attribute name="uri" type="xsd:string"/>
+    </xsd:complexType>
+    <xsd:element name="Package" type="identity:Package"/>
+</xsd:schema>

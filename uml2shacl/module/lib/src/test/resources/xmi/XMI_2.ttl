@@ -1,0 +1,643 @@
+# baseURI: http://schema.omg.org/spec/XMI/2.1
+# imports: http://topbraid.org/sxml
+# imports: http://www.linkedmodel.org/schema/dtype
+
+# c14n-version: 3
+@prefix XMI-2_1: <http://schema.omg.org/spec/XMI/2.1#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dtype: <http://www.linkedmodel.org/schema/dtype#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sxml: <http://topbraid.org/sxml#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+dc:description
+  rdfs:label "description"^^xsd:string ;
+.
+<http://schema.omg.org/spec/XMI/2.1>
+  rdf:type owl:Ontology ;
+  dc:description "CLASS: Delete"^^xsd:string ;
+  owl:imports <http://topbraid.org/sxml> ;
+  owl:imports <http://www.linkedmodel.org/schema/dtype> ;
+  owl:versionInfo "Created with TopBraid Composer from the XML Schema(s) http://schema.omg.org/spec/XMI/2.1"^^xsd:string ;
+.
+XMI-2_1:Add
+  rdf:type owl:Class ;
+  sxml:tag "http://schema.omg.org/spec/XMI/2.1#Add" ;
+  rdfs:label "Add"^^xsd:string ;
+  rdfs:subClassOf XMI-2_1:Difference ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      sxml:isAttribute "true"^^xsd:boolean ;
+      owl:allValuesFrom xsd:IDREFS ;
+      owl:onProperty XMI-2_1:additionRef ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      sxml:isAttribute "true"^^xsd:boolean ;
+      owl:allValuesFrom xsd:string ;
+      owl:onProperty XMI-2_1:position ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:int ;
+      owl:onProperty XMI-2_1:additionRef ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:int ;
+      owl:onProperty XMI-2_1:position ;
+    ] ;
+.
+XMI-2_1:Any
+  rdf:type owl:Class ;
+  sxml:tag "http://schema.omg.org/spec/XMI/2.1#Any" ;
+  rdfs:label "Any"^^xsd:string ;
+.
+XMI-2_1:Delete
+  rdf:type owl:Class ;
+  sxml:tag "http://schema.omg.org/spec/XMI/2.1#Delete" ;
+  rdfs:label "Delete"^^xsd:string ;
+  rdfs:subClassOf XMI-2_1:Difference ;
+.
+XMI-2_1:Difference
+  rdf:type owl:Class ;
+  sxml:tag "http://schema.omg.org/spec/XMI/2.1#Difference" ;
+  rdfs:label "Difference"^^xsd:string ;
+  rdfs:subClassOf XMI-2_1:ObjectAttribs ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      sxml:isAttribute "false"^^xsd:boolean ;
+      sxml:order "0"^^xsd:int ;
+      owl:allValuesFrom XMI-2_1:Difference-target ;
+      owl:onProperty XMI-2_1:targetRef ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      sxml:isAttribute "false"^^xsd:boolean ;
+      sxml:order "1"^^xsd:int ;
+      owl:allValuesFrom XMI-2_1:Difference ;
+      owl:onProperty XMI-2_1:differenceRef ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      sxml:isAttribute "false"^^xsd:boolean ;
+      sxml:order "2"^^xsd:int ;
+      owl:allValuesFrom XMI-2_1:Difference ;
+      owl:onProperty XMI-2_1:containerRef ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      sxml:isAttribute "false"^^xsd:boolean ;
+      sxml:order "3"^^xsd:int ;
+      owl:allValuesFrom XMI-2_1:Extension ;
+      owl:onProperty XMI-2_1:extensionRef ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      sxml:isAttribute "true"^^xsd:boolean ;
+      owl:allValuesFrom xsd:ID ;
+      owl:onProperty XMI-2_1:id ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      sxml:isAttribute "true"^^xsd:boolean ;
+      owl:allValuesFrom xsd:IDREFS ;
+      owl:onProperty XMI-2_1:containerRef ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      sxml:isAttribute "true"^^xsd:boolean ;
+      owl:allValuesFrom xsd:IDREFS ;
+      owl:onProperty XMI-2_1:targetRef ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:int ;
+      owl:onProperty XMI-2_1:containerRef ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:int ;
+      owl:onProperty XMI-2_1:id ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:int ;
+      owl:onProperty XMI-2_1:targetRef ;
+    ] ;
+.
+XMI-2_1:Difference-target
+  rdf:type owl:Class ;
+  rdfs:label "Difference-target"^^xsd:string ;
+.
+XMI-2_1:Documentation
+  rdf:type owl:Class ;
+  sxml:tag "http://schema.omg.org/spec/XMI/2.1#Documentation" ;
+  rdfs:label "Documentation"^^xsd:string ;
+  rdfs:subClassOf XMI-2_1:ObjectAttribs ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      sxml:isAttribute "false"^^xsd:boolean ;
+      sxml:order "0"^^xsd:int ;
+      owl:allValuesFrom xsd:string ;
+      owl:onProperty XMI-2_1:contact ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      sxml:isAttribute "false"^^xsd:boolean ;
+      sxml:order "1"^^xsd:int ;
+      owl:allValuesFrom xsd:string ;
+      owl:onProperty XMI-2_1:exporter ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      sxml:isAttribute "false"^^xsd:boolean ;
+      sxml:order "2"^^xsd:int ;
+      owl:allValuesFrom xsd:string ;
+      owl:onProperty XMI-2_1:exporterVersion ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      sxml:isAttribute "false"^^xsd:boolean ;
+      sxml:order "3"^^xsd:int ;
+      owl:allValuesFrom xsd:string ;
+      owl:onProperty XMI-2_1:exporterID ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      sxml:isAttribute "false"^^xsd:boolean ;
+      sxml:order "4"^^xsd:int ;
+      owl:allValuesFrom xsd:string ;
+      owl:onProperty XMI-2_1:longDescription ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      sxml:isAttribute "false"^^xsd:boolean ;
+      sxml:order "5"^^xsd:int ;
+      owl:allValuesFrom xsd:string ;
+      owl:onProperty XMI-2_1:shortDescription ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      sxml:isAttribute "false"^^xsd:boolean ;
+      sxml:order "6"^^xsd:int ;
+      owl:allValuesFrom xsd:string ;
+      owl:onProperty XMI-2_1:notice ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      sxml:isAttribute "false"^^xsd:boolean ;
+      sxml:order "7"^^xsd:int ;
+      owl:allValuesFrom xsd:string ;
+      owl:onProperty XMI-2_1:owner ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      sxml:isAttribute "false"^^xsd:boolean ;
+      sxml:order "8"^^xsd:int ;
+      owl:allValuesFrom XMI-2_1:Extension ;
+      owl:onProperty XMI-2_1:extensionRef ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      sxml:isAttribute "true"^^xsd:boolean ;
+      owl:allValuesFrom xsd:ID ;
+      owl:onProperty XMI-2_1:id ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:int ;
+      owl:onProperty XMI-2_1:contact ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:int ;
+      owl:onProperty XMI-2_1:exporter ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:int ;
+      owl:onProperty XMI-2_1:exporterVersion ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:int ;
+      owl:onProperty XMI-2_1:id ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:int ;
+      owl:onProperty XMI-2_1:longDescription ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:int ;
+      owl:onProperty XMI-2_1:notice ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:int ;
+      owl:onProperty XMI-2_1:owner ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:int ;
+      owl:onProperty XMI-2_1:shortDescription ;
+    ] ;
+.
+XMI-2_1:Extension
+  rdf:type owl:Class ;
+  sxml:tag "http://schema.omg.org/spec/XMI/2.1#Extension" ;
+  rdfs:label "Extension"^^xsd:string ;
+  rdfs:subClassOf XMI-2_1:ObjectAttribs ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      sxml:isAttribute "true"^^xsd:boolean ;
+      owl:allValuesFrom xsd:ID ;
+      owl:onProperty XMI-2_1:id ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      sxml:isAttribute "true"^^xsd:boolean ;
+      owl:allValuesFrom xsd:string ;
+      owl:onProperty XMI-2_1:extender ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      sxml:isAttribute "true"^^xsd:boolean ;
+      owl:allValuesFrom xsd:string ;
+      owl:onProperty XMI-2_1:extenderID ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:int ;
+      owl:onProperty XMI-2_1:extender ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:int ;
+      owl:onProperty XMI-2_1:extenderID ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:int ;
+      owl:onProperty XMI-2_1:id ;
+    ] ;
+.
+XMI-2_1:IdentityAttribs
+  rdf:type owl:Class ;
+  sxml:tag "http://schema.omg.org/spec/XMI/2.1#IdentityAttribs" ;
+  rdfs:label "Identity attribs"^^xsd:string ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      sxml:isAttribute "true"^^xsd:boolean ;
+      owl:allValuesFrom xsd:string ;
+      owl:onProperty XMI-2_1:label ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      sxml:isAttribute "true"^^xsd:boolean ;
+      owl:allValuesFrom xsd:string ;
+      owl:onProperty XMI-2_1:uuid ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:int ;
+      owl:onProperty XMI-2_1:label ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:int ;
+      owl:onProperty XMI-2_1:uuid ;
+    ] ;
+.
+XMI-2_1:LinkAttribs
+  rdf:type owl:Class ;
+  sxml:tag "http://schema.omg.org/spec/XMI/2.1#LinkAttribs" ;
+  rdfs:label "Link attribs"^^xsd:string ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      sxml:isAttribute "true"^^xsd:boolean ;
+      owl:allValuesFrom xsd:IDREF ;
+      owl:onProperty XMI-2_1:idref ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      sxml:isAttribute "true"^^xsd:boolean ;
+      owl:allValuesFrom xsd:string ;
+      owl:onProperty XMI-2_1:href ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:int ;
+      owl:onProperty XMI-2_1:href ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:int ;
+      owl:onProperty XMI-2_1:idref ;
+    ] ;
+.
+XMI-2_1:ObjectAttribs
+  rdf:type owl:Class ;
+  sxml:tag "http://schema.omg.org/spec/XMI/2.1#ObjectAttribs" ;
+  rdfs:label "Object attribs"^^xsd:string ;
+  rdfs:subClassOf XMI-2_1:IdentityAttribs ;
+  rdfs:subClassOf XMI-2_1:LinkAttribs ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      sxml:isAttribute "true"^^xsd:boolean ;
+      owl:allValuesFrom xsd:QName ;
+      owl:onProperty XMI-2_1:type ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      sxml:isAttribute "true"^^xsd:boolean ;
+      owl:allValuesFrom xsd:string ;
+      owl:onProperty XMI-2_1:version ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:int ;
+      owl:onProperty XMI-2_1:type ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:int ;
+      owl:onProperty XMI-2_1:version ;
+    ] ;
+.
+XMI-2_1:Replace
+  rdf:type owl:Class ;
+  sxml:tag "http://schema.omg.org/spec/XMI/2.1#Replace" ;
+  rdfs:label "Replace"^^xsd:string ;
+  rdfs:subClassOf XMI-2_1:Difference ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      sxml:isAttribute "true"^^xsd:boolean ;
+      owl:allValuesFrom xsd:IDREFS ;
+      owl:onProperty XMI-2_1:replacementRef ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      sxml:isAttribute "true"^^xsd:boolean ;
+      owl:allValuesFrom xsd:string ;
+      owl:onProperty XMI-2_1:position ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:int ;
+      owl:onProperty XMI-2_1:position ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:int ;
+      owl:onProperty XMI-2_1:replacementRef ;
+    ] ;
+.
+XMI-2_1:XMI
+  rdf:type owl:Class ;
+  sxml:tag "http://schema.omg.org/spec/XMI/2.1#XMI" ;
+  rdfs:label "XMI"^^xsd:string ;
+  rdfs:subClassOf XMI-2_1:IdentityAttribs ;
+  rdfs:subClassOf XMI-2_1:LinkAttribs ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      sxml:isAttribute "true"^^xsd:boolean ;
+      owl:allValuesFrom xsd:ID ;
+      owl:onProperty XMI-2_1:id ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      sxml:isAttribute "true"^^xsd:boolean ;
+      owl:allValuesFrom xsd:QName ;
+      owl:onProperty XMI-2_1:type ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      sxml:isAttribute "true"^^xsd:boolean ;
+      owl:allValuesFrom xsd:string ;
+      owl:onProperty XMI-2_1:version ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:cardinality "1"^^xsd:int ;
+      owl:onProperty XMI-2_1:version ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:int ;
+      owl:onProperty XMI-2_1:id ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:int ;
+      owl:onProperty XMI-2_1:type ;
+    ] ;
+.
+XMI-2_1:XMIPackage
+  rdf:type owl:Class ;
+  sxml:tag "http://schema.omg.org/spec/XMI/2.1#XMIPackage" ;
+  rdfs:label "XMIPackage"^^xsd:string ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      sxml:isAttribute "false"^^xsd:boolean ;
+      sxml:order "0"^^xsd:int ;
+      owl:allValuesFrom XMI-2_1:Difference ;
+      owl:onProperty XMI-2_1:differenceRef ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      sxml:isAttribute "false"^^xsd:boolean ;
+      sxml:order "1"^^xsd:int ;
+      owl:allValuesFrom XMI-2_1:Add ;
+      owl:onProperty XMI-2_1:addRef ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      sxml:isAttribute "false"^^xsd:boolean ;
+      sxml:order "2"^^xsd:int ;
+      owl:allValuesFrom XMI-2_1:Replace ;
+      owl:onProperty XMI-2_1:replaceRef ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      sxml:isAttribute "false"^^xsd:boolean ;
+      sxml:order "3"^^xsd:int ;
+      owl:allValuesFrom XMI-2_1:Delete ;
+      owl:onProperty XMI-2_1:deleteRef ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      sxml:isAttribute "false"^^xsd:boolean ;
+      sxml:order "4"^^xsd:int ;
+      owl:allValuesFrom XMI-2_1:XMI ;
+      owl:onProperty XMI-2_1:xMIRef ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      sxml:isAttribute "false"^^xsd:boolean ;
+      sxml:order "5"^^xsd:int ;
+      owl:allValuesFrom XMI-2_1:Documentation ;
+      owl:onProperty XMI-2_1:documentationRef ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      sxml:isAttribute "false"^^xsd:boolean ;
+      sxml:order "6"^^xsd:int ;
+      owl:allValuesFrom XMI-2_1:Extension ;
+      owl:onProperty XMI-2_1:extensionRef ;
+    ] ;
+.
+XMI-2_1:addRef
+  rdf:type owl:ObjectProperty ;
+  sxml:tag "http://schema.omg.org/spec/XMI/2.1#Add" ;
+  rdfs:label "add ref"^^xsd:string ;
+.
+XMI-2_1:additionRef
+  rdf:type owl:ObjectProperty ;
+  sxml:tag "http://schema.omg.org/spec/XMI/2.1#addition" ;
+  rdfs:label "addition ref"^^xsd:string ;
+.
+XMI-2_1:contact
+  rdf:type owl:DatatypeProperty ;
+  sxml:attribute "http://schema.omg.org/spec/XMI/2.1#contact" ;
+  rdfs:label "contact"^^xsd:string ;
+.
+XMI-2_1:containerRef
+  rdf:type owl:ObjectProperty ;
+  sxml:tag "http://schema.omg.org/spec/XMI/2.1#container" ;
+  rdfs:label "container ref"^^xsd:string ;
+.
+XMI-2_1:deleteRef
+  rdf:type owl:ObjectProperty ;
+  sxml:tag "http://schema.omg.org/spec/XMI/2.1#Delete" ;
+  rdfs:label "delete ref"^^xsd:string ;
+.
+XMI-2_1:differenceRef
+  rdf:type owl:ObjectProperty ;
+  sxml:tag "http://schema.omg.org/spec/XMI/2.1#Difference" ;
+  sxml:tag "http://schema.omg.org/spec/XMI/2.1#difference" ;
+  rdfs:label "difference ref"^^xsd:string ;
+.
+XMI-2_1:documentationRef
+  rdf:type owl:ObjectProperty ;
+  sxml:tag "http://schema.omg.org/spec/XMI/2.1#Documentation" ;
+  rdfs:label "documentation ref"^^xsd:string ;
+.
+XMI-2_1:exporter
+  rdf:type owl:DatatypeProperty ;
+  sxml:attribute "http://schema.omg.org/spec/XMI/2.1#exporter" ;
+  rdfs:label "exporter"^^xsd:string ;
+.
+XMI-2_1:exporterID
+  rdf:type owl:DatatypeProperty ;
+  sxml:attribute "http://schema.omg.org/spec/XMI/2.1#exporterID" ;
+  rdfs:label "exporter ID"^^xsd:string ;
+.
+XMI-2_1:exporterVersion
+  rdf:type owl:DatatypeProperty ;
+  sxml:attribute "http://schema.omg.org/spec/XMI/2.1#exporterVersion" ;
+  rdfs:label "exporter version"^^xsd:string ;
+.
+XMI-2_1:extender
+  rdf:type owl:DatatypeProperty ;
+  sxml:attribute "http://schema.omg.org/spec/XMI/2.1#extender" ;
+  rdfs:label "extender"^^xsd:string ;
+.
+XMI-2_1:extenderID
+  rdf:type owl:DatatypeProperty ;
+  sxml:attribute "http://schema.omg.org/spec/XMI/2.1#extenderID" ;
+  rdfs:label "extender ID"^^xsd:string ;
+.
+XMI-2_1:extensionRef
+  rdf:type owl:ObjectProperty ;
+  sxml:tag "http://schema.omg.org/spec/XMI/2.1#Extension" ;
+  rdfs:label "extension ref"^^xsd:string ;
+.
+XMI-2_1:href
+  rdf:type owl:DatatypeProperty ;
+  sxml:attribute "http://schema.omg.org/spec/XMI/2.1#href" ;
+  rdfs:label "href"^^xsd:string ;
+.
+XMI-2_1:id
+  rdf:type owl:DatatypeProperty ;
+  sxml:attribute "http://schema.omg.org/spec/XMI/2.1#id" ;
+  rdfs:label "id"^^xsd:string ;
+.
+XMI-2_1:idref
+  rdf:type owl:DatatypeProperty ;
+  sxml:attribute "http://schema.omg.org/spec/XMI/2.1#idref" ;
+  rdfs:label "idref"^^xsd:string ;
+.
+XMI-2_1:label
+  rdf:type owl:DatatypeProperty ;
+  sxml:attribute "http://schema.omg.org/spec/XMI/2.1#label" ;
+  rdfs:label "label"^^xsd:string ;
+.
+XMI-2_1:longDescription
+  rdf:type owl:DatatypeProperty ;
+  sxml:attribute "http://schema.omg.org/spec/XMI/2.1#longDescription" ;
+  rdfs:label "long description"^^xsd:string ;
+.
+XMI-2_1:notice
+  rdf:type owl:DatatypeProperty ;
+  sxml:attribute "http://schema.omg.org/spec/XMI/2.1#notice" ;
+  rdfs:label "notice"^^xsd:string ;
+.
+XMI-2_1:owner
+  rdf:type owl:DatatypeProperty ;
+  sxml:attribute "http://schema.omg.org/spec/XMI/2.1#owner" ;
+  rdfs:label "owner"^^xsd:string ;
+.
+XMI-2_1:position
+  rdf:type owl:DatatypeProperty ;
+  sxml:attribute "http://schema.omg.org/spec/XMI/2.1#position" ;
+  rdfs:label "position"^^xsd:string ;
+.
+XMI-2_1:replaceRef
+  rdf:type owl:ObjectProperty ;
+  sxml:tag "http://schema.omg.org/spec/XMI/2.1#Replace" ;
+  rdfs:label "replace ref"^^xsd:string ;
+.
+XMI-2_1:replacementRef
+  rdf:type owl:ObjectProperty ;
+  sxml:tag "http://schema.omg.org/spec/XMI/2.1#replacement" ;
+  rdfs:label "replacement ref"^^xsd:string ;
+.
+XMI-2_1:shortDescription
+  rdf:type owl:DatatypeProperty ;
+  sxml:attribute "http://schema.omg.org/spec/XMI/2.1#shortDescription" ;
+  rdfs:label "short description"^^xsd:string ;
+.
+XMI-2_1:targetRef
+  rdf:type owl:ObjectProperty ;
+  sxml:tag "http://schema.omg.org/spec/XMI/2.1#target" ;
+  rdfs:label "target ref"^^xsd:string ;
+.
+XMI-2_1:type
+  rdf:type owl:DatatypeProperty ;
+  sxml:attribute "http://schema.omg.org/spec/XMI/2.1#type" ;
+  rdfs:label "type"^^xsd:string ;
+.
+XMI-2_1:uuid
+  rdf:type owl:DatatypeProperty ;
+  sxml:attribute "http://schema.omg.org/spec/XMI/2.1#uuid" ;
+  rdfs:label "uuid"^^xsd:string ;
+.
+XMI-2_1:version
+  rdf:type owl:DatatypeProperty ;
+  sxml:attribute "http://schema.omg.org/spec/XMI/2.1#version" ;
+  rdfs:label "version"^^xsd:string ;
+.
+XMI-2_1:xMIRef
+  rdf:type owl:ObjectProperty ;
+  sxml:tag "http://schema.omg.org/spec/XMI/2.1#XMI" ;
+  rdfs:label "x MIRef"^^xsd:string ;
+.
+skos:prefLabel
+  rdf:type owl:AnnotationProperty ;
+  rdfs:label "pref label"^^xsd:string ;
+.
