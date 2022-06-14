@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs='http://www.w3.org/2001/XMLSchema' xmlns:oTemporal='http://www.sparxsystems.com/profiles/oTemporal/1.0' xmlns:oFinancal='http://www.sparxsystems.com/profiles/oFinancal/1.0' xmlns:oBusiness='http://www.sparxsystems.com/profiles/oBusiness/1.0' xmlns:xmi='http://schema.omg.org/spec/XMI/2.1' xmlns:dt='urn:schemas-microsoft-com:datatypes' xmlns:OWL_Profile='http://www.sparxsystems.com/profiles/OWL_Profile/1.0' xmlns:oMath='http://www.sparxsystems.com/profiles/oMath/1.0' xmlns:thecustomprofile='http://www.sparxsystems.com/profiles/thecustomprofile/1.0' xmlns:EAUML='http://www.sparxsystems.com/profiles/EAUML/1.0' xmlns:oInformation='http://www.sparxsystems.com/profiles/oInformation/1.0' xmlns:oSecurities='http://www.sparxsystems.com/profiles/oSecurities/1.0' xmlns:oCore='http://www.sparxsystems.com/profiles/oCore/1.0' xmlns:oGeographical='http://www.sparxsystems.com/profiles/oGeographical/1.0' xmlns:uml='http://schema.omg.org/spec/UML/2.1' xmlns:RDF_Profile='http://www.sparxsystems.com/profiles/RDF_Profile/1.0' xmlns:oActivity='http://www.sparxsystems.com/profiles/oActivity/1.0' xmlns:oRisk='http://www.sparxsystems.com/profiles/oRisk/1.0' xmlns:oLogic='http://www.sparxsystems.com/profiles/oLogic/1.0' xmlns:oLegal='http://www.sparxsystems.com/profiles/oLegal/1.0' xmlns:u='http://schema.omg.org/spec/UML/2.1/' elementFormDefault='qualified' targetNamespace='http://www.sparxsystems.com/profiles/oTemporal/1.0'>
+    <xs:import schemaLocation='XmplifyDerivedSchema.xsd'/>
+    <xs:import namespace='http://schema.omg.org/spec/UML/2.1' schemaLocation='uml.xsd'/>
+    <xs:import namespace='http://schema.omg.org/spec/UML/2.1/' schemaLocation='u.xsd'/>
+    <xs:import namespace='http://schema.omg.org/spec/XMI/2.1' schemaLocation='xmi.xsd'/>
+    <xs:import namespace='http://www.sparxsystems.com/profiles/EAUML/1.0' schemaLocation='EAUML.xsd'/>
+    <xs:import namespace='http://www.sparxsystems.com/profiles/OWL_Profile/1.0' schemaLocation='OWL_Profile.xsd'/>
+    <xs:import namespace='http://www.sparxsystems.com/profiles/RDF_Profile/1.0' schemaLocation='RDF_Profile.xsd'/>
+    <xs:import namespace='http://www.sparxsystems.com/profiles/oActivity/1.0' schemaLocation='oActivity.xsd'/>
+    <xs:import namespace='http://www.sparxsystems.com/profiles/oBusiness/1.0' schemaLocation='oBusiness.xsd'/>
+    <xs:import namespace='http://www.sparxsystems.com/profiles/oCore/1.0' schemaLocation='oCore.xsd'/>
+    <xs:import namespace='http://www.sparxsystems.com/profiles/oFinancal/1.0' schemaLocation='oFinancal.xsd'/>
+    <xs:import namespace='http://www.sparxsystems.com/profiles/oGeographical/1.0' schemaLocation='oGeographical.xsd'/>
+    <xs:import namespace='http://www.sparxsystems.com/profiles/oInformation/1.0' schemaLocation='oInformation.xsd'/>
+    <xs:import namespace='http://www.sparxsystems.com/profiles/oLegal/1.0' schemaLocation='oLegal.xsd'/>
+    <xs:import namespace='http://www.sparxsystems.com/profiles/oLogic/1.0' schemaLocation='oLogic.xsd'/>
+    <xs:import namespace='http://www.sparxsystems.com/profiles/oMath/1.0' schemaLocation='oMath.xsd'/>
+    <xs:import namespace='http://www.sparxsystems.com/profiles/oRisk/1.0' schemaLocation='oRisk.xsd'/>
+    <xs:import namespace='http://www.sparxsystems.com/profiles/oSecurities/1.0' schemaLocation='oSecurities.xsd'/>
+    <xs:import namespace='http://www.sparxsystems.com/profiles/thecustomprofile/1.0' schemaLocation='thecustomprofile.xsd'/>
+    <xs:import namespace='urn:schemas-microsoft-com:datatypes' schemaLocation='dt.xsd'/>
+    <xs:element name='Beginning'>
+        <xs:complexType>
+            <xs:attribute name='base_Association' use='required'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='Duration'>
+        <xs:complexType>
+            <xs:attribute name='base_Class' use='required'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='End'>
+        <xs:complexType>
+            <xs:attribute name='base_Association'/>
+            <xs:attribute name='base_Class'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='Length'>
+        <xs:complexType>
+            <xs:attribute name='base_Association'/>
+            <xs:attribute name='base_Class'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='RelativeTime'>
+        <xs:complexType>
+            <xs:attribute name='base_Class' use='required'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='RelativeTo'>
+        <xs:complexType>
+            <xs:attribute name='base_Association'/>
+            <xs:attribute name='base_Class'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='Schedule'>
+        <xs:complexType>
+            <xs:attribute name='base_Class' use='required'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='Scheduling'>
+        <xs:complexType>
+            <xs:attribute name='base_Association' use='required'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='Temporal'>
+        <xs:complexType>
+            <xs:attribute name='base_Class' use='required'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='TemporalDefinition'>
+        <xs:complexType>
+            <xs:attribute name='base_Association'/>
+            <xs:attribute name='base_Class'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='TemporalEntity'>
+        <xs:complexType>
+            <xs:attribute name='base_Class' use='required'/>
+            <xs:attribute name='synonym'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='TemporalUnit'>
+        <xs:complexType>
+            <xs:attribute name='base_Class' use='required'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='Temporal_Derivation'>
+        <xs:complexType>
+            <xs:attribute name='__EAStereoName' use='required'/>
+            <xs:attribute name='base_Class' use='required'/>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

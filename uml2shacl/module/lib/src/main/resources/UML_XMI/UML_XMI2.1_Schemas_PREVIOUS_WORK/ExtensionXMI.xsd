@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema
+    targetNamespace="http:///org/omg/uml2/infrastructure/extension"
+    xmlns:elements="http:///org/omg/uml2/infrastructure/elements"
+    xmlns:extension="http:///org/omg/uml2/infrastructure/extension"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:import namespace="http:///org/omg/uml2/infrastructure/elements" schemaLocation="elements.xsd"/>
+    <xsd:import namespace="http://www.omg.org/XMI" schemaLocation="XMI.xsd"/>
+    <xsd:complexType name="Tag">
+        <xsd:complexContent>
+            <xsd:extension base="extension:Object">
+                <xsd:choice maxOccurs="unbounded" minOccurs="0">
+                    <xsd:element name="name" type="xsd:string"/>
+                    <xsd:element name="value" type="xsd:string"/>
+                    <xsd:element name="element" type="elements:Element"/>
+                </xsd:choice>
+                <xsd:attribute name="name" type="xsd:string"/>
+                <xsd:attribute name="value" type="xsd:string"/>
+                <xsd:attribute name="element" type="xsd:string"/>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="Tag" type="extension:Tag"/>
+    <xsd:complexType name="Object">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+            <xsd:element ref="xmi:Extension"/>
+        </xsd:choice>
+        <xsd:attribute ref="xmi:id"/>
+        <xsd:attributeGroup ref="xmi:ObjectAttribs"/>
+    </xsd:complexType>
+    <xsd:element name="Object" type="extension:Object"/>
+</xsd:schema>

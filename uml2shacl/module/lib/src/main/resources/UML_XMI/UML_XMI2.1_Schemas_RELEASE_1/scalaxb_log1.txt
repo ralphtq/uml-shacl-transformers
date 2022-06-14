@@ -1,0 +1,25 @@
+$ scalaxb xmi2.1.xsd -p umlxmi2pt1
+OpenJDK 64-Bit Server VM warning: Ignoring option MaxPermSize; support was removed in 8.0
+WARN  [2022-06-14 15:46:26,088] module: xmi2.1.xsd imports uml.xsd but no schema with that name was compiled together.
+WARN  [2022-06-14 15:46:26,090] module: Warning: xmi2.1.xsd includes xmi.xsd but no schema with that name was compiled together.
+WARN  [2022-06-14 15:46:26,093] module: added uml.xsd to compilation.
+WARN  [2022-06-14 15:46:26,103] module: added xmi.xsd to compilation.
+generated ./xmi2.1.scala.
+generated ./xmi.scala.
+generated ./uml.scala.
+generated ./xmlprotocol.scala.
+generated ./scalaxb.scala.
+$ ls -al
+drwxr-xr-x  12 ralphtq  staff      384 Jun 14 15:54 .
+drwxr-xr-x   7 ralphtq  staff      224 Jun 14 15:44 ..
+-rw-r--r--@  1 ralphtq  staff  2804722 Jun 14 15:36 AIS_Export_v1_s1.xml
+-rw-r--r--   1 ralphtq  staff    50967 Jun 14 15:46 scalaxb.scala
+-rw-r--r--   1 ralphtq  staff      652 Jun 14 15:54 scalaxb_log1.txt
+-rw-r--r--   1 ralphtq  staff      418 Jun 14 15:46 uml.scala
+-rw-r--r--@  1 ralphtq  staff      788 Jun 14 13:01 uml.xsd
+-rw-r--r--   1 ralphtq  staff    19845 Jun 14 15:46 xmi.scala
+-rw-r--r--@  1 ralphtq  staff    21401 Jun 14 13:00 xmi.xsd
+-rw-r--r--   1 ralphtq  staff      889 Jun 14 15:46 xmi2.1.scala
+-rw-r--r--@  1 ralphtq  staff     1463 Jun 14 13:00 xmi2.1.xsd
+-rw-r--r--   1 ralphtq  staff   159109 Jun 14 15:46 xmlprotocol.scala
+$

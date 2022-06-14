@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema
+           xmlns:xs='http://www.w3.org/2001/XMLSchema'
+           xmlns:xmi='http://schema.omg.org/spec/XMI/2.1'
+           elementFormDefault='qualified' 
+           targetNamespace='http://schema.omg.org/spec/UML/2.1'>
+    <xs:import namespace='http://schema.omg.org/spec/XMI/2.1' schemaLocation='xmi.xsd'/>
+    <xs:element name='Model'>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref='xmi:packagedElement'/>
+            </xs:sequence>
+            <xs:attribute name='name' use='required' type='xs:NCName'/>
+            <xs:attribute name='visibility' use='required' type='xs:NCName'/>
+            <xs:attribute ref='xmi:type' use='required'/>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

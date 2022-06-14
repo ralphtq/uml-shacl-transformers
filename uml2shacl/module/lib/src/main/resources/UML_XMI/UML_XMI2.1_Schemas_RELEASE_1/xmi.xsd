@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema
+    xmlns:xs='http://www.w3.org/2001/XMLSchema'
+    xmlns:xmi='http://schema.omg.org/spec/XMI/2.1'
+    targetNamespace='http://schema.omg.org/spec/XMI/2.1'
+    elementFormDefault='qualified'>
+    <xs:element name='connectors'>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs='unbounded' ref='xmi:connector'/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='connector'>
+        <xs:complexType>
+            <xs:attribute name='name'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='packagedElement'>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:choice minOccurs='0' maxOccurs='unbounded'>
+                    <xs:element ref='xmi:ownedComment'/>
+                    <xs:element ref='xmi:packagedElement'/>
+                </xs:choice>
+                <xs:choice>
+                    <xs:element minOccurs='0' maxOccurs='unbounded' ref='xmi:ownedLiteral'/>
+                    <xs:choice minOccurs='0' maxOccurs='unbounded'>
+                        <xs:element ref='xmi:memberEnd'/>
+                        <xs:element ref='xmi:ownedEnd'/>
+                    </xs:choice>
+                    <xs:choice minOccurs='0' maxOccurs='unbounded'>
+                        <xs:element ref='xmi:generalization'/>
+                        <xs:element ref='xmi:ownedAttribute'/>
+                    </xs:choice>
+                </xs:choice>
+            </xs:sequence>
+            <xs:attribute name='client'/>
+            <xs:attribute name='isAbstract' type='xs:NCName'/>
+            <xs:attribute name='memberEnd'/>
+            <xs:attribute name='name'/>
+            <xs:attribute name='supplier'/>
+            <xs:attribute name='visibility' type='xs:NCName'/>
+            <xs:attributeGroup ref='xmi:id1'/>
+            <xs:attribute ref='xmi:type' use='required'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='ownedLiteral'>
+        <xs:complexType>
+            <xs:attribute name='name' use='required'/>
+            <xs:attribute name='visibility' use='required' type='xs:NCName'/>
+            <xs:attributeGroup ref='xmi:id1'/>
+            <xs:attribute ref='xmi:type' use='required'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='memberEnd'>
+        <xs:complexType>
+            <xs:attributeGroup ref='xmi:idref'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='ownedEnd'>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element minOccurs='0' ref='xmi:type'/>
+                <xs:sequence minOccurs='0'>
+                    <xs:element ref='xmi:lowerValue'/>
+                    <xs:element ref='xmi:upperValue'/>
+                </xs:sequence>
+            </xs:sequence>
+            <xs:attribute name='aggregation' type='xs:NCName'/>
+            <xs:attribute name='association'/>
+            <xs:attribute name='isComposite' type='xs:NCName'/>
+            <xs:attribute name='isDerived' type='xs:NCName'/>
+            <xs:attribute name='isDerivedUnion' type='xs:NCName'/>
+            <xs:attribute name='isOrdered' type='xs:NCName'/>
+            <xs:attribute name='isReadOnly' type='xs:NCName'/>
+            <xs:attribute name='isStatic' type='xs:NCName'/>
+            <xs:attribute name='isUnique' type='xs:NCName'/>
+            <xs:attribute name='lower' type='xs:integer'/>
+            <xs:attribute name='memberEnd'/>
+            <xs:attribute name='name'/>
+            <xs:attribute name='type'/>
+            <xs:attribute name='upper' type='xs:integer'/>
+            <xs:attribute name='visibility' type='xs:NCName'/>
+            <xs:attributeGroup ref='xmi:id1'/>
+            <xs:attribute ref='xmi:type'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='generalization'>
+        <xs:complexType>
+            <xs:attribute name='general' use='required' type='xs:NMTOKEN'/>
+            <xs:attributeGroup ref='xmi:id1'/>
+            <xs:attribute ref='xmi:type' use='required'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='ownedAttribute'>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:choice maxOccurs='unbounded'>
+                    <xs:element ref='xmi:lowerValue'/>
+                    <xs:element ref='xmi:type'/>
+                    <xs:element ref='xmi:upperValue'/>
+                </xs:choice>
+                <xs:element minOccurs='0' ref='xmi:defaultValue'/>
+            </xs:sequence>
+            <xs:attribute name='aggregation' type='xs:NCName'/>
+            <xs:attribute name='association'/>
+            <xs:attribute name='isDerived' type='xs:NCName'/>
+            <xs:attribute name='isDerivedUnion' type='xs:NCName'/>
+            <xs:attribute name='isOrdered' type='xs:NCName'/>
+            <xs:attribute name='isReadOnly' type='xs:NCName'/>
+            <xs:attribute name='isStatic' type='xs:NCName'/>
+            <xs:attribute name='isUnique' type='xs:NCName'/>
+            <xs:attribute name='name'/>
+            <xs:attribute name='visibility' type='xs:NCName'/>
+            <xs:attributeGroup ref='xmi:id1'/>
+            <xs:attribute ref='xmi:type' use='required'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='defaultValue'>
+        <xs:complexType>
+            <xs:attribute name='value' use='required' type='xs:NMTOKEN'/>
+            <xs:attributeGroup ref='xmi:id1'/>
+            <xs:attribute ref='xmi:type' use='required'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='elements'>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs='unbounded' ref='xmi:element'/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='element'>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:sequence minOccurs='0'>
+                    <xs:element ref='xmi:model'/>
+                    <xs:element ref='xmi:properties'/>
+                    <xs:element ref='xmi:project'/>
+                    <xs:element ref='xmi:code'/>
+                    <xs:element ref='xmi:style'/>
+                </xs:sequence>
+                <xs:element minOccurs='0' ref='xmi:modelDocument'/>
+                <xs:sequence minOccurs='0'>
+                    <xs:element ref='xmi:tags'/>
+                    <xs:element ref='xmi:xrefs'/>
+                    <xs:element ref='xmi:extendedProperties'/>
+                </xs:sequence>
+                <xs:sequence minOccurs='0'>
+                    <xs:element ref='xmi:packageproperties'/>
+                    <xs:element ref='xmi:paths'/>
+                    <xs:element ref='xmi:times'/>
+                    <xs:element ref='xmi:flags'/>
+                </xs:sequence>
+                <xs:element minOccurs='0' ref='xmi:attributes'/>
+                <xs:element minOccurs='0' ref='xmi:links'/>
+            </xs:sequence>
+            <xs:attribute name='geometry'/>
+            <xs:attribute name='name'/>
+            <xs:attribute name='scope' type='xs:NCName'/>
+            <xs:attribute name='seqno' type='xs:integer'/>
+            <xs:attribute name='style'/>
+            <xs:attribute name='subject'/>
+            <xs:attributeGroup ref='xmi:idref'/>
+            <xs:attribute ref='xmi:type'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='code'>
+        <xs:complexType>
+            <xs:attribute name='gentype'/>
+            <xs:attribute name='product_name'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='modelDocument'>
+        <xs:complexType>
+            <xs:attribute name='author' use='required'/>
+            <xs:attribute name='date' use='required'/>
+            <xs:attribute name='docid' use='required'/>
+            <xs:attribute name='elementtype' use='required' type='xs:NCName'/>
+            <xs:attribute name='isactive' use='required' type='xs:integer'/>
+            <xs:attribute name='name' use='required' type='xs:NCName'/>
+            <xs:attribute name='notes' use='required'/>
+            <xs:attribute name='sequence' use='required' type='xs:integer'/>
+            <xs:attribute name='strcontent' use='required'/>
+            <xs:attribute name='style' use='required'/>
+            <xs:attribute name='type' use='required' type='xs:NCName'/>
+            <xs:attribute name='version' use='required'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='packageproperties'>
+        <xs:complexType>
+            <xs:attribute name='version' type='xs:decimal'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='paths'>
+        <xs:complexType/>
+    </xs:element>
+    <xs:element name='times'>
+        <xs:complexType>
+            <xs:attribute name='created' use='required'/>
+            <xs:attribute name='lastloaddate'/>
+            <xs:attribute name='lastsavedate'/>
+            <xs:attribute name='modified' use='required'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='flags'>
+        <xs:complexType>
+            <xs:attribute name='batchload' type='xs:integer'/>
+            <xs:attribute name='batchsave' type='xs:integer'/>
+            <xs:attribute name='iscontrolled' use='required' type='xs:NCName'/>
+            <xs:attribute name='isnamespace' type='xs:integer'/>
+            <xs:attribute name='isprotected' use='required' type='xs:NCName'/>
+            <xs:attribute name='logxml' use='required' type='xs:NCName'/>
+            <xs:attribute name='packageFlags'/>
+            <xs:attribute name='usedtd' use='required' type='xs:NCName'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='attributes'>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs='unbounded' ref='xmi:attribute'/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='attribute'>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref='xmi:initial'/>
+                <xs:element ref='xmi:documentation'/>
+                <xs:element ref='xmi:model'/>
+                <xs:element ref='xmi:properties'/>
+                <xs:element ref='xmi:coords'/>
+                <xs:element ref='xmi:containment'/>
+                <xs:element ref='xmi:stereotype'/>
+                <xs:element ref='xmi:bounds'/>
+                <xs:element ref='xmi:options'/>
+                <xs:element ref='xmi:style'/>
+                <xs:element ref='xmi:styleex'/>
+                <xs:element ref='xmi:tags'/>
+                <xs:element ref='xmi:xrefs'/>
+            </xs:sequence>
+            <xs:attribute name='name' use='required'/>
+            <xs:attribute name='scope' use='required' type='xs:NCName'/>
+            <xs:attributeGroup ref='xmi:idref'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='initial'>
+        <xs:complexType>
+            <xs:attribute name='body' type='xs:NMTOKEN'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='coords'>
+        <xs:complexType>
+            <xs:attribute name='ordered' use='required' type='xs:integer'/>
+            <xs:attribute name='scale' use='required' type='xs:integer'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='containment'>
+        <xs:complexType>
+            <xs:attribute name='containment'/>
+            <xs:attribute name='position' use='required' type='xs:integer'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='stereotype'>
+        <xs:complexType>
+            <xs:attribute name='stereotype' type='xs:NCName'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='bounds'>
+        <xs:complexType>
+            <xs:attribute name='lower' use='required' type='xs:integer'/>
+            <xs:attribute name='upper' use='required'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='options'>
+        <xs:complexType/>
+    </xs:element>
+    <xs:element name='styleex'>
+        <xs:complexType>
+            <xs:attribute name='value'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='links'>
+        <xs:complexType>
+            <xs:choice maxOccurs='unbounded'>
+                <xs:element ref='xmi:Abstraction'/>
+                <xs:element ref='xmi:Aggregation'/>
+                <xs:element ref='xmi:Association'/>
+                <xs:element ref='xmi:Dependency'/>
+                <xs:element ref='xmi:Generalization'/>
+                <xs:element ref='xmi:NoteLink'/>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='Abstraction'>
+        <xs:complexType>
+            <xs:attribute name='end' use='required'/>
+            <xs:attribute name='start' use='required'/>
+            <xs:attributeGroup ref='xmi:id1'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='Aggregation'>
+        <xs:complexType>
+            <xs:attribute name='end' use='required'/>
+            <xs:attribute name='start' use='required'/>
+            <xs:attributeGroup ref='xmi:id1'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='Association'>
+        <xs:complexType>
+            <xs:attribute name='end' use='required'/>
+            <xs:attribute name='start' use='required'/>
+            <xs:attributeGroup ref='xmi:id1'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='Dependency'>
+        <xs:complexType>
+            <xs:attribute name='end' use='required'/>
+            <xs:attribute name='start' use='required'/>
+            <xs:attributeGroup ref='xmi:id1'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='Generalization'>
+        <xs:complexType>
+            <xs:attribute name='end' use='required'/>
+            <xs:attribute name='start' use='required'/>
+            <xs:attributeGroup ref='xmi:id1'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='NoteLink'>
+        <xs:complexType>
+            <xs:attribute name='end' use='required'/>
+            <xs:attribute name='start' use='required'/>
+            <xs:attributeGroup ref='xmi:id1'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='model'>
+        <xs:complexType>
+            <xs:attribute name='ea_eleType' type='xs:NCName'/>
+            <xs:attribute name='ea_guid'/>
+            <xs:attribute name='ea_localid' type='xs:integer'/>
+            <xs:attribute name='localID' type='xs:integer'/>
+            <xs:attribute name='name'/>
+            <xs:attribute name='owner'/>
+            <xs:attribute name='package'/>
+            <xs:attribute name='package2'/>
+            <xs:attribute name='tpos' type='xs:integer'/>
+            <xs:attribute name='type' type='xs:NCName'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='role'>
+        <xs:complexType>
+            <xs:attribute name='name'/>
+            <xs:attribute name='targetScope' type='xs:NCName'/>
+            <xs:attribute name='visibility' use='required' type='xs:NCName'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='type'>
+        <xs:complexType>
+            <xs:attribute name='aggregation' type='xs:NCName'/>
+            <xs:attribute name='containment' type='xs:NCName'/>
+            <xs:attribute name='href' type='xs:anyURI'/>
+            <xs:attribute name='multiplicity'/>
+            <xs:attributeGroup ref='xmi:idref1'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='constraints'>
+        <xs:complexType/>
+    </xs:element>
+    <xs:element name='modifiers'>
+        <xs:complexType>
+            <xs:attribute name='changeable' type='xs:NCName'/>
+            <xs:attribute name='isLeaf' type='xs:NCName'/>
+            <xs:attribute name='isNavigable' type='xs:NCName'/>
+            <xs:attribute name='isOrdered' type='xs:NCName'/>
+            <xs:attribute name='isRoot' type='xs:NCName'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='style'>
+        <xs:complexType>
+            <xs:attribute name='appearance'/>
+            <xs:attribute name='object_style'/>
+            <xs:attribute name='styleex'/>
+            <xs:attribute name='value'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='documentation'>
+        <xs:complexType>
+            <xs:attribute name='value'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='xrefs'>
+        <xs:complexType>
+            <xs:attribute name='value'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='tags'>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element minOccurs='0' maxOccurs='unbounded' ref='xmi:tag'/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='tag'>
+        <xs:complexType>
+            <xs:attribute name='modelElement'/>
+            <xs:attribute name='name' use='required' type='xs:NCName'/>
+            <xs:attribute name='notes'/>
+            <xs:attribute name='value' use='required'/>
+            <xs:attributeGroup ref='xmi:id1'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='properties'>
+        <xs:complexType>
+            <xs:attribute name='alias' type='xs:anyURI'/>
+            <xs:attribute name='changeability' type='xs:NCName'/>
+            <xs:attribute name='collection' type='xs:NCName'/>
+            <xs:attribute name='derived' type='xs:integer'/>
+            <xs:attribute name='direction'/>
+            <xs:attribute name='documentation'/>
+            <xs:attribute name='duplicates' type='xs:integer'/>
+            <xs:attribute name='ea_type' type='xs:NCName'/>
+            <xs:attribute name='isAbstract' type='xs:NCName'/>
+            <xs:attribute name='isActive' type='xs:NCName'/>
+            <xs:attribute name='isLeaf' type='xs:NCName'/>
+            <xs:attribute name='isRoot' type='xs:NCName'/>
+            <xs:attribute name='isSpecification' type='xs:NCName'/>
+            <xs:attribute name='length' type='xs:integer'/>
+            <xs:attribute name='nType' type='xs:integer'/>
+            <xs:attribute name='name'/>
+            <xs:attribute name='precision' type='xs:integer'/>
+            <xs:attribute name='sType' type='xs:NCName'/>
+            <xs:attribute name='scope' type='xs:NCName'/>
+            <xs:attribute name='static' type='xs:integer'/>
+            <xs:attribute name='stereotype' type='xs:NCName'/>
+            <xs:attribute name='subtype' type='xs:NCName'/>
+            <xs:attribute name='type'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='extendedProperties'>
+        <xs:complexType>
+            <xs:attribute name='conditional'/>
+            <xs:attribute name='package_name'/>
+            <xs:attribute name='tagged' type='xs:integer'/>
+            <xs:attribute name='virtualInheritance' type='xs:integer'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='ownedComment'>
+        <xs:complexType>
+            <xs:choice minOccurs='0'>
+                <xs:element ref='xmi:annotatedElement'/>
+                <xs:element ref='xmi:body'/>
+            </xs:choice>
+            <xs:attribute name='annotatedElement' type='xs:NMTOKEN'/>
+            <xs:attribute name='body'/>
+            <xs:attributeGroup ref='xmi:id'/>
+            <xs:attribute ref='xmi:type' use='required'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='annotatedElement'>
+        <xs:complexType>
+            <xs:attributeGroup ref='xmi:idref'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='body' type='xs:string'/>
+    <xs:element name='project'>
+        <xs:complexType>
+            <xs:attribute name='author'/>
+            <xs:attribute name='complexity' type='xs:integer'/>
+            <xs:attribute name='created' use='required'/>
+            <xs:attribute name='modified' use='required'/>
+            <xs:attribute name='phase' type='xs:decimal'/>
+            <xs:attribute name='status' type='xs:NCName'/>
+            <xs:attribute name='version' type='xs:decimal'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='lowerValue'>
+        <xs:complexType>
+            <xs:attribute name='value' use='required' type='xs:integer'/>
+            <xs:attributeGroup ref='xmi:id1'/>
+            <xs:attribute ref='xmi:type' use='required'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='upperValue'>
+        <xs:complexType>
+            <xs:attribute name='value' use='required' type='xs:integer'/>
+            <xs:attributeGroup ref='xmi:id1'/>
+            <xs:attribute ref='xmi:type' use='required'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:attribute name='type' type='xs:NMTOKEN'/>
+    <xs:attributeGroup name='idref'>
+        <xs:attribute name='idref' use='required' form='qualified'/>
+    </xs:attributeGroup>
+    <xs:attributeGroup name='id2'>
+        <xs:attribute name='id' use='required' form='qualified' type='xs:NMTOKEN'/>
+    </xs:attributeGroup>
+    <xs:attribute name='version' type='xs:decimal'/>
+    <xs:attributeGroup name='id'>
+        <xs:attribute name='id' use='required' form='qualified' type='xs:NCName'/>
+    </xs:attributeGroup>
+    <xs:attributeGroup name='id1'>
+        <xs:attribute name='id' use='required' form='qualified'/>
+    </xs:attributeGroup>
+    <xs:attributeGroup name='idref1'>
+        <xs:attribute name='idref' use='required' form='qualified' type='xs:NCName'/>
+    </xs:attributeGroup>
+</xs:schema>

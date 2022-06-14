@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema
+    xmlns:xs='http://www.w3.org/2001/XMLSchema'
+    xmlns:EAUML='http://www.sparxsystems.com/profiles/EAUML/1.0'
+    xmlns:BPMN2.0='http://www.sparxsystems.com/profiles/BPMN2.0/1.5'
+    xmlns:BPMN='http://www.sparxsystems.com/profiles/BPMN/1.4'
+    xmlns:sysml='http://www.omg.org/spec/SysML/20080501/SysML-profile'
+    xmlns:uml='http://schema.omg.org/spec/UML/2.1'
+    xmlns:u='http://schema.omg.org/spec/UML/2.1/'
+    xmlns:xmi='http://schema.omg.org/spec/XMI/2.1'
+    xmlns:thecustomprofile='http://www.sparxsystems.com/profiles/thecustomprofile/1.0'
+    xmlns:EPProfile='http://www.sparxsystems.com/profiles/EPProfile/1.0' elementFormDefault='qualified' targetNamespace='http://schema.omg.org/spec/XMI/2.1'>
+    <xs:import schemaLocation='XmplifyDerivedSchema.xsd'/>
+    <xs:import namespace='http://schema.omg.org/spec/UML/2.1' schemaLocation='uml.xsd'/>
+    <xs:import namespace='http://schema.omg.org/spec/UML/2.1/' schemaLocation='u.xsd'/>
+    <xs:import namespace='http://www.omg.org/spec/SysML/20080501/SysML-profile' schemaLocation='sysml.xsd'/>
+    <xs:import namespace='http://www.sparxsystems.com/profiles/BPMN/1.4' schemaLocation='BPMN.xsd'/>
+    <xs:import namespace='http://www.sparxsystems.com/profiles/BPMN2.0/1.5' schemaLocation='BPMN2.0.xsd'/>
+    <xs:import namespace='http://www.sparxsystems.com/profiles/EAUML/1.0' schemaLocation='EAUML.xsd'/>
+    <xs:import namespace='http://www.sparxsystems.com/profiles/EPProfile/1.0' schemaLocation='EPProfile.xsd'/>
+    <xs:import namespace='http://www.sparxsystems.com/profiles/thecustomprofile/1.0' schemaLocation='thecustomprofile.xsd'/>
+    <xs:element name='XMI'>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref='xmi:Documentation'/>
+                <xs:element ref='uml:Model'/>
+                <xs:element ref='xmi:Extension'/>
+            </xs:sequence>
+            <xs:attribute ref='xmi:version' use='required'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='Documentation'>
+        <xs:complexType>
+            <xs:attribute name='exporter' use='required'/>
+            <xs:attribute name='exporterID' use='required' type='xs:integer'/>
+            <xs:attribute name='exporterVersion' use='required' type='xs:decimal'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='Extension'>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref='elements'/>
+                <xs:element ref='connectors'/>
+                <xs:element ref='primitivetypes'/>
+                <xs:element ref='profiles'/>
+                <xs:element ref='diagrams'/>
+            </xs:sequence>
+            <xs:attribute name='extender' use='required'/>
+            <xs:attribute name='extenderID' use='required' type='xs:decimal'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:attribute name='type' type='xs:NMTOKEN'/>
+    <xs:attributeGroup name='idref'>
+        <xs:attribute name='idref' use='required' form='qualified'/>
+    </xs:attributeGroup>
+    <xs:attributeGroup name='id2'>
+        <xs:attribute name='id' use='required' form='qualified' type='xs:NMTOKEN'/>
+    </xs:attributeGroup>
+    <xs:attribute name='version' type='xs:decimal'/>
+    <xs:attributeGroup name='id'>
+        <xs:attribute name='id' use='required' form='qualified' type='xs:NCName'/>
+    </xs:attributeGroup>
+    <xs:attributeGroup name='id1'>
+        <xs:attribute name='id' use='required' form='qualified'/>
+    </xs:attributeGroup>
+    <xs:attributeGroup name='idref1'>
+        <xs:attribute name='idref' use='required' form='qualified' type='xs:NCName'/>
+    </xs:attributeGroup>
+</xs:schema>

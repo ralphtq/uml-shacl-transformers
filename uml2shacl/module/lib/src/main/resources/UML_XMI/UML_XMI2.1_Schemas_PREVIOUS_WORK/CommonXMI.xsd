@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema targetNamespace="http:///org/omg/uml2/infrastructure/common"
+    xmlns:common="http:///org/omg/uml2/infrastructure/common"
+    xmlns:elements="http:///org/omg/uml2/infrastructure/elements"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:import namespace="http:///org/omg/uml2/infrastructure/elements" schemaLocation="elements.xsd"/>
+    <xsd:import namespace="http://www.omg.org/XMI" schemaLocation="XMI.xsd"/>
+    <xsd:complexType name="ReflectiveSequence">
+        <xsd:complexContent>
+            <xsd:extension base="common:ReflectiveCollection"/>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="ReflectiveSequence" type="common:ReflectiveSequence"/>
+    <xsd:complexType name="ReflectiveCollection">
+        <xsd:complexContent>
+            <xsd:extension base="elements:Element"/>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="ReflectiveCollection" type="common:ReflectiveCollection"/>
+</xsd:schema>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs='http://www.w3.org/2001/XMLSchema' xmlns:oTemporal='http://www.sparxsystems.com/profiles/oTemporal/1.0' xmlns:oFinancal='http://www.sparxsystems.com/profiles/oFinancal/1.0' xmlns:oBusiness='http://www.sparxsystems.com/profiles/oBusiness/1.0' xmlns:xmi='http://schema.omg.org/spec/XMI/2.1' xmlns:dt='urn:schemas-microsoft-com:datatypes' xmlns:OWL_Profile='http://www.sparxsystems.com/profiles/OWL_Profile/1.0' xmlns:oMath='http://www.sparxsystems.com/profiles/oMath/1.0' xmlns:thecustomprofile='http://www.sparxsystems.com/profiles/thecustomprofile/1.0' xmlns:EAUML='http://www.sparxsystems.com/profiles/EAUML/1.0' xmlns:oInformation='http://www.sparxsystems.com/profiles/oInformation/1.0' xmlns:oSecurities='http://www.sparxsystems.com/profiles/oSecurities/1.0' xmlns:oCore='http://www.sparxsystems.com/profiles/oCore/1.0' xmlns:oGeographical='http://www.sparxsystems.com/profiles/oGeographical/1.0' xmlns:uml='http://schema.omg.org/spec/UML/2.1' xmlns:RDF_Profile='http://www.sparxsystems.com/profiles/RDF_Profile/1.0' xmlns:oActivity='http://www.sparxsystems.com/profiles/oActivity/1.0' xmlns:oRisk='http://www.sparxsystems.com/profiles/oRisk/1.0' xmlns:oLogic='http://www.sparxsystems.com/profiles/oLogic/1.0' xmlns:oLegal='http://www.sparxsystems.com/profiles/oLegal/1.0' xmlns:u='http://schema.omg.org/spec/UML/2.1/' elementFormDefault='qualified' targetNamespace='http://schema.omg.org/spec/XMI/2.1'>
+    <xs:import namespace='http://schema.omg.org/spec/UML/2.1' schemaLocation='uml.xsd'/>
+    <xs:element name='XMI'>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref='xmi:Documentation'/>
+                <xs:element ref='uml:Model'/>
+                <xs:element ref='xmi:Extension'/>
+            </xs:sequence>
+            <xs:attribute ref='xmi:version' use='required'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='Documentation'>
+        <xs:complexType>
+            <xs:attribute name='exporter' use='required'/>
+            <xs:attribute name='exporterVersion' use='required' type='xs:decimal'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='Extension'>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref='elements'/>
+                <xs:element ref='connectors'/>
+                <xs:element ref='primitivetypes'/>
+                <xs:element ref='profiles'/>
+            </xs:sequence>
+            <xs:attribute name='extender' use='required'/>
+            <xs:attribute name='extenderID' use='required' type='xs:decimal'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:attribute name='type' type='xs:NMTOKEN'/>
+    <xs:attribute name='idref'/>
+    <xs:attributeGroup name='id'>
+        <xs:attribute name='id' use='required' form='qualified'/>
+    </xs:attributeGroup>
+    <xs:attributeGroup name='id2'>
+        <xs:attribute name='id' use='required' form='qualified' type='xs:NMTOKEN'/>
+    </xs:attributeGroup>
+    <xs:attribute name='version' type='xs:decimal'/>
+    <xs:attributeGroup name='id1'>
+        <xs:attribute name='id' use='required' form='qualified' type='xs:NCName'/>
+    </xs:attributeGroup>
+</xs:schema>

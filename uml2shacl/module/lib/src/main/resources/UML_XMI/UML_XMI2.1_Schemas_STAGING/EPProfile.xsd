@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs='http://www.w3.org/2001/XMLSchema' xmlns:EAUML='http://www.sparxsystems.com/profiles/EAUML/1.0' xmlns:BPMN2.0='http://www.sparxsystems.com/profiles/BPMN2.0/1.5' xmlns:BPMN='http://www.sparxsystems.com/profiles/BPMN/1.4' xmlns:sysml='http://www.omg.org/spec/SysML/20080501/SysML-profile' xmlns:uml='http://schema.omg.org/spec/UML/2.1' xmlns:u='http://schema.omg.org/spec/UML/2.1/' xmlns:xmi='XMI2.1.xsd' xmlns:thecustomprofile='http://www.sparxsystems.com/profiles/thecustomprofile/1.0' xmlns:EPProfile='http://www.sparxsystems.com/profiles/EPProfile/1.0' elementFormDefault='qualified' targetNamespace='http://www.sparxsystems.com/profiles/EPProfile/1.0'>
+    <xs:import namespace='http://schema.omg.org/spec/UML/2.1' schemaLocation='uml.xsd'/>
+    <xs:import namespace='http://schema.omg.org/spec/UML/2.1/' schemaLocation='u.xsd'/>
+    <xs:import namespace='XMI2.1.xsd' schemaLocation='XMI2.1.xsd'/>
+    <xs:import namespace='http://www.omg.org/spec/SysML/20080501/SysML-profile' schemaLocation='sysml.xsd'/>
+    <xs:import namespace='http://www.sparxsystems.com/profiles/BPMN/1.4' schemaLocation='BPMN.xsd'/>
+    <xs:import namespace='http://www.sparxsystems.com/profiles/BPMN2.0/1.5' schemaLocation='BPMN2.0.xsd'/>
+    <xs:import namespace='http://www.sparxsystems.com/profiles/EAUML/1.0' schemaLocation='EAUML.xsd'/>
+    <xs:import namespace='http://www.sparxsystems.com/profiles/thecustomprofile/1.0' schemaLocation='thecustomprofile.xsd'/>
+    <xs:element name='abstract'>
+        <xs:complexType>
+            <xs:attribute name='base_Class'/>
+            <xs:attribute name='base_DataType'/>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

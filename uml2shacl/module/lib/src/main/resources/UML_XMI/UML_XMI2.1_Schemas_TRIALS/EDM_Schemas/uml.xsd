@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs='http://www.w3.org/2001/XMLSchema' xmlns:oTemporal='http://www.sparxsystems.com/profiles/oTemporal/1.0' xmlns:oFinancal='http://www.sparxsystems.com/profiles/oFinancal/1.0' xmlns:oBusiness='http://www.sparxsystems.com/profiles/oBusiness/1.0' xmlns:xmi='http://schema.omg.org/spec/XMI/2.1' xmlns:dt='urn:schemas-microsoft-com:datatypes' xmlns:OWL_Profile='http://www.sparxsystems.com/profiles/OWL_Profile/1.0' xmlns:oMath='http://www.sparxsystems.com/profiles/oMath/1.0' xmlns:thecustomprofile='http://www.sparxsystems.com/profiles/thecustomprofile/1.0' xmlns:EAUML='http://www.sparxsystems.com/profiles/EAUML/1.0' xmlns:oInformation='http://www.sparxsystems.com/profiles/oInformation/1.0' xmlns:oSecurities='http://www.sparxsystems.com/profiles/oSecurities/1.0' xmlns:oCore='http://www.sparxsystems.com/profiles/oCore/1.0' xmlns:oGeographical='http://www.sparxsystems.com/profiles/oGeographical/1.0' xmlns:uml='http://schema.omg.org/spec/UML/2.1' xmlns:RDF_Profile='http://www.sparxsystems.com/profiles/RDF_Profile/1.0' xmlns:oActivity='http://www.sparxsystems.com/profiles/oActivity/1.0' xmlns:oRisk='http://www.sparxsystems.com/profiles/oRisk/1.0' xmlns:oLogic='http://www.sparxsystems.com/profiles/oLogic/1.0' xmlns:oLegal='http://www.sparxsystems.com/profiles/oLegal/1.0' xmlns:u='http://schema.omg.org/spec/UML/2.1/' elementFormDefault='qualified' targetNamespace='http://schema.omg.org/spec/UML/2.1'>
+    <xs:import namespace='http://schema.omg.org/spec/UML/2.1/' schemaLocation='u.xsd'/>
+    <xs:import namespace='http://schema.omg.org/spec/XMI/2.1' schemaLocation='xmi.xsd'/>
+    <xs:import namespace='http://www.sparxsystems.com/profiles/EAUML/1.0' schemaLocation='EAUML.xsd'/>
+    <xs:import namespace='http://www.sparxsystems.com/profiles/OWL_Profile/1.0' schemaLocation='OWL_Profile.xsd'/>
+    <xs:import namespace='http://www.sparxsystems.com/profiles/RDF_Profile/1.0' schemaLocation='RDF_Profile.xsd'/>
+    <xs:import namespace='http://www.sparxsystems.com/profiles/oActivity/1.0' schemaLocation='oActivity.xsd'/>
+    <xs:import namespace='http://www.sparxsystems.com/profiles/oBusiness/1.0' schemaLocation='oBusiness.xsd'/>
+    <xs:import namespace='http://www.sparxsystems.com/profiles/oCore/1.0' schemaLocation='oCore.xsd'/>
+    <xs:import namespace='http://www.sparxsystems.com/profiles/oFinancal/1.0' schemaLocation='oFinancal.xsd'/>
+    <xs:import namespace='http://www.sparxsystems.com/profiles/oGeographical/1.0' schemaLocation='oGeographical.xsd'/>
+    <xs:import namespace='http://www.sparxsystems.com/profiles/oInformation/1.0' schemaLocation='oInformation.xsd'/>
+    <xs:import namespace='http://www.sparxsystems.com/profiles/oLegal/1.0' schemaLocation='oLegal.xsd'/>
+    <xs:import namespace='http://www.sparxsystems.com/profiles/oLogic/1.0' schemaLocation='oLogic.xsd'/>
+    <xs:import namespace='http://www.sparxsystems.com/profiles/oMath/1.0' schemaLocation='oMath.xsd'/>
+    <xs:import namespace='http://www.sparxsystems.com/profiles/oRisk/1.0' schemaLocation='oRisk.xsd'/>
+    <xs:import namespace='http://www.sparxsystems.com/profiles/oSecurities/1.0' schemaLocation='oSecurities.xsd'/>
+    <xs:import namespace='http://www.sparxsystems.com/profiles/oTemporal/1.0' schemaLocation='oTemporal.xsd'/>
+    <xs:import namespace='http://www.sparxsystems.com/profiles/thecustomprofile/1.0' schemaLocation='thecustomprofile.xsd'/>
+    <xs:import namespace='urn:schemas-microsoft-com:datatypes' schemaLocation='dt.xsd'/>
+    <xs:element name='Model'>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref='packagedElement'/>
+                <xs:choice maxOccurs='unbounded'>
+                    <xs:element ref='EAUML:enumeration'/>
+                    <xs:element ref='EAUML:import'/>
+                    <xs:element ref='EAUML:trace'/>
+                    <xs:element ref='OWL_Profile:disjointWith'/>
+                    <xs:element ref='OWL_Profile:from'/>
+                    <xs:element ref='OWL_Profile:inverseOf'/>
+                    <xs:element ref='OWL_Profile:is'/>
+                    <xs:element ref='OWL_Profile:owlAnnotationProperty'/>
+                    <xs:element ref='OWL_Profile:owlClass'/>
+                    <xs:element ref='OWL_Profile:owlDatatypeProperty'/>
+                    <xs:element ref='OWL_Profile:owlEnumeratedDataRange'/>
+                    <xs:element ref='OWL_Profile:owlObjectProperty'/>
+                    <xs:element ref='OWL_Profile:owlOntology'/>
+                    <xs:element ref='OWL_Profile:owlUnionClass'/>
+                    <xs:element ref='OWL_Profile:owlValue'/>
+                    <xs:element ref='OWL_Profile:typeOf'/>
+                    <xs:element ref='OWL_Profile:union'/>
+                    <xs:element ref='RDF_Profile:rdfDocument'/>
+                    <xs:element ref='RDF_Profile:rdfsClass'/>
+                    <xs:element ref='RDF_Profile:rdfsDatatype'/>
+                    <xs:element ref='RDF_Profile:rdfsResource'/>
+                    <xs:element ref='oActivity:BusinessProcess'/>
+                    <xs:element ref='oActivity:Contains'/>
+                    <xs:element ref='oActivity:Context'/>
+                    <xs:element ref='oActivity:Decision'/>
+                    <xs:element ref='oActivity:Decomposition'/>
+                    <xs:element ref='oActivity:Generates'/>
+                    <xs:element ref='oActivity:Lifecycle'/>
+                    <xs:element ref='oActivity:Milestone'/>
+                    <xs:element ref='oActivity:Motivation'/>
+                    <xs:element ref='oActivity:Participant'/>
+                    <xs:element ref='oActivity:ProcessActivity'/>
+                    <xs:element ref='oActivity:ProcessEnd'/>
+                    <xs:element ref='oActivity:ProcessEvent'/>
+                    <xs:element ref='oActivity:ProcessStart'/>
+                    <xs:element ref='oActivity:Program'/>
+                    <xs:element ref='oActivity:Refers'/>
+                    <xs:element ref='oActivity:Resource'/>
+                    <xs:element ref='oActivity:Role'/>
+                    <xs:element ref='oActivity:Timing'/>
+                    <xs:element ref='oActivity:oActivity'/>
+                    <xs:element ref='oActivity:oActor'/>
+                    <xs:element ref='oActivity:oAgency'/>
+                    <xs:element ref='oActivity:oControl'/>
+                    <xs:element ref='oActivity:oDependency'/>
+                    <xs:element ref='oActivity:oEvent'/>
+                    <xs:element ref='oBusiness:BusinessEntity'/>
+                    <xs:element ref='oBusiness:Consideration'/>
+                    <xs:element ref='oBusiness:Driver'/>
+                    <xs:element ref='oBusiness:Facility'/>
+                    <xs:element ref='oBusiness:Follows'/>
+                    <xs:element ref='oBusiness:Form'/>
+                    <xs:element ref='oBusiness:Good'/>
+                    <xs:element ref='oBusiness:HasGoal'/>
+                    <xs:element ref='oBusiness:Incurs'/>
+                    <xs:element ref='oBusiness:Method'/>
+                    <xs:element ref='oBusiness:Negotiable'/>
+                    <xs:element ref='oBusiness:Objective'/>
+                    <xs:element ref='oBusiness:OwedTo'/>
+                    <xs:element ref='oBusiness:Party'/>
+                    <xs:element ref='oBusiness:PartyRelation'/>
+                    <xs:element ref='oBusiness:PartyTo'/>
+                    <xs:element ref='oBusiness:Perspectival'/>
+                    <xs:element ref='oBusiness:Provides'/>
+                    <xs:element ref='oBusiness:ProvisionFor'/>
+                    <xs:element ref='oBusiness:Service'/>
+                    <xs:element ref='oBusiness:Stake'/>
+                    <xs:element ref='oBusiness:Strategy'/>
+                    <xs:element ref='oBusiness:Subject'/>
+                    <xs:element ref='oBusiness:Transaction'/>
+                    <xs:element ref='oBusiness:Viewpoint'/>
+                    <xs:element ref='oBusiness:oPart'/>
+                    <xs:element ref='oBusiness:oRule'/>
+                    <xs:element ref='oCore:Agent'/>
+                    <xs:element ref='oCore:Autonomous'/>
+                    <xs:element ref='oCore:Called'/>
+                    <xs:element ref='oCore:Collection'/>
+                    <xs:element ref='oCore:Context'/>
+                    <xs:element ref='oCore:ControlledBy'/>
+                    <xs:element ref='oCore:Derivation'/>
+                    <xs:element ref='oCore:Embodies'/>
+                    <xs:element ref='oCore:ExpressedAs'/>
+                    <xs:element ref='oCore:Expresses'/>
+                    <xs:element ref='oCore:Expression'/>
+                    <xs:element ref='oCore:Form'/>
+                    <xs:element ref='oCore:Goal'/>
+                    <xs:element ref='oCore:HasControl'/>
+                    <xs:element ref='oCore:HasMember'/>
+                    <xs:element ref='oCore:HasPart'/>
+                    <xs:element ref='oCore:HasPrecedence'/>
+                    <xs:element ref='oCore:Identity'/>
+                    <xs:element ref='oCore:IsMember'/>
+                    <xs:element ref='oCore:OwnedBy'/>
+                    <xs:element ref='oCore:Owns'/>
+                    <xs:element ref='oCore:PartOf'/>
+                    <xs:element ref='oCore:Physical'/>
+                    <xs:element ref='oCore:Place'/>
+                    <xs:element ref='oCore:Policy'/>
+                    <xs:element ref='oCore:Production'/>
+                    <xs:element ref='oCore:Quantity'/>
+                    <xs:element ref='oCore:RestrictedBy'/>
+                    <xs:element ref='oCore:Restricts'/>
+                    <xs:element ref='oCore:Treatment'/>
+                    <xs:element ref='oFinancal:Account'/>
+                    <xs:element ref='oFinancal:Accrual'/>
+                    <xs:element ref='oFinancal:Amortization'/>
+                    <xs:element ref='oFinancal:AppliesTo'/>
+                    <xs:element ref='oFinancal:Asset'/>
+                    <xs:element ref='oFinancal:Balance'/>
+                    <xs:element ref='oFinancal:Basis'/>
+                    <xs:element ref='oFinancal:Capital'/>
+                    <xs:element ref='oFinancal:Cashflow'/>
+                    <xs:element ref='oFinancal:Collateral'/>
+                    <xs:element ref='oFinancal:Collateralized'/>
+                    <xs:element ref='oFinancal:Debt'/>
+                    <xs:element ref='oFinancal:Economy'/>
+                    <xs:element ref='oFinancal:Entry'/>
+                    <xs:element ref='oFinancal:Equity'/>
+                    <xs:element ref='oFinancal:Feature'/>
+                    <xs:element ref='oFinancal:Financing'/>
+                    <xs:element ref='oFinancal:ForEntity'/>
+                    <xs:element ref='oFinancal:ForPeriod'/>
+                    <xs:element ref='oFinancal:Guaranty'/>
+                    <xs:element ref='oFinancal:HasBalance'/>
+                    <xs:element ref='oFinancal:Holds'/>
+                    <xs:element ref='oFinancal:Interest'/>
+                    <xs:element ref='oFinancal:IsAmount'/>
+                    <xs:element ref='oFinancal:IsBalance'/>
+                    <xs:element ref='oFinancal:IssuedEquity'/>
+                    <xs:element ref='oFinancal:Liability'/>
+                    <xs:element ref='oFinancal:Price'/>
+                    <xs:element ref='oFinancal:Taxation'/>
+                    <xs:element ref='oFinancal:Value'/>
+                    <xs:element ref='oFinancal:ValueChange'/>
+                    <xs:element ref='oGeographical:FederatedTo'/>
+                    <xs:element ref='oGeographical:Geographical'/>
+                    <xs:element ref='oGeographical:Geopolitical'/>
+                    <xs:element ref='oGeographical:Governed'/>
+                    <xs:element ref='oGeographical:Governs'/>
+                    <xs:element ref='oGeographical:Language'/>
+                    <xs:element ref='oGeographical:Law'/>
+                    <xs:element ref='oGeographical:Location'/>
+                    <xs:element ref='oGeographical:Reach'/>
+                    <xs:element ref='oGeographical:StateActor'/>
+                    <xs:element ref='oGeographical:Venue'/>
+                    <xs:element ref='oInformation:About'/>
+                    <xs:element ref='oInformation:Applies'/>
+                    <xs:element ref='oInformation:AppliesTo'/>
+                    <xs:element ref='oInformation:As'/>
+                    <xs:element ref='oInformation:Becomes'/>
+                    <xs:element ref='oInformation:Classifies'/>
+                    <xs:element ref='oInformation:ControlDocument'/>
+                    <xs:element ref='oInformation:DefinedIn'/>
+                    <xs:element ref='oInformation:Defines'/>
+                    <xs:element ref='oInformation:Details'/>
+                    <xs:element ref='oInformation:Historical'/>
+                    <xs:element ref='oInformation:Identifier'/>
+                    <xs:element ref='oInformation:Identifies'/>
+                    <xs:element ref='oInformation:Identifying'/>
+                    <xs:element ref='oInformation:Information'/>
+                    <xs:element ref='oInformation:Personal'/>
+                    <xs:element ref='oInformation:Published'/>
+                    <xs:element ref='oInformation:Purposive'/>
+                    <xs:element ref='oInformation:Rated'/>
+                    <xs:element ref='oInformation:Rates'/>
+                    <xs:element ref='oInformation:Rating'/>
+                    <xs:element ref='oInformation:Schematic_Code'/>
+                    <xs:element ref='oInformation:Scheme'/>
+                    <xs:element ref='oInformation:Source'/>
+                    <xs:element ref='oInformation:Specification'/>
+                    <xs:element ref='oInformation:SpecifiedIn'/>
+                    <xs:element ref='oInformation:Specifies'/>
+                    <xs:element ref='oInformation:Status'/>
+                    <xs:element ref='oInformation:To'/>
+                    <xs:element ref='oInformation:VariableInfo'/>
+                    <xs:element ref='oLegal:Conferral'/>
+                    <xs:element ref='oLegal:ConferredBy'/>
+                    <xs:element ref='oLegal:Confers'/>
+                    <xs:element ref='oLegal:Constitution'/>
+                    <xs:element ref='oLegal:Contract'/>
+                    <xs:element ref='oLegal:ContractPart'/>
+                    <xs:element ref='oLegal:Contractual'/>
+                    <xs:element ref='oLegal:GovernedBy'/>
+                    <xs:element ref='oLegal:GoverningLaw'/>
+                    <xs:element ref='oLegal:HasTerms'/>
+                    <xs:element ref='oLegal:Incorporated_Under'/>
+                    <xs:element ref='oLegal:Jurisdiction'/>
+                    <xs:element ref='oLegal:LegalEntity'/>
+                    <xs:element ref='oLegal:LegalRequirement'/>
+                    <xs:element ref='oLegal:RegistrationDetail'/>
+                    <xs:element ref='oLegal:Restriction'/>
+                    <xs:element ref='oLegal:SetsOut'/>
+                    <xs:element ref='oLegal:Supersedes'/>
+                    <xs:element ref='oLegal:Terms'/>
+                    <xs:element ref='oLegal:TradingInformation'/>
+                    <xs:element ref='oLogic:LogicAll'/>
+                    <xs:element ref='oLogic:LogicAny'/>
+                    <xs:element ref='oLogic:LogicNot'/>
+                    <xs:element ref='oLogic:LogicOne'/>
+                    <xs:element ref='oLogic:Selection'/>
+                    <xs:element ref='oLogic:Uses'/>
+                    <xs:element ref='oLogic:UsesStereotypes'/>
+                    <xs:element ref='oLogic:owlImpliedClass'/>
+                    <xs:element ref='oMath:Amount'/>
+                    <xs:element ref='oMath:Argument'/>
+                    <xs:element ref='oMath:DatedParameter'/>
+                    <xs:element ref='oMath:DatedValue'/>
+                    <xs:element ref='oMath:Denomination'/>
+                    <xs:element ref='oMath:Formula'/>
+                    <xs:element ref='oMath:FormulaComponent'/>
+                    <xs:element ref='oMath:Math'/>
+                    <xs:element ref='oMath:Measure'/>
+                    <xs:element ref='oMath:Model'/>
+                    <xs:element ref='oMath:Operand'/>
+                    <xs:element ref='oMath:Operator'/>
+                    <xs:element ref='oMath:Parametric'/>
+                    <xs:element ref='oMath:Purpose'/>
+                    <xs:element ref='oMath:QuantityOf'/>
+                    <xs:element ref='oMath:Reciprocal'/>
+                    <xs:element ref='oMath:Reference_Entity'/>
+                    <xs:element ref='oMath:Represents'/>
+                    <xs:element ref='oMath:TakesValue'/>
+                    <xs:element ref='oMath:Variable'/>
+                    <xs:element ref='oMath:add'/>
+                    <xs:element ref='oMath:subtract'/>
+                    <xs:element ref='oRisk:Consequence'/>
+                    <xs:element ref='oRisk:Impact'/>
+                    <xs:element ref='oRisk:ImpactsUpon'/>
+                    <xs:element ref='oRisk:Likelihood'/>
+                    <xs:element ref='oRisk:Risk'/>
+                    <xs:element ref='oSecurities:Attachment'/>
+                    <xs:element ref='oSecurities:Banking_Product'/>
+                    <xs:element ref='oSecurities:Listing'/>
+                    <xs:element ref='oSecurities:Pool'/>
+                    <xs:element ref='oSecurities:RelatedInstrument'/>
+                    <xs:element ref='oSecurities:Underlying'/>
+                    <xs:element ref='oTemporal:Beginning'/>
+                    <xs:element ref='oTemporal:Duration'/>
+                    <xs:element ref='oTemporal:End'/>
+                    <xs:element ref='oTemporal:Length'/>
+                    <xs:element ref='oTemporal:RelativeTime'/>
+                    <xs:element ref='oTemporal:RelativeTo'/>
+                    <xs:element ref='oTemporal:Schedule'/>
+                    <xs:element ref='oTemporal:Scheduling'/>
+                    <xs:element ref='oTemporal:Temporal'/>
+                    <xs:element ref='oTemporal:TemporalDefinition'/>
+                    <xs:element ref='oTemporal:TemporalEntity'/>
+                    <xs:element ref='oTemporal:TemporalUnit'/>
+                    <xs:element ref='oTemporal:Temporal_Derivation'/>
+                    <xs:element ref='thecustomprofile:Agency'/>
+                    <xs:element ref='thecustomprofile:Facet'/>
+                    <xs:element ref='thecustomprofile:MOFPrimitiveType'/>
+                    <xs:element ref='thecustomprofile:Part'/>
+                    <xs:element ref='thecustomprofile:Referenceable'/>
+                    <xs:element ref='thecustomprofile:Requirement'/>
+                    <xs:element ref='thecustomprofile:Start'/>
+                    <xs:element ref='thecustomprofile:_profile_data'/>
+                    <xs:element ref='thecustomprofile:derivation'/>
+                    <xs:element ref='thecustomprofile:enum'/>
+                    <xs:element ref='thecustomprofile:extends'/>
+                    <xs:element ref='thecustomprofile:invariant'/>
+                    <xs:element ref='thecustomprofile:isA'/>
+                    <xs:element ref='thecustomprofile:metaclass'/>
+                    <xs:element ref='thecustomprofile:minInclusive'/>
+                    <xs:element ref='thecustomprofile:ontologyActor'/>
+                    <xs:element ref='thecustomprofile:profile'/>
+                    <xs:element ref='thecustomprofile:stereotype'/>
+                </xs:choice>
+            </xs:sequence>
+            <xs:attribute name='name' use='required' type='xs:NCName'/>
+            <xs:attribute name='visibility' use='required' type='xs:NCName'/>
+            <xs:attribute ref='xmi:type' use='required'/>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

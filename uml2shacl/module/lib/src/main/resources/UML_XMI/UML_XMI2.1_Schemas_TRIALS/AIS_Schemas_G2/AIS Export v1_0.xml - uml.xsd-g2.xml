@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs='http://www.w3.org/2001/XMLSchema' xmlns:EAUML='http://www.sparxsystems.com/profiles/EAUML/1.0' xmlns:BPMN2.0='http://www.sparxsystems.com/profiles/BPMN2.0/1.5' xmlns:BPMN='http://www.sparxsystems.com/profiles/BPMN/1.4' xmlns:sysml='http://www.omg.org/spec/SysML/20080501/SysML-profile' xmlns:uml='http://schema.omg.org/spec/UML/2.1' xmlns:u='http://schema.omg.org/spec/UML/2.1/' xmlns:xmi='XMI.xsd' xmlns:thecustomprofile='http://www.sparxsystems.com/profiles/thecustomprofile/1.0' xmlns:EPProfile='http://www.sparxsystems.com/profiles/EPProfile/1.0' elementFormDefault='qualified' targetNamespace='http://schema.omg.org/spec/UML/2.1'>
+    <xs:import schemaLocation='XmplifyDerivedSchema.xsd'/>
+    <xs:import namespace='http://schema.omg.org/spec/UML/2.1/' schemaLocation='u.xsd'/>
+    <xs:import namespace='XMI.xsd' schemaLocation='xmi.xsd'/>
+    <xs:import namespace='http://www.omg.org/spec/SysML/20080501/SysML-profile' schemaLocation='sysml.xsd'/>
+    <xs:import namespace='http://www.sparxsystems.com/profiles/BPMN/1.4' schemaLocation='BPMN.xsd'/>
+    <xs:import namespace='http://www.sparxsystems.com/profiles/BPMN2.0/1.5' schemaLocation='BPMN2.0.xsd'/>
+    <xs:import namespace='http://www.sparxsystems.com/profiles/EAUML/1.0' schemaLocation='EAUML.xsd'/>
+    <xs:import namespace='http://www.sparxsystems.com/profiles/EPProfile/1.0' schemaLocation='EPProfile.xsd'/>
+    <xs:import namespace='http://www.sparxsystems.com/profiles/thecustomprofile/1.0' schemaLocation='thecustomprofile.xsd'/>
+    <xs:element name='Model'>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref='packagedElement'/>
+                <xs:choice maxOccurs='unbounded'>
+                    <xs:element ref='sysml:dataType'/>
+                    <xs:element ref='BPMN:Association'/>
+                    <xs:element ref='BPMN2.0:Category'/>
+                    <xs:element ref='EAUML:trace'/>
+                    <xs:element ref='EPProfile:abstract'/>
+                    <xs:element ref='thecustomprofile:Master'/>
+                    <xs:element ref='thecustomprofile:NavigationCell'/>
+                    <xs:element ref='thecustomprofile:Replicas'/>
+                    <xs:element ref='thecustomprofile:abstract'/>
+                    <xs:element ref='thecustomprofile:asset-lifecycle'/>
+                    <xs:element ref='thecustomprofile:dataType'/>
+                    <xs:element ref='thecustomprofile:dqc-accuracy'/>
+                    <xs:element ref='thecustomprofile:dqc-completeness'/>
+                    <xs:element ref='thecustomprofile:dqc-control'/>
+                    <xs:element ref='thecustomprofile:dqc-format'/>
+                    <xs:element ref='thecustomprofile:dqc-resolution'/>
+                    <xs:element ref='thecustomprofile:dqc-timeliness'/>
+                    <xs:element ref='thecustomprofile:dqc-traceability'/>
+                    <xs:element ref='thecustomprofile:dqc-uniqueness'/>
+                    <xs:element ref='thecustomprofile:dqc-uom'/>
+                    <xs:element ref='thecustomprofile:dqc-validlength'/>
+                    <xs:element ref='thecustomprofile:dqc-validrange'/>
+                    <xs:element ref='thecustomprofile:dqc-verifiability'/>
+                    <xs:element ref='thecustomprofile:exemptions'/>
+                    <xs:element ref='thecustomprofile:instance'/>
+                    <xs:element ref='thecustomprofile:metadata'/>
+                    <xs:element ref='thecustomprofile:nk'/>
+                    <xs:element ref='thecustomprofile:pk'/>
+                    <xs:element ref='thecustomprofile:reference'/>
+                </xs:choice>
+            </xs:sequence>
+            <xs:attribute name='name' use='required' type='xs:NCName'/>
+            <xs:attribute name='visibility' use='required' type='xs:NCName'/>
+            <xs:attribute ref='xmi:type' use='required'/>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

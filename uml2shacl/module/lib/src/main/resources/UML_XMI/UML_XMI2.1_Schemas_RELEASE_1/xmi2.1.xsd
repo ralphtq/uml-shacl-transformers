@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema
+        xmlns:xs='http://www.w3.org/2001/XMLSchema'
+        xmlns:xmi='http://schema.omg.org/spec/XMI/2.1'
+        xmlns:uml='http://schema.omg.org/spec/UML/2.1' 
+        elementFormDefault='qualified'
+        targetNamespace='http://schema.omg.org/spec/XMI/2.1'>
+    
+    <xs:include schemaLocation='xmi.xsd'/>
+    
+    <xs:import namespace='http://schema.omg.org/spec/UML/2.1' schemaLocation='uml.xsd'/>
+
+    <xs:element name='XMI'>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref='xmi:Documentation'/>
+                <xs:element ref='uml:Model'/>
+                <xs:element ref='xmi:Extension'/>
+            </xs:sequence>
+            <xs:attribute ref='xmi:version' use='required'/>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name='Documentation'>
+        <xs:complexType>
+            <xs:attribute name='exporter' use='required'/>
+            <xs:attribute name='exporterID' use='required' type='xs:integer'/>
+            <xs:attribute name='exporterVersion' use='required' type='xs:decimal'/>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name='Extension'>
+        <xs:complexType>
+            <xs:sequence>
+            </xs:sequence>
+            <xs:attribute name='extender' use='required'/>
+            <xs:attribute name='extenderID' use='required' type='xs:decimal'/>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
